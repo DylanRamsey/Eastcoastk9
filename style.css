@@ -1,5 +1,108 @@
-.blue {
-  color: blue;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --site-color-main: #B5BDA1;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: 200px 1fr 1fr 1fr;
+}
+
+.site-header {
+  grid-column: 1/-1;
+  grid-row: 1;
+  background: var(--site-color-main);
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+}
+.site-header .site-header__wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header .site-header__logo {
+  width: 197px;
+  height: 195px;
+}
+.site-header .site-header__locations-hours {
+  font-size: 18px;
+}
+
+.site-banner {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.site-banner img {
+  max-width: 1640px;
+  margin: auto;
+  width: 100%;
+}
+
+.site-body {
+  grid-column: 2/4;
+  grid-row: 3;
 }
 
 /*# sourceMappingURL=style.css.map */
