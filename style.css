@@ -1,3 +1,9 @@
+:root {
+  --site-main-color-green: #B5BDA1;
+  --site-main-color-brown: #45200D;
+  --site-secondary-color-brown: #73594B;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -38,6 +44,15 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 /*
   7. Remove built-in form typography styles
 */
@@ -59,22 +74,36 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-:root {
-  --site-color-main: #B5BDA1;
+h1 {
+  font-size: 72px;
+  margin-bottom: 15px;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
-  grid-template-rows: 200px 1fr 1fr 1fr;
+h6 {
+  font-size: 32px;
+}
+
+footer {
+  background: var(--site-main-color-green);
+  grid-column: 1/-1;
+  grid-row: 4;
+}
+
+.heading--brown {
+  color: var(--site-main-color-brown);
+}
+
+.heading--center {
+  text-align: center;
 }
 
 .site-header {
   grid-column: 1/-1;
   grid-row: 1;
-  background: var(--site-color-main);
+  background: var(--site-main-color-green);
   display: grid;
   grid-template-columns: 100px 1fr 100px;
+  font-weight: 600;
 }
 .site-header .site-header__wrapper {
   grid-column: 2;
@@ -90,9 +119,17 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: 200px 1fr 1fr 200px;
+}
+
 .site-banner {
   grid-column: 1/-1;
   grid-row: 2;
+  background: var(--site-secondary-color-brown);
+  margin-bottom: 50px;
 }
 .site-banner img {
   max-width: 1640px;
@@ -103,6 +140,41 @@ p, h1, h2, h3, h4, h5, h6 {
 .site-body {
   grid-column: 2/4;
   grid-row: 3;
+}
+
+.service-cards-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.single-service-card {
+  width: 100%;
+  max-width: 300px;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+
+.single-service-card {
+  width: 100%;
+  max-width: 300px;
+  border: 5px solid black;
+  border-radius: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 10px;
+}
+
+.single-service-card--image {
+  display: block;
+  width: 100%;
+  max-width: 190px;
 }
 
 /*# sourceMappingURL=style.css.map */

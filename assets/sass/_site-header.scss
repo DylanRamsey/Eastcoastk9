@@ -1,0 +1,24 @@
+@use 'config' as *;
+.site-header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background: var(--site-main-color-green);
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  font-weight: 600;
+  .site-header__wrapper {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-header__logo {
+    width: 197px;
+    height: 195px;
+  }
+
+  .site-header__locations-hours {
+    font-size: 18px;
+  }
+}

@@ -39,8 +39,27 @@
       <img src="/wp-content/uploads/2022/12/banner-scaled.webp" alt="">
     </div>
     <main class="site-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi nostrum qui odit veritatis, hic consequatur vel, ipsam natus ratione dolore possimus enim distinctio aut perspiciatis culpa odio voluptate sapiente accusantium!
+      <section>
+        <h1 class="heading heading--brown heading--center">East Coast K9</h1>
+        <div class="service-cards-group">
+          <div class="single-service-card">
+            <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-trainer-green.png" alt="">
+            <h6>Training</h6>
+          </div>
+          <div class="single-service-card">
+            <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-house-green.webp" alt="">
+            <h6>Lodging</h6>
+          </div>
+          <div class="single-service-card">
+            <img class="single-service-card--image" src="/wp-content/uploads/2023/01/spa-green.png" alt="">
+            <h6>Spa</h6>
+          </div>                                      
+        </div>
+      </section>
     </main>
+    <footer>
+
+    </footer>
   </section>
 </body>
 </html>
