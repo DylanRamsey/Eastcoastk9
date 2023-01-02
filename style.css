@@ -75,22 +75,52 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 4.5rem;
   margin-bottom: 15px;
 }
 
-h6 {
-  font-size: 32px;
+h2 {
+  font-size: 4rem;
 }
 
-footer {
-  background: var(--site-main-color-green);
-  grid-column: 1/-1;
-  grid-row: 4;
+h6 {
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 600;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: 200px 500px 1fr 200px;
+}
+
+.site-body {
+  grid-column: 2/4;
+  grid-row: 3;
 }
 
 .heading--brown {
   color: var(--site-main-color-brown);
+}
+
+.heading--green {
+  color: var(--site-main-color-green);
+}
+
+.button--green {
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  background: var(--site-main-color-green);
+  color: var(--site-main-color-brown);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
 }
 
 .heading--center {
@@ -119,12 +149,6 @@ footer {
   font-size: 18px;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
-  grid-template-rows: 200px 1fr 1fr 200px;
-}
-
 .site-banner {
   grid-column: 1/-1;
   grid-row: 2;
@@ -137,9 +161,15 @@ footer {
   width: 100%;
 }
 
-.site-body {
-  grid-column: 2/4;
-  grid-row: 3;
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 70px;
+  margin-bottom: 100px;
+}
+
+.service-cards {
+  margin-bottom: 100px;
 }
 
 .service-cards-group {
@@ -175,6 +205,12 @@ footer {
   display: block;
   width: 100%;
   max-width: 190px;
+}
+
+footer {
+  background: var(--site-main-color-green);
+  grid-column: 1/-1;
+  grid-row: 4;
 }
 
 /*# sourceMappingURL=style.css.map */

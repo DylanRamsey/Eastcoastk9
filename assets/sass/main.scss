@@ -1,61 +1,7 @@
 @use 'config' as *;
 @use 'global';
 @use 'site-header';
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
-  grid-template-rows: 200px 1fr 1fr 200px;
-}
-
-.site-banner {
-  grid-column: 1 / -1;
-  grid-row: 2; 
-  background: var(--site-secondary-color-brown);
-  margin-bottom: 50px;
-  img {
-    max-width: 1640px;
-    margin: auto;
-    width: 100%;    
-  }
-}
-
-.site-body {
-  grid-column: 2 / 4;
-  grid-row: 3;
-}
-
-.service-cards-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-  max-width: 1240px;
-  margin: auto;
-}
-
-.single-service-card {
-  width: 100%;
-  max-width: 300px;
-  border: 5px solid black;
-  border-radius: 50px;
-}
-
-.single-service-card {
-  width: 100%;
-  max-width: 300px;
-  border: 5px solid black;
-  border-radius: 50px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 20px 10px;
-}
-
-.single-service-card--image {
-  display: block;
-  width: 100%;
-  max-width: 190px;
-}
+@use 'site-banner';
+@use 'introduction';
+@use 'service-cards';
+@use 'footer';

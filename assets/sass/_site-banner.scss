@@ -1,0 +1,11 @@
+.site-banner {
+  grid-column: 1 / -1;
+  grid-row: 2; 
+  background: var(--site-secondary-color-brown);
+  margin-bottom: 50px;
+  img {
+    max-width: 1640px;
+    margin: auto;
+    width: 100%;    
+  }
+}
