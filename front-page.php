@@ -73,7 +73,7 @@
             assistant and seasoned dog trainer, I can assure and promise the safest care for your 
             pups! We strive to be their second home while away from home.            
           </p>
-          <a class="button--green" href="">Sign up now</a>
+          <a class="button button--green" href="">Sign up now</a>
         </div>
       </section>
       <section class="testimonials">
@@ -113,19 +113,17 @@
     </main>
     <section class="services">
       <h2 class="heading heading--brown heading--center">Services</h2>
-      <h3>Training</h3>
-      <p class="services__copy">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
-at felis in enim ultrices finibus. Praesent in posuere neque. Nulla 
-vitae odio tristique, malesuada erat vel, vehicula purus. Sed 
-placerat sit amet libero vitae dignissim. Praesent justo augue, 
-tristique vel vulputate sit amet, lacinia vel lectus. Sed lobortis 
-massa luctus, vehicula augue in, lacinia nisi. In blandit felis id mi 
-suscipit, quis suscipit magna porta. Phasellus eleifend placerat 
-elit in euismod. In purus nulla, egestas eget gravida quis, 
-maximus et mi. Maecenas velit libero, sollicitudin vel lacus 
-ut, blandit pellentesque dolor.        
-      </p>
+      <div class="service-row">
+        <img class="service-row service-row__image" src="/wp-content/uploads/homepage-training.webp" alt="Group of dogs walking across an 'a-frame'">
+        <div class="service-row-copy">
+          <h3 class="heading heading--brown">Training</h3>
+          <p class="service-row-copy__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum nemo expedita aliquam ex nulla tenetur dolorum nisi natus quo. Sequi eligendi minus minima provident quidem ratione accusamus temporibus sint?   
+          </p>
+          <a class="button button--brown" href="">Sign up now</a>
+
+        </div>
+      </div>
     </section>
 
     <footer></footer>

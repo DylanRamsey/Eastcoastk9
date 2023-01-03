@@ -1,5 +1,6 @@
 :root {
   --site-main-color-green: #B5BDA1;
+  --site-secondary-color-green: #E3E3E3;
   --site-main-color-brown: #45200D;
   --site-secondary-color-brown: #73594B;
 }
@@ -83,6 +84,10 @@ h2 {
   font-size: 4rem;
 }
 
+h3 {
+  font-size: 3.25rem;
+}
+
 h6 {
   font-size: 2rem;
 }
@@ -94,7 +99,7 @@ p {
 .wrapper {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 100px;
-  grid-template-rows: 200px 500px 1fr 500px 200px;
+  grid-template-rows: 200px 500px 1fr 654px 200px;
 }
 
 .site-body {
@@ -110,17 +115,25 @@ p {
   color: var(--site-main-color-green);
 }
 
-.button--green {
+.button {
   display: block;
   width: max-content;
   text-decoration: none;
-  background: var(--site-main-color-green);
-  color: var(--site-main-color-brown);
   padding: 10px 18px;
   border-radius: 8px;
   font-size: 20px;
   font-weight: 600;
   margin-top: 25px;
+}
+
+.button--green {
+  background: var(--site-main-color-green);
+  color: var(--site-main-color-brown);
+}
+
+.button--brown {
+  background: var(--site-secondary-color-brown);
+  color: var(--site-secondary-color-green);
 }
 
 .heading--center {
@@ -262,11 +275,28 @@ p {
 }
 
 .services {
-  background: var(--site-main-color-brown);
   grid-column: 1/-1;
   grid-row: 4;
 }
-.services .services__copy {
+.services h2 {
+  margin-bottom: 50px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  align-items: center;
+}
+.service-row .service-row__image {
+  height: 100%;
+  min-width: 100%;
+  max-height: 508px;
+  object-fit: cover;
+  grid-column: 1/3;
+}
+.service-row .service-row-copy {
+  grid-column: 4;
+  padding-left: 70px;
   grid-column: 3;
 }
 
