@@ -4,8 +4,9 @@
   background: var(--site-secondary-color-brown);
   margin-bottom: 50px;
   img {
-    max-width: 1640px;
+    //max-width: 1640px;
     margin: auto;
-    width: 100%;    
+    min-width: 100%;
+    height: 450px;
   }
 }

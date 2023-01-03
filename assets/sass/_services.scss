@@ -1,0 +1,12 @@
+@use 'config' as *;
+
+.services {
+  background: var(--site-main-color-brown);
+  grid-column: 1/-1;
+  grid-row: 4;
+
+  .services__copy {
+    grid-column: 3;
+  }
+}
+

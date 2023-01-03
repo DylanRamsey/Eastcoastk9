@@ -1,0 +1,51 @@
+@use 'config' as *;
+.swiper {
+  width: 100%;
+}
+
+.testimonials-slider {
+  margin-top: 30px;
+  height: 430px;
+}
+
+.testimonials-slider__image {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: var(--site-main-color-green);
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+.testimonials-slider__copy {
+  font-weight: 500;
+  width: 100%;
+  max-width: 700px;
+  margin: auto auto 10px auto;
+}
+
+.testimonials-slider__author {
+  color: var(--site-main-color-brown);
+  font-weight: 600;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-pagination-bullet {
+  background: #727272;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--site-main-color-green);
+  width: 15px;
+  height: 15px;
+}

@@ -3,4 +3,9 @@
   grid-template-columns: 1fr 2fr;
   grid-gap: 70px;
   margin-bottom: 100px;
+
+  .introduction__image {
+    min-width: 100%;
+  }
 }
+
