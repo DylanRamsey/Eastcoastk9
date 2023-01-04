@@ -1,5 +1,43 @@
 footer {
   background: var(--site-main-color-green);
   grid-column: 1/-1;
-  grid-row: 5;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+}
+
+footer > * {
+  grid-column: 2;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 197px;
+  height: 195px;
+}
+
+.footer__secondary-logo {
+  max-width: 235px;
+  max-height: 128px;
+  height: 100%;
+  width: 100%;
+}
+
+.footer__text {
+  width: 700px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer__text__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text__bottom {
+  text-align: center;
 }

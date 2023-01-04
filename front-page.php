@@ -113,20 +113,75 @@
     </main>
     <section class="services">
       <h2 class="heading heading--brown heading--center">Services</h2>
-      <div class="service-row">
+      <div class="service-row service-row--green">
         <img class="service-row service-row__image" src="/wp-content/uploads/homepage-training.webp" alt="Group of dogs walking across an 'a-frame'">
         <div class="service-row-copy">
           <h3 class="heading heading--brown">Training</h3>
           <p class="service-row-copy__body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum nemo expedita aliquam ex nulla tenetur dolorum nisi natus quo. Sequi eligendi minus minima provident quidem ratione accusamus temporibus sint?   
+          Our board and train program only accepts a handful of students monthly and is custom tailored for his/her training needs. This ensures quality training and is the best foundation for success!
+Examples of daily training sessions may include concepts of basic obedience as well as exercises to build confidence and socialization. High distraction environments such as local parks, coffee shops, and other public
+spaces may be incorporated as needed.  
+Please feel free to reach out with any questions you have! We are here to help educate you and want you and your dog to have a beautiful relationship for many years to come!
           </p>
           <a class="button button--brown" href="">Sign up now</a>
-
         </div>
       </div>
+      <div class="service-row service-row--brown">
+        <img class="service-row service-row__image service-row__image--reversed" src="/wp-content/uploads/kennels.webp" alt="Group of dogs walking across an 'a-frame'">
+        <div class="service-row-copy service-row-copy--reversed service-row-copy--green">
+          <h3 class="heading heading--secondary-green">Lodging</h3>
+          <p class="service-row-copy__body">
+          Our newly renovated boarding facility includes 4 x 6 suites, peaceful music, pet friendly and relaxing essential oils, and two yards for play and exercise.
+Temperament evaluations are always completed to be sure each pet is safe to play in a group setting. Our goal is for all dogs in the play groups to have as much fun as possible
+interacting with others of similar age and size.
+In the warmer months we offer water zones to cool off so you can fully anticipate him/her getting down and dirty! All dogs go home bathed and cleaned if they enjoy the waterworks!
+We love to keep you updated throughout your pet's stay so be prepared for pictures and text messages!
+
+*we also offer more advanced grooming for boarding dogs. Please ask about that if you have any questions*
+          </p>
+          <a class="button button--green" href="">Book Now</a>
+        </div>
+      </div>
+      <div class="service-row service-row--green">
+        <img class="service-row service-row__image" src="/wp-content/uploads/spa-pup.jpeg" alt="Group of dogs walking across an 'a-frame'">
+        <div class="service-row-copy">
+          <h3 class="heading heading--brown">Spa Services</h3>
+          <p class="service-row-copy__body">
+            Give your pup a spa day! We offer two different spa servies, Standard and Deluxe. Standard includes the bath, blow drying, nail trimming, and ears cleaning. Deluxe
+            includes Deshedding shampoo and conditioner, nails clipper and filed, ears cleaning, and anal glandes
+          </p>
+          <a class="button button--brown" href="">Sign up now</a>
+        </div>
+      </div>       
+    </section>
+  
+    <section class="home-form">
+      <h2 class="heading heading--center heading--one heading--brown">Get Started Today!</h2>
+      <img src="/wp-content/uploads/form-placeholder.webp" alt="" style="width:630px;   margin: auto;">
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="footer footer__wrapper">
+        <img class="footer footer__logo" src="/wp-content/uploads/2022/12/ECK-logo.webp" alt="">
+        <div class="footer footer__text">
+          <div class="footer footer__text footer__text__top">
+            <div>
+              <p>EastCoastK9LLC@gmail.com</p>
+              <p>941-374-7161</p>
+            </div>
+            <div>
+              <p>Mon-Wed, Fri 6:30am - 6pm</p>
+              <p>Thursday 6:30am - 4pm</p>
+            </div>
+          </div>
+          <div class="footer footer__text footer__text__bottom">
+            <p>Located in North Port, Florida. Serving Fort Myers to Bradenton</p>
+            <p>Copyright 2022 East Coast K9 LLC</p>
+          </div>
+        </div>
+        <img class="footer__secondary-logo" src="/wp-content/uploads/stone-creek-logo.webp" alt="">
+      </div>
+    </footer>
   <script>
       var swiper = new Swiper(".testimonials-slider", {
         pagination: {
