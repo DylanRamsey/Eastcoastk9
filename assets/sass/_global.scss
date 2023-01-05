@@ -102,16 +102,34 @@ p {
   font-size: 20px;
   font-weight: 600;
   margin-top: 25px;
+  box-shadow: var(--shadow);
 }
 
 .button--green {
   background: var(--site-main-color-green);
   color: var(--site-main-color-brown);
+  &:hover {
+    background-color: var(--button-click);
+  }
+
+  &:active {
+    background-color: var(--button-click);
+    transform: translateY(4px);
+  }
 }
 
 .button--brown {
   background: var(--site-secondary-color-brown);
   color: var(--site-secondary-color-green);
+
+  &:hover {
+    background-color: var(--site-main-color-brown);
+  }
+
+  &:active {
+    background-color: var(--site-main-color-brown);
+    transform: translateY(4px);
+  }
 }
 
 .heading--center {

@@ -13,10 +13,25 @@
 }
 
 .single-service-card {
+  display: block;
   width: 100%;
   max-width: 300px;
   border: 5px solid black;
   border-radius: 50px;
+  transition: transform 250ms;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  a {
+    color: var(--site-main-color-brown);
+  }
+
+  &:visited {
+    color: var(--site-main-color-brown);
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 }
 
 .single-service-card {

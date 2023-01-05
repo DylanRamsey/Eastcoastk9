@@ -45,18 +45,19 @@
       <section class="service-cards">
         <h1 class="heading heading--brown heading--center">East Coast K9</h1>
         <div class="service-cards-group">
-          <div class="single-service-card">
+          
+          <a href="#training" class="single-service-card">
             <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-trainer-green.png" alt="">
             <h6>Training</h6>
-          </div>
-          <div class="single-service-card">
+          </a>
+          <a href="#lodging" class="single-service-card">
             <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-house-green.webp" alt="">
             <h6>Lodging</h6>
-          </div>
-          <div class="single-service-card">
+          </a>
+          <a href="#spa" class="single-service-card">
             <img class="single-service-card--image" src="/wp-content/uploads/2023/01/spa-green.png" alt="">
             <h6>Spa</h6>
-          </div>                                      
+          </a>                                
         </div>
       </section>
       <section class="introduction">
@@ -73,7 +74,7 @@
             assistant and seasoned dog trainer, I can assure and promise the safest care for your 
             pups! We strive to be their second home while away from home.            
           </p>
-          <a class="button button--green" href="">Sign up now</a>
+          <a class="button button--green" href="#form">Sign up now</a>
         </div>
       </section>
       <section class="testimonials">
@@ -113,7 +114,7 @@
     </main>
     <section class="services">
       <h2 class="heading heading--brown heading--center">Services</h2>
-      <div class="service-row service-row--green">
+      <div class="service-row service-row--green" id="training">
         <img class="service-row service-row__image" src="/wp-content/uploads/homepage-training.webp" alt="Group of dogs walking across an 'a-frame'">
         <div class="service-row-copy">
           <h3 class="heading heading--brown">Training</h3>
@@ -123,10 +124,10 @@ Examples of daily training sessions may include concepts of basic obedience as w
 spaces may be incorporated as needed.  
 Please feel free to reach out with any questions you have! We are here to help educate you and want you and your dog to have a beautiful relationship for many years to come!
           </p>
-          <a class="button button--brown" href="">Sign up now</a>
+          <a class="button button--brown" href="#form">Sign up now</a>
         </div>
       </div>
-      <div class="service-row service-row--brown">
+      <div class="service-row service-row--brown" id="lodging">
         <img class="service-row service-row__image service-row__image--reversed" src="/wp-content/uploads/kennels.webp" alt="Group of dogs walking across an 'a-frame'">
         <div class="service-row-copy service-row-copy--reversed service-row-copy--green">
           <h3 class="heading heading--secondary-green">Lodging</h3>
@@ -139,10 +140,10 @@ We love to keep you updated throughout your pet's stay so be prepared for pictur
 
 *we also offer more advanced grooming for boarding dogs. Please ask about that if you have any questions*
           </p>
-          <a class="button button--green" href="">Book Now</a>
+          <a class="button button--green" href="#form">Book Now</a>
         </div>
       </div>
-      <div class="service-row service-row--green">
+      <div class="service-row service-row--green" id="spa">
         <img class="service-row service-row__image" src="/wp-content/uploads/spa-pup.jpeg" alt="Group of dogs walking across an 'a-frame'">
         <div class="service-row-copy">
           <h3 class="heading heading--brown">Spa Services</h3>
@@ -150,13 +151,13 @@ We love to keep you updated throughout your pet's stay so be prepared for pictur
             Give your pup a spa day! We offer two different spa servies, Standard and Deluxe. Standard includes the bath, blow drying, nail trimming, and ears cleaning. Deluxe
             includes Deshedding shampoo and conditioner, nails clipper and filed, ears cleaning, and anal glandes
           </p>
-          <a class="button button--brown" href="">Sign up now</a>
+          <a class="button button--brown" href="#form">Sign up now</a>
         </div>
       </div>       
     </section>
   
     <section class="home-form">
-      <h2 class="heading heading--center heading--one heading--brown">Get Started Today!</h2>
+      <h2 class="heading heading--center heading--one heading--brown" id="form">Get Started Today!</h2>
       <img src="/wp-content/uploads/form-placeholder.webp" alt="" style="width:630px;   margin: auto;">
     </section>
 
@@ -179,7 +180,9 @@ We love to keep you updated throughout your pet's stay so be prepared for pictur
             <p>Copyright 2022 East Coast K9 LLC</p>
           </div>
         </div>
-        <img class="footer__secondary-logo" src="/wp-content/uploads/stone-creek-logo.webp" alt="">
+        <a href="https://stonecreekdachshunds.com/" target="_blank">
+          <img class="footer__secondary-logo" src="/wp-content/uploads/stone-creek-logo.webp" alt="Stone Creek Dachshunds Logo">
+        </a>
       </div>
     </footer>
   <script>
