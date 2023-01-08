@@ -1,9 +1,12 @@
+@use 'config' as *;
 .introduction {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-gap: 70px;
-  margin-bottom: 100px;
-
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 2fr;
+    margin: 0 0 100px;
+  }
   .introduction__image {
     min-width: 100%;
   }

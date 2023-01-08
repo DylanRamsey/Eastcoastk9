@@ -1,3 +1,12 @@
+/*
+Theme Name: East Coast K9
+Text Domain: East Coast K9
+Version: 1.0
+Description: Custom theme for dog trainer website
+Tags: dogs
+Author: Dylan Ramsey
+Author URI: https://dylanbradramsey.com
+*/
 :root {
   --site-main-color-green: #B5BDA1;
   --site-secondary-color-green: #E3E3E3;
@@ -5,8 +14,14 @@
   --site-secondary-color-brown: #73594B;
   --button-click: #9aa287;
   --shadow: 3px 3px 6px 0px #717171;
+  --widescreen: 1440px;
 }
 
+/*
+Mobile Opt example
+@media (min-width: $desktop) {}
+@media (min-width: $widescreen) {}
+*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -52,12 +67,22 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
 }
 
 h3 {
@@ -72,20 +97,43 @@ p {
   font-weight: 600;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
-  grid-template-rows: 200px 500px 1fr;
+@media (min-width: 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: 200px 500px 1fr;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    grid-template-columns: 100px 1fr 1fr 100px;
+  }
 }
 
 .site-body {
-  grid-column: 2/4;
-  grid-row: 3;
+  margin: 0 25px;
+}
+@media (min-width: 768px) {
+  .site-body {
+    margin: 0 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .site-body {
+    margin: initial;
+    grid-column: 2/4;
+    grid-row: 3;
+  }
 }
 
 .heading--one {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .heading--one {
+    font-size: 4.5rem;
+  }
 }
 
 .heading--brown {
@@ -100,7 +148,17 @@ p {
   color: var(--site-secondary-color-green);
 }
 
+.heading--tablet-up {
+  display: none;
+}
+@media (min-width: 768px) {
+  .heading--tablet-up {
+    display: block;
+  }
+}
+
 .button {
+  margin: 25px auto 25px;
   display: block;
   width: max-content;
   text-decoration: none;
@@ -109,7 +167,13 @@ p {
   font-size: 20px;
   font-weight: 600;
   margin-top: 25px;
+  margin-bottom: 25px;
   box-shadow: var(--shadow);
+}
+@media (min-width: 1024px) {
+  .button {
+    margin: 25px 0 25px;
+  }
 }
 
 .button--green {
@@ -141,25 +205,67 @@ p {
 }
 
 .site-header {
-  grid-column: 1/-1;
-  grid-row: 1;
   background: var(--site-main-color-green);
-  display: grid;
   grid-template-columns: 100px 1fr 100px;
   font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .site-header {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
 }
 .site-header .site-header__wrapper {
   grid-column: 2;
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .site-header .site-header__wrapper {
+    flex-flow: row;
+  }
 }
 .site-header .site-header__logo {
   width: 197px;
   height: 195px;
 }
 .site-header .site-header__locations-hours {
-  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .site-header .site-header__locations-hours {
+    text-align: initial;
+    margin-bottom: initial;
+  }
+}
+.site-header .header-contact {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .site-header .header-contact {
+    text-align: initial;
+    margin-bottom: initial;
+  }
+}
+.site-header .header-contact .header-contact__email {
+  display: flex;
+  align-items: center;
+}
+.site-header .header-contact .header-contact__phone {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.site-header .header-contact .header-contact__envelope {
+  margin-right: 5px;
+}
+.site-header .header-contact .header-contact__phone-icon {
+  margin-right: 5px;
 }
 
 .site-banner {
@@ -177,9 +283,14 @@ p {
 
 .introduction {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-gap: 70px;
-  margin-bottom: 100px;
+}
+@media (min-width: 1024px) {
+  .introduction {
+    grid-template-columns: 1fr 2fr;
+    margin: 0 0 100px;
+  }
 }
 .introduction .introduction__image {
   min-width: 100%;
@@ -191,15 +302,23 @@ p {
 
 .service-cards-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   justify-items: center;
   width: 100%;
   max-width: 1240px;
   margin: auto;
+  grid-gap: 30px;
+}
+@media (min-width: 1024px) {
+  .service-cards-group {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
 }
 
 .single-service-card {
+  color: var(--site-main-color-brown);
   display: block;
   width: 100%;
   max-width: 300px;
@@ -243,7 +362,12 @@ p {
 
 .testimonials-slider {
   margin-top: 30px;
-  height: 430px;
+  height: 625px;
+}
+@media (min-width: 768px) {
+  .testimonials-slider {
+    height: 430px;
+  }
 }
 
 .testimonials-slider__image {
@@ -298,29 +422,59 @@ p {
 
 .service-row {
   display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-columns: 1fr;
   align-items: center;
+  padding: 25px 25px;
+}
+@media (min-width: 768px) {
+  .service-row {
+    padding: 50px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .service-row {
+    grid-template-columns: 100px 1fr 1fr 100px;
+    padding: initial;
+  }
 }
 .service-row .service-row__image {
   height: 100%;
   min-width: 100%;
-  max-height: 508px;
   object-fit: cover;
   grid-column: 1/3;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .service-row .service-row__image {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .service-row .service-row__image {
+    max-height: 508px;
+  }
 }
 .service-row .service-row__image--reversed {
   grid-column: 3/-1 !important;
 }
 .service-row .service-row-copy {
   grid-column: 4;
-  padding-left: 70px;
   grid-column: 3;
+}
+@media (min-width: 1024px) {
+  .service-row .service-row-copy {
+    padding-left: 70px;
+  }
 }
 .service-row .service-row-copy--reversed {
   grid-column: 2;
   padding-left: 0;
   grid-row: 1;
-  padding-right: 70px;
+}
+@media (min-width: 1024px) {
+  .service-row .service-row-copy--reversed {
+    padding-right: 70px;
+  }
 }
 .service-row .service-row-copy--green {
   color: var(--site-secondary-color-green);
@@ -342,8 +496,13 @@ p {
 footer {
   background: var(--site-main-color-green);
   grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
 }
 
 footer > * {
@@ -352,8 +511,14 @@ footer > * {
 
 .footer__wrapper {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .footer__wrapper {
+    flex-flow: row;
+  }
 }
 
 .footer__logo {
@@ -369,14 +534,23 @@ footer > * {
 }
 
 .footer__text {
-  width: 700px;
   max-width: 100%;
   margin-bottom: 10px;
 }
+@media (min-width: 1440px) {
+  .footer__text {
+    width: 700px;
+  }
+}
 
 .footer__text__top {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .footer__text__top {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__text__bottom {

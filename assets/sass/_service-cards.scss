@@ -1,18 +1,25 @@
+@use 'config' as *;
 .service-cards {
   margin-bottom: 100px;
 }
 
 .service-cards-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   justify-items: center;
   width: 100%;
   max-width: 1240px;
   margin: auto;
+  grid-gap: 30px;
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0
+  }
 }
 
 .single-service-card {
+  color: var(--site-main-color-brown);
   display: block;
   width: 100%;
   max-width: 300px;

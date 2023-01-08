@@ -1,8 +1,14 @@
+@use 'config' as *;
 footer {
   background: var(--site-main-color-green);
   grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: 100px 1fr 100px;
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
 }
 
 footer > * {
@@ -11,8 +17,12 @@ footer > * {
 
 .footer__wrapper {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $desktop) {
+    flex-flow: row;
+  }
 }
 
 .footer__logo {
@@ -28,14 +38,19 @@ footer > * {
 }
 
 .footer__text {
-  width: 700px;
   max-width: 100%;
   margin-bottom: 10px;
+  @media (min-width: $widescreen) {
+    width: 700px;
+  }
 }
 
 .footer__text__top {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__text__bottom {

@@ -5,7 +5,11 @@
 
 .testimonials-slider {
   margin-top: 30px;
-  height: 430px;
+  height: 625px;
+
+  @media (min-width: $tablet) {
+    height: 430px;
+  }
 }
 
 .testimonials-slider__image {
