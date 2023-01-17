@@ -71,6 +71,10 @@ p {
   font-weight: 600;
 }
 
+form, input, textarea {
+  max-width: 100%;
+}
+
 .wrapper {
   @media (min-width: $desktop) {
     display: grid;

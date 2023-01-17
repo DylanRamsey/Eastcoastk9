@@ -36,9 +36,15 @@
   .header-contact {
     text-align: center;
     margin-bottom: 20px;
+    color: black;
     @media (min-width: $desktop) {
       text-align: initial;
       margin-bottom: initial;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
     }
     
     .header-contact__email {

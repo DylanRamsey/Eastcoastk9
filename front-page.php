@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>East Coast K9</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
-  <?php
-  wp_head();
-  ?>
-</head>
+<?php
+  get_header();
+?>
 <body>
   <section class="wrapper">
     <nav class="site-header">
@@ -36,7 +24,7 @@
               </svg>
             </span>            
             <p>
-              EastCoastK9LLC@gmail.com
+            <a href = "mailto: EastCoastK9LLC@gmail.com">EastCoastK9LLC@gmail.com</a>
             </p>
           </div>
           <div class="header-contact__phone">
@@ -45,7 +33,7 @@
                 <path d="M24.2866 18.1736L18.8179 15.8169C18.5843 15.7168 18.3246 15.6957 18.078 15.7568C17.8315 15.8179 17.6113 15.9579 17.4507 16.1557L15.0288 19.1311C11.2279 17.3291 8.16904 14.2532 6.37695 10.4313L9.33594 7.99596C9.53305 7.83476 9.67256 7.61337 9.73335 7.36531C9.79414 7.11726 9.7729 6.85603 9.67285 6.6212L7.3291 1.12213C7.21929 0.868985 7.02508 0.662297 6.77996 0.537711C6.53483 0.413124 6.25416 0.378448 5.98633 0.439661L0.908203 1.61803C0.649985 1.67799 0.419602 1.82419 0.254656 2.03276C0.0897096 2.24134 -5.94829e-05 2.49997 2.95713e-08 2.76645C2.95713e-08 15.3603 10.1514 25.5483 22.6562 25.5483C22.9213 25.5485 23.1787 25.4582 23.3862 25.2924C23.5937 25.1265 23.7392 24.8948 23.7988 24.635L24.9707 19.5288C25.0312 19.2582 24.996 18.9748 24.8711 18.7275C24.7463 18.4801 24.5396 18.2843 24.2866 18.1736Z" fill="black"/>
               </svg>
             </span>
-            <p>941-374-7161</p>
+            <a href="tel:941-374-7161"><p>941-374-7161</p></a>
           </div>
         </div>
       </div>
@@ -170,40 +158,10 @@ We love to keep you updated throughout your pet's stay so be prepared for pictur
   
     <section class="home-form">
       <h2 class="heading heading--center heading--one heading--brown" id="form">Get Started Today!</h2>
-      <img src="/wp-content/uploads/form-placeholder.webp" alt="" style="width:630px;   margin: auto;">
+      <?php echo apply_shortcodes( '[contact-form-7 id="21" title="Site Contact"]' ); ?>
     </section>
-
-    <footer>
-      <div class="footer footer__wrapper">
-        <img class="footer footer__logo" src="/wp-content/uploads/2022/12/ECK-logo.webp" alt="">
-        <div class="footer footer__text">
-          <div class="footer footer__text footer__text__top">
-            <div>
-              <p>EastCoastK9LLC@gmail.com</p>
-              <p>941-374-7161</p>
-            </div>
-            <div>
-              <p>Mon-Wed, Fri 6:30am - 6pm</p>
-              <p>Thursday 6:30am - 4pm</p>
-            </div>
-          </div>
-          <div class="footer footer__text footer__text__bottom">
-            <p>Located in North Port, Florida.</p>
-            <p>Serving Fort Myers to Bradenton</p>
-            <p>Copyright 2022 East Coast K9 LLC</p>
-          </div>
-        </div>
-        <a href="https://stonecreekdachshunds.com/" target="_blank">
-          <img class="footer__secondary-logo" src="/wp-content/uploads/stone-creek-logo.webp" alt="Stone Creek Dachshunds Logo">
-        </a>
-      </div>
-    </footer>
-  <script>
-      var swiper = new Swiper(".testimonials-slider", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });    
-  </script>
+    <?php
+      get_footer();
+    ?>
 </body>
 </html>

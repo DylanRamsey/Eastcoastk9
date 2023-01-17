@@ -1,7 +1,7 @@
-console.log('script file is hooked up')
+console.log('script file is hooked up');
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".testimonials-slider", {
   pagination: {
     el: ".swiper-pagination",
   },
-});
+});    
