@@ -1,5 +1,22 @@
 <?php
 
+function eck_menus(){
+  $locations = array(
+    'primary' => "Primary Menu",
+  );
+
+  register_nav_menus($locations);
+}
+
+add_action('init','eck_menus');
+
+
+function eck_theme_support(){
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'eck_theme_support');
+
 function eck_register_styles(){
   $version = wp_get_theme()->get('Version');
   wp_enqueue_style('eck-style', get_template_directory_uri() . "/style.css", array('eck-swiper'), $version, 'all' );

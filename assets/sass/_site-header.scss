@@ -14,6 +14,8 @@
     }
   }
 
+  
+
   .site-header__wrapper {
     grid-column: 2;
     display: flex;
@@ -26,8 +28,12 @@
   }
 
   .site-header__logo {
+    display: none;
     width: 197px;
     height: 195px;
+    @media (min-width: $desktop) {
+      display: block;
+    }
   }
 
   .site-header__locations-hours {
@@ -42,54 +48,73 @@
   .header-contact {
     text-align: center;
     margin-bottom: 20px;
+    gap: 10px;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (min-width: $desktop) {
       text-align: initial;
       margin-bottom: initial;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+
       justify-content: end;
       margin-top: 10px;
       font-size: 20px;
     }
-
     a {
       color: black;
+      display: flex;
       text-decoration: none;
     }
-    
-    .header-contact__email {
-      display: flex;
-      align-items: center;
+
+    p {
+      display: none;
+      @media (min-width: $desktop) {
+        display: block;
+      }
     }
 
-    .header-contact__phone {
-      display: flex;
-      align-items: center;
-    }    
-
+    img {
+      width: 50px;
+      height: 50px;
+      @media (min-width: $desktop) {
+        width: initial;
+        height: initial;
+      }
+    }
+    
     .header-contact__envelope {
-      margin-right: 5px;
+      @media (min-width: $desktop) {
+        margin-right: 10px;
+      }
     }
 
     .header-contact__phone-icon {
-      margin-right: 5px;   
+      @media (min-width: $desktop) {
+        margin-right: 10px;
+      }
     }
   }
 
   .site-header__navigation-links {
-    display: flex;
-    justify-content: space-between;
-    width: 920px;
-    max-width: 100%;
-    li {
-      font-size: 1.5rem;
-      font-weight: 600;
-      transition: margin 0.2s ease-in-out;
-      &:hover {
-        margin-top: -3px;
-        color: var(--site-main-color-brown);
+    display: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      width: 920px;
+      max-width: 100%;
+      li {
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: margin 0.2s ease-in-out;
+        &:hover {
+          margin-top: -3px;
+          color: var(--site-main-color-brown);
+        }
       }
     }
   }  
