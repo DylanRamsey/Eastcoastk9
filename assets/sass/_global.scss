@@ -44,6 +44,11 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -79,7 +84,7 @@ form, input, textarea {
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: 200px 500px 1fr;
+    grid-template-rows: 210px 500px 1fr;
   }
 
   @media (min-width: $widescreen) {

@@ -13,3 +13,40 @@
   wp_head();
   ?>
 </head>
+
+<body>
+  <section class="wrapper">
+    <nav class="site-header">
+      <div class="header-contact">
+        <img src="/wp-content/themes/eastcoastk9/assets/svgs/instagram-logo.svg" alt="Instagram Logo">
+        <img src="/wp-content/themes/eastcoastk9/assets/svgs/facebook-logo.svg" alt="Facebook Logo">
+        <div class="header-contact__phone">
+          <span class="header-contact__phone-icon">
+            <img src="/wp-content/themes/eastcoastk9/assets/svgs/phone-icon.svg" alt="Phone Icon">
+          </span>
+          <a href="tel:941-374-7161">
+            <p>941-374-7161</p>
+          </a>
+        </div>          
+        <div class="header-contact__email">
+          <span class="header-contact__envelope">
+            <img src="/wp-content/themes/eastcoastk9/assets/svgs/envelope.svg" alt="Envelope Icon">
+          </span>            
+          <p>
+            <a href="mailto: EastCoastK9LLC@gmail.com">EastCoastK9LLC@gmail.com</a>
+          </p>
+        </div>
+      </div>      
+      <div class="site-header__wrapper">
+        <img class="site-header__logo" src="/wp-content/uploads/eck9-kogo.webp" alt="East Coast K9 Logo">
+          <ul class="site-header__navigation-links">
+            <li>Training</li>
+            <li>Lodging</li>
+            <li>Spa</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+          </ul>
+
+      </div>
+    </nav>
+

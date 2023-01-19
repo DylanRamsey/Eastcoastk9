@@ -1,13 +1,19 @@
 @use 'config' as *;
 .site-header {
   background: var(--site-main-color-green);
-  grid-template-columns: 100px 1fr 100px;
+  
   font-weight: 600;
   @media (min-width: $desktop) {
     display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 50px 110px;
     grid-column: 1 / -1;
     grid-row: 1;
+    & > * {
+      grid-column: 2;
+    }
   }
+
   .site-header__wrapper {
     grid-column: 2;
     display: flex;
@@ -40,6 +46,12 @@
     @media (min-width: $desktop) {
       text-align: initial;
       margin-bottom: initial;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: end;
+      margin-top: 10px;
+      font-size: 20px;
     }
 
     a {
@@ -55,7 +67,6 @@
     .header-contact__phone {
       display: flex;
       align-items: center;
-      margin-top: 10px;
     }    
 
     .header-contact__envelope {
@@ -66,4 +77,20 @@
       margin-right: 5px;   
     }
   }
+
+  .site-header__navigation-links {
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+    max-width: 100%;
+    li {
+      font-size: 1.5rem;
+      font-weight: 600;
+      transition: margin 0.2s ease-in-out;
+      &:hover {
+        margin-top: -3px;
+        color: var(--site-main-color-brown);
+      }
+    }
+  }  
 }
