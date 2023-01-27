@@ -1,18 +1,18 @@
 @use 'config' as *;
-footer {
+.footer {
   background: var(--site-main-color-green);
   grid-column: 1/-1;
-  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 12.5px 1fr 12.5px;
 
   @media (min-width: $desktop) {
-    display: grid;
     grid-template-columns: 100px 1fr 100px;
     padding-top: 30px;
     padding-bottom: 10px;
   }
 }
 
-footer > * {
+.footer > * {
   grid-column: 2;
 }
 
@@ -23,8 +23,7 @@ footer > * {
   align-items: center;
   @media (min-width: $desktop) {
     flex-flow: row;
-
-    a,img {
+    a, img {
       align-self: self-start;
       display: flex;  
     }
@@ -34,6 +33,10 @@ footer > * {
 .footer__logo {
   width: 197px;
   height: 195px;
+  margin-bottom: 25px;
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+  }
 }
 
 .footer__secondary-logo {
@@ -53,10 +56,11 @@ footer > * {
 
 .footer__text__top {
   text-align: left;
+  font-size: 1.125rem;
+  margin-bottom: 25px;
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-    font-size: 1.125rem;
     margin-bottom: 40px;
   }
 }
@@ -75,13 +79,36 @@ footer > * {
 
 .footer__navigation {
   font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.875rem;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
   li {
+    margin-bottom: 10px;
     &:hover {
       color: var(--site-main-color-brown);
     }
-  } 
+    @media (min-width: $desktop) {
+      margin-bottom: unset;
+    }
+  }
+    
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+    text-align: unset;
+    font-size: unset;
+  }
 }
 
 .footer__contact {
   font-weight: 500;
+  text-align: center;
+  @media (min-width: $desktop) {
+    text-align: unset;
+  }
 }

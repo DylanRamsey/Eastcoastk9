@@ -14,8 +14,6 @@
     }
   }
 
-  
-
   .site-header__wrapper {
     grid-column: 2;
     display: flex;
@@ -48,15 +46,17 @@
   .header-contact {
     text-align: center;
     margin-bottom: 20px;
-    gap: 10px;
+    gap: 25px;
     color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
     @media (min-width: $desktop) {
+      gap: 10px;
       text-align: initial;
       margin-bottom: initial;
-
+      padding-top: unset;
       justify-content: end;
       margin-top: 10px;
       font-size: 20px;
@@ -76,10 +76,9 @@
 
     img {
       width: 50px;
-      height: 50px;
+      object-fit: contain;
       @media (min-width: $desktop) {
-        width: initial;
-        height: initial;
+        width: 30px;
       }
     }
     
@@ -105,7 +104,7 @@
     @media (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
-      width: 920px;
+      width: 600px;
       max-width: 100%;
       li {
         font-size: 1.5rem;
@@ -116,6 +115,9 @@
           color: var(--site-main-color-brown);
         }
       }
+    }
+    @media (min-width: $widescreen) {
+      width: 920px;
     }
   }  
 }

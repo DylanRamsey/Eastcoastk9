@@ -2,6 +2,7 @@
 .mobile-navigation {
   padding-bottom: 30px;
   margin-right: 30px;
+  margin-top: -96px;
   @media (min-width: $desktop) {
     display: none;
   }

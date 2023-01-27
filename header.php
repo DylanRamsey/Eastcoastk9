@@ -17,8 +17,10 @@
   <section class="wrapper">
     <nav class="site-header">
       <div class="header-contact">
+        <!--
         <img src="/wp-content/themes/eastcoastk9/assets/svgs/instagram-logo.svg" alt="Instagram Logo">
         <img src="/wp-content/themes/eastcoastk9/assets/svgs/facebook-logo.svg" alt="Facebook Logo">
+        -->
         <div class="header-contact__phone">
           <a href="tel:941-374-7161">
             <img class="header-contact__phone-icon" src="/wp-content/themes/eastcoastk9/assets/svgs/phone-icon.svg" alt="Phone Icon">
@@ -33,7 +35,9 @@
         </div>
       </div>      
       <div class="site-header__wrapper">
-        <img class="site-header__logo" src="/wp-content/uploads/eck9-kogo.webp" alt="East Coast K9 Logo">
+        <a href="/">
+          <img class="site-header__logo" src="/wp-content/uploads/eck9-kogo.webp" alt="East Coast K9 Logo">
+        </a>
           <div class="site-header__navigation-links">
             <?php 
               wp_nav_menu(
@@ -66,5 +70,5 @@
             )
           );
         ?>
-    </nav>      
+      </nav>      
     </nav>
