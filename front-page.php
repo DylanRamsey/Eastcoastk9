@@ -2,16 +2,54 @@
   get_header();
 ?>
     <div class="site-banner">
-      <img src="/wp-content/uploads/2022/12/banner-scaled.webp" alt="site banner">
+      <img 
+        src="<?php
+              $home_banner_image = get_field("home_banner_image");
+              if($home_banner_image) {
+                echo $home_banner_image;
+              }
+            ?>" 
+        alt="<?php
+              $home_banner_image_alt = get_field("home_banner_image_alt");
+              if($home_banner_image_alt) {
+                echo $home_banner_image_alt;
+              }?>">
     </div>
+
     <main class="site-body">
       <section class="service-cards">
         <h1 class="heading heading--brown heading--center">East Coast K9</h1>
         <div class="service-cards-group">
           
-          <a href="#training" class="single-service-card">
-            <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-trainer-green.png" alt="">
-            <h6>Training</h6>
+          <a href="
+          <?php
+            $service_card_1 = get_field("service_card_1");
+            if($service_card_1) {
+                echo $service_card_1['service_card_1_link'];
+            }
+          ?>          
+          " class="single-service-card">
+            <img class="single-service-card--image" src="
+              <?php
+                $service_card_1 = get_field("service_card_1");
+                if($service_card_1) {
+                    echo $service_card_1['service_card_1_icon'];
+                }
+              ?>" 
+            alt="<?php
+                  $service_card_1 = get_field("service_card_1");
+                  if($service_card_1) {
+                      echo $service_card_1['service_card_1_icon_alt'];
+                  }?>"
+            >
+            <h6>
+              <?php
+                $service_card_1 = get_field("service_card_1");
+                if($service_card_1) {
+                    echo $service_card_1['service_card_1_heading'];
+                }
+              ?>                 
+            </h6>
           </a>
           <a href="#lodging" class="single-service-card">
             <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-house-green.webp" alt="">
