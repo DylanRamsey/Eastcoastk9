@@ -20,28 +20,35 @@
       <section class="service-cards">
         <h1 class="heading heading--brown heading--center">East Coast K9</h1>
         <div class="service-cards-group">
-          
-          <a href="
-          <?php
-            $service_card_1 = get_field("service_card_1");
-            if($service_card_1) {
-                echo $service_card_1['service_card_1_link'];
-            }
-          ?>          
-          " class="single-service-card">
-            <img class="single-service-card--image" src="
+          <a 
+            href="
               <?php
                 $service_card_1 = get_field("service_card_1");
                 if($service_card_1) {
-                    echo $service_card_1['service_card_1_icon'];
+                    echo $service_card_1['service_card_1_link'];
                 }
-              ?>" 
-            alt="<?php
+              ?>
+            " 
+            class="single-service-card"
+          >
+            <img 
+              class="single-service-card--image" 
+              src="
+                <?php
+                  $service_card_1 = get_field("service_card_1");
+                  if($service_card_1) {
+                      echo $service_card_1['service_card_1_icon'];
+                  }
+                ?>
+              " 
+              alt="
+                <?php
                   $service_card_1 = get_field("service_card_1");
                   if($service_card_1) {
                       echo $service_card_1['service_card_1_icon_alt'];
-                  }?>"
-            >
+                }?>
+              "
+            />
             <h6>
               <?php
                 $service_card_1 = get_field("service_card_1");
@@ -51,64 +58,260 @@
               ?>                 
             </h6>
           </a>
-          <a href="#lodging" class="single-service-card">
-            <img class="single-service-card--image" src="/wp-content/uploads/2023/01/dog-house-green.webp" alt="">
-            <h6>Lodging</h6>
+          <a 
+            href="
+              <?php
+                $service_card_2 = get_field("service_card_2");
+                if($service_card_2) {
+                    echo $service_card_2['service_card_2_link'];
+                }
+              ?>
+            " 
+            class="single-service-card"
+          >
+            <img 
+              class="single-service-card--image" 
+              src="
+                <?php
+                  $service_card_2 = get_field("service_card_2");
+                  if($service_card_2) {
+                      echo $service_card_2['service_card_2_icon'];
+                  }
+                ?>
+              " 
+              alt="
+                <?php
+                  $service_card_2 = get_field("service_card_2");
+                  if($service_card_2) {
+                      echo $service_card_2['service_card_2_icon_alt'];
+                }?>
+              "
+            />
+            <h6>
+              <?php
+                $service_card_2 = get_field("service_card_2");
+                if($service_card_2) {
+                    echo $service_card_2['service_card_2_heading'];
+                }
+              ?>                 
+            </h6>
           </a>
-          <a href="#spa" class="single-service-card">
-            <img class="single-service-card--image" src="/wp-content/uploads/2023/01/spa-green.png" alt="">
-            <h6>Spa</h6>
-          </a>                                
+          <a 
+            class="single-service-card"
+            href="
+              <?php
+                $service_card_3 = get_field("service_card_3");
+                if($service_card_3) {
+                    echo $service_card_3['service_card_3_link'];
+                }
+              ?>
+            " 
+          >
+            <img 
+              class="single-service-card--image" 
+              src="
+                <?php
+                  $service_card_3 = get_field("service_card_3");
+                  if($service_card_3) {
+                      echo $service_card_3['service_card_3_icon'];
+                  }
+                ?>
+              " 
+              alt="
+                <?php
+                  $service_card_3 = get_field("service_card_3");
+                  if($service_card_3) {
+                      echo $service_card_3['service_card_3_icon_alt'];
+                }?>
+              "
+            />
+            <h6>
+              <?php
+                $service_card_3 = get_field("service_card_3");
+                if($service_card_3) {
+                    echo $service_card_3['service_card_3_heading'];
+                }
+              ?>                 
+            </h6>
+          </a>                
         </div>
       </section>
       <section class="introduction">
-        <img class="introduction__image" src="/wp-content/uploads/gab-and-zarius.webp" alt="">
+        <img 
+          class="introduction__image" 
+          src="
+            <?php
+              $home_introduction_image = get_field("home_introduction_image");
+              if($home_introduction_image) {
+                echo $home_introduction_image;
+              }
+            ?>
+          " 
+          alt="
+            <?php
+              $home_introduction_alt = get_field("home_introduction_alt");
+              if($home_introduction_alt) {
+                echo $home_introduction_alt;
+              }
+            ?>          
+          "
+        >
         <div class="introduction__copy">
-          <h2 class="heading heading--brown">Who We Are...</h2>
+          <h2 class="heading heading--brown">
+            <?php
+              $home_introduction_heading = get_field("home_introduction_heading");
+              if($home_introduction_heading) {
+                echo $home_introduction_heading;
+              }
+            ?>                
+          </h2>
           <p>
-            East Coast K9 is dedicated to providing exceptional care for your canine companion in 
-            a family atmosphere. Our kennel room is newly renovated to ensure clean and 
-            comfortable lodging. Your pets will be happy and secure while staying with us, in our 
-            home. We believe that the key to your dog's success and happiness is a loving, low 
-            stress environment. Your dog will receive one-on-one attention as he or she gets 
-            acquainted with us and enjoys play time with other K9 friends. As a certified vet 
-            assistant and seasoned dog trainer, I can assure and promise the safest care for your 
-            pups! We strive to be their second home while away from home.            
+            <?php
+              $home_introduction_text = get_field("home_introduction_text");
+              if($home_introduction_text) {
+                echo $home_introduction_text;
+              }
+            ?>      
           </p>
-          <a class="button button--green" href="#form">Sign up now</a>
+          <a 
+            class="button button--green" 
+            href="
+              <?php
+                $home_introduction_link = get_field("home_introduction_link");
+                if($home_introduction_link) {
+                  echo $home_introduction_link;
+                }
+              ?>               
+            ">
+            <?php
+              $home_introduction_cta = get_field("home_introduction_cta");
+              if($home_introduction_cta) {
+                echo $home_introduction_cta;
+              }
+            ?>
+          </a>
         </div>
       </section>
       <section class="testimonials">
-        <h2 class="heading heading--brown heading--center">Testimonials</h2>
+        <h2 class="heading heading--brown heading--center">
+          <?php
+            $testimonial_slider_heading = get_field("testimonial_slider_heading");
+            if($testimonial_slider_heading) {
+                echo $testimonial_slider_heading
+            }
+          ?>          
+        </h2>
         <div class="testimonials-slider swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-              <img class="testimonials-slider__image" src="/wp-content/uploads/Courtney-Starling.png" alt="testimonial">
+              <img 
+                class="testimonials-slider__image" 
+                src="
+                  <?php
+                    $testimonial_slider_testimonial_1 = get_field("testimonial_slider_testimonial_1");
+                    if($testimonial_slider_testimonial_1) {
+                        echo $testimonial_slider_testimonial_1['testimonial_slider_testimonial_image'];
+                    }
+                  ?>                  
+                " 
+                alt="
+                  <?php
+                    $testimonial_slider_testimonial_1 = get_field("testimonial_slider_testimonial_1");
+                    if($testimonial_slider_testimonial_1) {
+                        echo $testimonial_slider_testimonial_1['testimonial_slider_testimonial_alt'];
+                    }
+                  ?>                
+                ">
               <p class="testimonials-slider__copy">
-                Gabbie was very flexible to schedule grooming appointments for my two dogs. She exceeded my expectations and loved her work! She did a wonderful job, and made sure to keep me updated during the process. She was attentive to my dogs and made it comfortable for them since this was their time at a groomers. I will continue to use her for any grooming, and boarding needed. I highly recommend her!              
+                <?php
+                  $testimonial_slider_testimonial_1 = get_field("testimonial_slider_testimonial_1");
+                  if($testimonial_slider_testimonial_1) {
+                      echo $testimonial_slider_testimonial_1['testimonial_slider_testimonial_content'];
+                  }
+                ?>              
               </p>
               <p class="testimonials-slider__author">
-                Courtney Starling
+                <?php
+                  $testimonial_slider_testimonial_1 = get_field("testimonial_slider_testimonial_1");
+                  if($testimonial_slider_testimonial_1) {
+                      echo $testimonial_slider_testimonial_1['testimonial_slider_testimonial_author'];
+                  }
+                ?>
               </p>
           </div>
           <div class="swiper-slide">
-            <img class="testimonials-slider__image" src="/wp-content/uploads/cheryl-b.png" alt="testimonial">
-            <p class="testimonials-slider__copy">
-              Gabrielle is the sweetest dog handler I have ever seen! She had such a gentle, loving way with our pup and I'm so glad to have found her. Our puppy had a very bad nail clipping experience at a Veterinarian's office last fall and for months has been snarling with every touch of her feet. Gabby sweet-talked our girl (and plied her with tasty treats!) into letting her clip all of her nails. SUCH a positive experience!              
-            </p>
-            <p class="testimonials-slider__author">
-              Cheryl B
-            </p>
+              <img 
+                class="testimonials-slider__image" 
+                src="
+                  <?php
+                    $testimonial_slider_testimonial_2 = get_field("testimonial_slider_testimonial_2");
+                    if($testimonial_slider_testimonial_2) {
+                        echo $testimonial_slider_testimonial_2['testimonial_slider_testimonial_image'];
+                    }
+                  ?>                  
+                " 
+                alt="
+                  <?php
+                    $testimonial_slider_testimonial_2 = get_field("testimonial_slider_testimonial_2");
+                    if($testimonial_slider_testimonial_2) {
+                        echo $testimonial_slider_testimonial_2['testimonial_slider_testimonial_alt'];
+                    }
+                  ?>                
+                ">
+              <p class="testimonials-slider__copy">
+                <?php
+                  $testimonial_slider_testimonial_2 = get_field("testimonial_slider_testimonial_2");
+                  if($testimonial_slider_testimonial_2) {
+                      echo $testimonial_slider_testimonial_2['testimonial_slider_testimonial_content'];
+                  }
+                ?>              
+              </p>
+              <p class="testimonials-slider__author">
+                <?php
+                  $testimonial_slider_testimonial_2 = get_field("testimonial_slider_testimonial_2");
+                  if($testimonial_slider_testimonial_2) {
+                      echo $testimonial_slider_testimonial_2['testimonial_slider_testimonial_author'];
+                  }
+                ?>
+              </p>
           </div>
           <div class="swiper-slide">
-            <img class="testimonials-slider__image" src="/wp-content/uploads/bailey-m.png" alt="testimonial">
-            <p class="testimonials-slider__copy">
-              Only person ill take my Leonberger too, she knows the breed and is amazing with him.
-            </p>
-            <p class="testimonials-slider__author">
-              Bailey M
-            </p>
-          </div>                              
+              <img 
+                class="testimonials-slider__image" 
+                src="
+                  <?php
+                    $testimonial_slider_testimonial_3 = get_field("testimonial_slider_testimonial_3");
+                    if($testimonial_slider_testimonial_3) {
+                        echo $testimonial_slider_testimonial_3['testimonial_slider_testimonial_image'];
+                    }
+                  ?>                  
+                " 
+                alt="
+                  <?php
+                    $testimonial_slider_testimonial_3 = get_field("testimonial_slider_testimonial_3");
+                    if($testimonial_slider_testimonial_3) {
+                        echo $testimonial_slider_testimonial_3['testimonial_slider_testimonial_alt'];
+                    }
+                  ?>                
+                ">
+              <p class="testimonials-slider__copy">
+                <?php
+                  $testimonial_slider_testimonial_3 = get_field("testimonial_slider_testimonial_3");
+                  if($testimonial_slider_testimonial_3) {
+                      echo $testimonial_slider_testimonial_3['testimonial_slider_testimonial_content'];
+                  }
+                ?>              
+              </p>
+              <p class="testimonials-slider__author">
+                <?php
+                  $testimonial_slider_testimonial_3 = get_field("testimonial_slider_testimonial_3");
+                  if($testimonial_slider_testimonial_3) {
+                      echo $testimonial_slider_testimonial_3['testimonial_slider_testimonial_author'];
+                  }
+                ?>
+              </p>
+          </div>                    
+                               
         </div>
         <div class="swiper-pagination"></div>       
       </section>
