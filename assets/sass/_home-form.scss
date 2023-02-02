@@ -26,3 +26,13 @@
   display: flex;
   justify-content: center;
 }
+
+.form-group {
+  display: flex;
+  align-items: self-end;
+  justify-content: space-between;
+}
+
+.form-group__form-field {
+  width: 310px;
+}

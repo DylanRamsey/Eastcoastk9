@@ -197,7 +197,7 @@
           <?php
             $testimonial_slider_heading = get_field("testimonial_slider_heading");
             if($testimonial_slider_heading) {
-                echo $testimonial_slider_heading
+                echo $testimonial_slider_heading;
             }
           ?>          
         </h2>
@@ -317,49 +317,182 @@
       </section>
     </main>
     <section class="services">
-      <h2 class="heading heading--brown heading--center heading--tablet-up">Services</h2>
+      <h2 class="heading heading--brown heading--center heading--tablet-up">
+        <?php
+          $service_row_main_heading = get_field("service_row_main_heading");
+          if($service_row_main_heading) {
+              echo $service_row_main_heading;
+          }
+        ?>
+      </h2>
       <div class="service-row service-row--green" id="training">
-        <img class="service-row service-row__image" src="/wp-content/uploads/homepage-training.webp" alt="Group of dogs walking across an 'a-frame'">
+        <img 
+          class="service-row service-row__image" 
+          src=
+          "
+            <?php
+              $service_row_image = get_field("service_row_image");
+              if($service_row_image) {
+                  echo $service_row_image;
+              }
+            ?>
+          "           
+          alt="
+            <?php
+              $service_row_image_alt = get_field("service_row_image_alt");
+              if($service_row_image_alt) {
+                  echo $service_row_image_alt;
+              }
+            ?>     
+          ">
         <div class="service-row-copy">
-          <h3 class="heading heading--brown">Training</h3>
+          <h3 class="heading heading--brown">
+            <?php
+              $service_row_heading = get_field("service_row_heading");
+              if($service_row_heading) {
+                  echo $service_row_heading;
+              }
+            ?>            
+          </h3>
           <p class="service-row-copy__body">
-          Our board and train program only accepts a handful of students monthly and is custom tailored for his/her training needs. This ensures quality training and is the best foundation for success!
-Examples of daily training sessions may include concepts of basic obedience as well as exercises to build confidence and socialization. High distraction environments such as local parks, coffee shops, and other public
-spaces may be incorporated as needed.  
-Please feel free to reach out with any questions you have! We are here to help educate you and want you and your dog to have a beautiful relationship for many years to come!
+            <?php
+              $service_row_body = get_field("service_row_body");
+              if($service_row_body) {
+                  echo $service_row_body;
+              }
+            ?> 
           </p>
-          <a class="button button--brown" href="#form">Sign up now</a>
+          <a 
+            class="button button--brown" 
+            href="
+              <?php
+                $cta_link = get_field("cta_link");
+                if($cta_link) {
+                    echo $cta_link;
+                }
+              ?>             
+            ">
+              <?php
+                $cta_text = get_field("cta_text");
+                if($cta_link) {
+                    echo $cta_text;
+                }
+              ?>              
+          </a>
         </div>
       </div>
       <div class="service-row service-row--brown" id="lodging">
-        <img class="service-row service-row__image service-row__image--reversed" src="/wp-content/uploads/kennels.webp" alt="Group of dogs walking across an 'a-frame'">
+        <img 
+          class="service-row service-row__image service-row__image--reversed" 
+          src=
+          "
+            <?php
+              $service_row_image_rev = get_field("service_row_image_rev");
+              if($service_row_image_rev) {
+                  echo $service_row_image_rev;
+              }
+            ?>
+          "           
+          alt="
+            <?php
+              $service_row_image_alt_rev = get_field("service_row_image_alt_rev");
+              if($service_row_image_alt_rev) {
+                  echo $service_row_image_alt_rev;
+              }
+            ?>     
+          ">        
         <div class="service-row-copy service-row-copy--reversed service-row-copy--green">
-          <h3 class="heading heading--secondary-green">Lodging</h3>
+          <h3 class="heading heading--secondary-green">
+          <?php
+              $service_row_heading_rev = get_field("service_row_heading_rev");
+              if($service_row_heading_rev) {
+                  echo $service_row_heading_rev;
+              }
+            ?>             
+          </h3>
           <p class="service-row-copy__body">
-          Our newly renovated boarding facility includes 4 x 6 suites, peaceful music, pet friendly and relaxing essential oils, and two yards for play and exercise.
-Temperament evaluations are always completed to be sure each pet is safe to play in a group setting. Our goal is for all dogs in the play groups to have as much fun as possible
-interacting with others of similar age and size.
-In the warmer months we offer water zones to cool off so you can fully anticipate him/her getting down and dirty! All dogs go home bathed and cleaned if they enjoy the waterworks!
-We love to keep you updated throughout your pet's stay so be prepared for pictures and text messages!
-
-*we also offer more advanced grooming for boarding dogs. Please ask about that if you have any questions*
+            <?php
+              $service_row_body_rev = get_field("service_row_body_rev");
+              if($service_row_body_rev) {
+                  echo $service_row_body_rev;
+              }
+            ?> 
           </p>
-          <a class="button button--green" href="#form">Book Now</a>
+          <a class="button button--green"
+          href="
+              <?php
+                $cta_link_rev = get_field("cta_link_rev");
+                if($cta_link_rev) {
+                    echo $cta_link_rev;
+                }
+              ?>             
+            ">
+              <?php
+                $cta_text_rev = get_field("cta_text_rev");
+                if($cta_link_rev) {
+                    echo $cta_text_rev;
+                }
+              ?>              
+          </a>          
         </div>
       </div>
-      <div class="service-row service-row--green" id="spa">
-        <img class="service-row service-row__image" src="/wp-content/uploads/spa-pup.jpeg" alt="Group of dogs walking across an 'a-frame'">
+      <div class="service-row service-row--green" id="training">
+        <img 
+          class="service-row service-row__image" 
+          src=
+          "
+            <?php
+              $service_row_image_2 = get_field("service_row_image_2");
+              if($service_row_image_2) {
+                  echo $service_row_image_2;
+              }
+            ?>
+          "           
+          alt="
+            <?php
+              $service_row_image_alt_2 = get_field("service_row_image_alt_2");
+              if($service_row_image_alt_2) {
+                  echo $service_row_image_alt_2;
+              }
+            ?>     
+          ">
         <div class="service-row-copy">
-          <h3 class="heading heading--brown">Spa Services</h3>
+          <h3 class="heading heading--brown">
+            <?php
+              $service_row_heading_2 = get_field("service_row_heading_2");
+              if($service_row_heading_2) {
+                  echo $service_row_heading_2;
+              }
+            ?>            
+          </h3>
           <p class="service-row-copy__body">
-            Give your pup a spa day! We offer two different spa servies, Standard and Deluxe. Standard includes the bath, blow drying, nail trimming, and ears cleaning. Deluxe
-            includes Deshedding shampoo and conditioner, nails clipper and filed, ears cleaning, and anal glandes
+            <?php
+              $service_row_body_2 = get_field("service_row_body_2");
+              if($service_row_body_2) {
+                  echo $service_row_body_2;
+              }
+            ?> 
           </p>
-          <a class="button button--brown" href="#form">Sign up now</a>
+          <a 
+            class="button button--brown" 
+            href="
+              <?php
+                $cta_link_2 = get_field("cta_link_2");
+                if($cta_link_2) {
+                    echo $cta_link_2;
+                }
+              ?>             
+            ">
+              <?php
+                $cta_text_2 = get_field("cta_text_2");
+                if($cta_link_2) {
+                    echo $cta_text_2;
+                }
+              ?>
+          </a>
         </div>
-      </div>       
+      </div>
     </section>
-  
     <section class="home-form">
       <h2 class="heading heading--center heading--one heading--brown" id="form">Get Started Today!</h2>
       <?php echo apply_shortcodes( '[contact-form-7 id="21" title="Site Contact"]' ); ?>
