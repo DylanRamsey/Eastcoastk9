@@ -14,6 +14,24 @@
         <h5>Off Leash Board & Train Program</h5>
       </div>
 
+      <div class="picture-with-list">
+        <img class="picture-with-list__image" src="/wp-content/uploads/dogs-sitting-for-their-handlers.webp" alt="Row of dogs sitting for their handlers">
+        <div class="picture-with-list__content">
+          <h3>Free Consultation!</h3>
+          <ul>
+            <li>Length: 2-4 weeks</li>
+            <li>4 follow up private lessons</li>
+            <li>Complimentary bath and nail trim at the end of the program</li>
+          </ul>
+          <a 
+            class="button button--green" 
+            href="/#form">
+              Sign up now
+          </a>          
+        </div>
+      </div>
+
+
       <div class="service-row service-row--brown" id="lodging">
           <img 
               class="service-row service-row__image service-row__image--reversed" 

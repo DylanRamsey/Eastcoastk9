@@ -1,0 +1,14 @@
+.picture-with-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .picture-with-list__image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .picture-with-list__content {
+    padding-left: 70px;
+  }
+}
+

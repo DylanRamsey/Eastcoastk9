@@ -222,6 +222,7 @@ form, input, textarea {
 }
 
 .interior-page-heading {
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -742,6 +743,18 @@ form, input, textarea {
 
 .form-group__form-field {
   width: 310px;
+}
+
+.picture-with-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.picture-with-list .picture-with-list__image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.picture-with-list .picture-with-list__content {
+  padding-left: 70px;
 }
 
 .footer {
