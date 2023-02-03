@@ -94,6 +94,14 @@ h3 {
   font-size: 3.25rem;
 }
 
+h4 {
+  font-size: 2.625rem;
+}
+
+h5 {
+  font-size: 2.25rem;
+}
+
 h6 {
   font-size: 2rem;
 }
@@ -110,7 +118,7 @@ form, input, textarea {
   .wrapper {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: 210px 500px 1fr;
+    grid-template-rows: 210px 1fr;
   }
 }
 @media (min-width: 1440px) {
@@ -211,6 +219,18 @@ form, input, textarea {
 
 .heading--center {
   text-align: center;
+}
+
+.interior-page-heading {
+  text-align: center;
+}
+
+.interior-page-heading--green {
+  color: var(--site-main-color-green);
+}
+
+.interior-page-heading--brown {
+  color: var(--site-main-color-brown);
 }
 
 .site-header {
