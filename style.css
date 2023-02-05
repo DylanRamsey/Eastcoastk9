@@ -164,7 +164,6 @@ form, input, textarea {
   .site-body {
     margin: initial;
     grid-column: 2/4;
-    grid-row: 3;
   }
 }
 
@@ -649,7 +648,7 @@ form, input, textarea {
 
 .services {
   grid-column: 1/-1;
-  grid-row: 4;
+  margin-bottom: 30px;
 }
 .services h2 {
   margin-bottom: 50px;
@@ -725,7 +724,12 @@ form, input, textarea {
 
 .home-form {
   grid-column: 2/4;
-  padding: 50px 0;
+  margin-bottom: 30px;
+}
+
+.home-form__wrapper {
+  width: 700px;
+  max-width: 100%;
   margin: auto;
 }
 

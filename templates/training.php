@@ -14,6 +14,7 @@
       <h5>Off Leash Board & Train Program</h5>
     </section>
 
+
     <section class="picture-with-list">
       <img class="picture-with-list__image" src="/wp-content/uploads/dogs-sitting-for-their-handlers.webp" alt="Row of dogs sitting for their handlers">
       <div class="picture-with-list__content">
@@ -44,10 +45,10 @@
         <li>Load up: Either into a kennel or a vehicle</li>
       </ul>      
     </section>
-  
+  </div>
 
-
-    <section class="service-row service-row--brown" id="lodging">
+  <section class="services">
+    <div class="service-row service-row--single service-row--brown" id="lodging">
       <img 
           class="service-row service-row__image service-row__image--reversed" 
           src=
@@ -100,21 +101,27 @@
               }
               ?>              
           </a>          
+        </div>
       </div>
     </section>
-    <section class="simple-pricing">
-      <h2 class="heading heading--center heading--brown">Pricing</h2>
-      <div class="pricing-disclaimer pricing-disclaimer--brown">
-        <h5>
-          Prices for training bootcamp ranges between $1,500-$2,300. Call 941-374-7161 for exact pricing. Pricing is determined during first welcome call when we get to know your pet and determine their personal needs and what we'd need to 
-          provide to give your pet their best possible experience.
-        </h5>
+    <div class="site-body">
+      <section class="simple-pricing">
+        <h2 class="heading heading--center heading--brown">Pricing</h2>
+        <div class="pricing-disclaimer pricing-disclaimer--brown">
+          <h5>
+            Prices for training bootcamp ranges between $1,500-$2,300. Call 941-374-7161 for exact pricing. Pricing is determined during first welcome call when we get to know your pet and determine their personal needs and what we'd need to 
+            provide to give your pet their best possible experience.
+          </h5>
+        </div>
+      </section>
+      
+      <section class="home-form">
+      <h2 class="heading heading--center heading--one heading--brown" id="form">Contact Us for More Information</h2>
+      <div class="home-form__wrapper">
+        <?php echo apply_shortcodes( '[contact-form-7 id="21" title="Site Contact"]' ); ?>
       </div>
-    </section>
-    <section class="home-form">
-    <h2 class="heading heading--center heading--one heading--brown" id="form">Contact Us for More Information</h2>
-    <?php echo apply_shortcodes( '[contact-form-7 id="21" title="Site Contact"]' ); ?>
-    </section>      
+      </section>   
+    </div>   
   </div>
 
 </section>
