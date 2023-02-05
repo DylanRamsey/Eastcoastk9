@@ -1,0 +1,20 @@
+@use 'config' as *;
+
+.simple-pricing {
+  .heading {
+    margin-bottom: 30px;
+  }
+}
+
+.pricing-disclaimer {
+  padding: 54px;
+  border-radius: 8px;
+}
+
+.pricing-disclaimer--brown {
+  background: var(--site-secondary-color-brown);
+
+  h5 {
+    color: var(--site-secondary-color-green);
+  }
+}

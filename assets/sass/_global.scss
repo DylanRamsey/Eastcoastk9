@@ -49,7 +49,30 @@ ul {
   padding: 0;
 }
 
+.full-width-list {
+  margin-bottom: 50px;
+}
+
+.paw-print-list li {
+  font-size: 2rem;
+  font-weight: 500;
+  list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
+  margin-bottom: 10px;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  @media (min-width: $tablet) {
+    font-size: 4.5rem;
+  }
+}
+
+.heading--one {
   font-size: 2.5rem;
   margin-bottom: 15px;
   @media (min-width: $tablet) {
@@ -112,12 +135,8 @@ form, input, textarea {
   }
 }
 
-.heading--one {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  @media (min-width: $tablet) {
-    font-size: 4.5rem;
-  }
+.heading--center {
+  text-align: center;
 }
 
 .heading--brown {
@@ -184,12 +203,9 @@ form, input, textarea {
   }
 }
 
-.heading--center {
-  text-align: center;
-}
-
 .interior-page-heading {
   margin-bottom: 30px;
+  margin-top: 30px;
   text-align: center;
 }
 

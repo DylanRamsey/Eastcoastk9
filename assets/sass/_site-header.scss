@@ -1,7 +1,7 @@
 @use 'config' as *;
 .site-header {
   background: var(--site-main-color-green);
-  
+  border-bottom: solid 2px;
   font-weight: 600;
   @media (min-width: $desktop) {
     display: grid;
