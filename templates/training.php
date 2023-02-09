@@ -14,20 +14,8 @@
     </section>
 
     <?php include dirname(dirname(__FILE__))."/components/picture-with-list.php" ?>
-    
-    <section class="full-width-list">
-      <h2 class="heading heading--one heading--brown heading--center">Commands Learned</h2>
-      <ul class="paw-print-list">
-        <li>Sit</li>
-        <li>Down</li>
-        <li>Rapid recall/ Come</li>
-        <li>Heel: Walks loosely on leash</li>
-        <li>Place: Stays on a mat/dog bed until released</li>
-        <li>Free: Release word</li>
-        <li>Off: Stopping of an unwanted behavior</li>
-        <li>Load up: Either into a kennel or a vehicle</li>
-      </ul>      
-    </section>
+    <?php include dirname(dirname(__FILE__))."/components/full-width-list.php" ?>
+
   </div>
   <section class="services">
     <div class="service-row service-row--green service-row--single" id="training">
