@@ -15,9 +15,6 @@
 
     <?php include dirname(dirname(__FILE__))."/components/picture-with-list.php" ?>
     
-
-
-    
     <section class="full-width-list">
       <h2 class="heading heading--one heading--brown heading--center">Commands Learned</h2>
       <ul class="paw-print-list">
