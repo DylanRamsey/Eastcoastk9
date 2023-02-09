@@ -785,6 +785,9 @@ form, input, textarea {
   margin-left: 50px;
 }
 
+.simple-pricing {
+  margin-bottom: 50px;
+}
 .simple-pricing .heading {
   margin-bottom: 30px;
 }

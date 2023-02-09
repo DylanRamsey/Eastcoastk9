@@ -13,24 +13,11 @@
       <h5>Off Leash Board & Train Program</h5>
     </section>
 
+    <?php include dirname(dirname(__FILE__))."/components/picture-with-list.php" ?>
+    
 
-    <section class="picture-with-list">
-      <img class="picture-with-list__image" src="/wp-content/uploads/dogs-sitting-for-their-handlers.webp" alt="Row of dogs sitting for their handlers">
-      <div class="picture-with-list__content">
-        <h3 class="heading heading--brown">Free Consultation!</h3>
-        <ul class="paw-print-list">
-          <li>Length: 2-4 weeks</li>
-          <li>4 follow up private lessons</li>
-          <li>Complimentary bath and nail trim at the end of the program</li>
-        </ul>
-        <a 
-          class="button button--green" 
-          href="/#form">
-            Sign up now
-        </a>          
-      </div>
-    </section>
 
+    
     <section class="full-width-list">
       <h2 class="heading heading--one heading--brown heading--center">Commands Learned</h2>
       <ul class="paw-print-list">
@@ -46,59 +33,60 @@
     </section>
   </div>
   <section class="services">
-    <div class="service-row service-row--single service-row--brown" id="lodging">
+    <div class="service-row service-row--green service-row--single" id="training">
       <img 
-      class="service-row service-row__image service-row__image--reversed" 
-      src=
-      "
-        <?php
-            $service_row_image_rev = get_field("service_row_image_rev");
-            if($service_row_image_rev) {
-                echo $service_row_image_rev;
+        class="service-row service-row__image" 
+        src=
+        "
+          <?php
+            $service_row_image = get_field("service_row_image");
+            if($service_row_image) {
+                echo $service_row_image;
             }
-        ?>
-      "           
-      alt="
-        <?php
-            $service_row_image_alt_rev = get_field("service_row_image_alt_rev");
-            if($service_row_image_alt_rev) {
-                echo $service_row_image_alt_rev;
+          ?>
+        "           
+        alt="
+          <?php
+            $service_row_image_alt = get_field("service_row_image_alt");
+            if($service_row_image_alt) {
+                echo $service_row_image_alt;
             }
-        ?>     
-      ">        
-      <div class="service-row-copy service-row-copy--reversed service-row-copy--green">
-        <h3 class="heading heading--secondary-green">
-        <?php
-            $service_row_heading_rev = get_field("service_row_heading_rev");
-            if($service_row_heading_rev) {
-                echo $service_row_heading_rev;
+          ?>     
+      ">
+      <div class="service-row-copy">
+        <h3 class="heading heading--brown">
+          <?php
+            $service_row_heading = get_field("service_row_heading");
+            if($service_row_heading) {
+                echo $service_row_heading;
             }
-        ?>             
+          ?>            
         </h3>
         <p class="service-row-copy__body">
-        <?php
-            $service_row_body_rev = get_field("service_row_body_rev");
-            if($service_row_body_rev) {
-                echo $service_row_body_rev;
+          <?php
+            $service_row_body = get_field("service_row_body");
+            if($service_row_body) {
+                echo $service_row_body;
             }
-        ?> 
+          ?> 
         </p>
-        <a class="button button--green"
-        href="
+        <a 
+          class="button button--brown" 
+          href="
             <?php
-            $cta_link_rev = get_field("cta_link_rev");
-            if($cta_link_rev) {
-                echo $cta_link_rev;
-            }
+              $cta_link = get_field("cta_link");
+              if($cta_link) {
+                  echo $cta_link;
+              }
             ?>             
-        ">
+          ">
             <?php
-            $cta_text_rev = get_field("cta_text_rev");
-            if($cta_link_rev) {
-                echo $cta_text_rev;
-            }
+              $cta_text = get_field("cta_text");
+              if($cta_link) {
+                  echo $cta_text;
+              }
             ?>              
-        </a>          
+        </a>
       </div>
     </div>
   </section>
