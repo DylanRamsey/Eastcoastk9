@@ -10,7 +10,7 @@
 </section>
 <div class="site-body">
   <?php include dirname(dirname(__FILE__))."/components/simple-pricing-brown.php" ?>
-  <?php include dirname(dirname(__FILE__))."/components/home-form.php" ?>
+  <?php include dirname(dirname(__FILE__))."/components/contact-form.php" ?>
 </div>
 <!-- This is closing section tag from php get_header() function -->
 </section>

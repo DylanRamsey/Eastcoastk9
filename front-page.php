@@ -495,7 +495,7 @@
       </div>
     </div>
   </section>
-  <?php include "components/home-form.php" ?>
+  <?php include "components/contact-form.php" ?>
   <?php get_footer(); ?>
 </body>
 </html>

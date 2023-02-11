@@ -30,6 +30,12 @@ Mobile Opt example
   margin: 0;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 html, body {
   height: 100%;
 }

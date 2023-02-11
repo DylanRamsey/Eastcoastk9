@@ -1,6 +1,8 @@
 <footer class="footer">
   <div class="footer__wrapper">
-    <img class="footer__logo" src="/wp-content/uploads/eck9-kogo.webp" alt="East Coast K9 Logo">
+    <a href="/">
+      <img class="footer__logo" src="/wp-content/uploads/eck9-kogo.webp" alt="East Coast K9 Logo">
+    </a>
     <div class="footer__text">
       <div class="footer__text__top">
       <?php 

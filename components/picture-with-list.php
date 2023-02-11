@@ -53,22 +53,24 @@
         }
       ?>               
     </ul>
+
     <a 
       class="button button--green" 
       href="
-        <?php
-          $picture_with_list_image_link = get_field("picture_with_list_image_link");
-          if($picture_with_list_image_link) {
-            echo $picture_with_list_image_link;
-          }
-        ?>        
+      <?php
+        $picture_with_list_image_link = get_field("picture_with_list_image_link");
+        if($picture_with_list_image_link) {
+          echo $picture_with_list_image_link;
+        }
+      ?>      
       ">
       <?php
         $picture_with_list_button_text = get_field("picture_with_list_button_text");
         if($picture_with_list_button_text) {
           echo $picture_with_list_button_text;
         }
-      ?>        
-    </a>          
+      ?>      
+    </a>    
+         
   </div>
 </section>
