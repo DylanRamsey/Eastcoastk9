@@ -1,23 +1,4 @@
 <section class="picture-with-list">
-  <img 
-    class="picture-with-list__image" 
-    src="
-      <?php
-        $picture_with_list_image = get_field("picture_with_list_image");
-        if($picture_with_list_image) {
-          echo $picture_with_list_image;
-        }
-      ?>
-    " 
-    alt="
-      <?php
-        $picture_with_list_image_alt = get_field("picture_with_list_image_alt");
-        if($picture_with_list_image_alt) {
-          echo $picture_with_list_image_alt;
-        }
-      ?>    
-    "
-  >
   <div class="picture-with-list__content">
     <h3 class="heading heading--brown">
       <?php
@@ -53,23 +34,41 @@
         }
       ?>               
     </ul>
-
     <a 
-      class="button button--green" 
-      href="
-      <?php
-        $picture_with_list_image_link = get_field("picture_with_list_image_link");
-        if($picture_with_list_image_link) {
-          echo $picture_with_list_image_link;
-        }
-      ?>      
-      ">
-      <?php
-        $picture_with_list_button_text = get_field("picture_with_list_button_text");
-        if($picture_with_list_button_text) {
-          echo $picture_with_list_button_text;
-        }
-      ?>      
-    </a>    
-  </div>
+    class="button button--green" 
+    href="
+    <?php
+      $picture_with_list_image_link = get_field("picture_with_list_image_link");
+      if($picture_with_list_image_link) {
+        echo $picture_with_list_image_link;
+      }
+    ?>      
+    ">
+    <?php
+      $picture_with_list_button_text = get_field("picture_with_list_button_text");
+      if($picture_with_list_button_text) {
+        echo $picture_with_list_button_text;
+      }
+    ?>      
+  </a>
+</div>
+<img 
+  class="picture-with-list__image" 
+  src="
+    <?php
+      $picture_with_list_image = get_field("picture_with_list_image");
+      if($picture_with_list_image) {
+        echo $picture_with_list_image;
+      }
+    ?>
+  " 
+  alt="
+    <?php
+      $picture_with_list_image_alt = get_field("picture_with_list_image_alt");
+      if($picture_with_list_image_alt) {
+        echo $picture_with_list_image_alt;
+      }
+    ?>    
+  "
+>    
 </section>
