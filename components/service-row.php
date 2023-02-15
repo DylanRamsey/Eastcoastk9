@@ -1,3 +1,11 @@
+<h2 class="heading heading--brown heading--center heading--tablet-up">
+  <?php
+    $service_row_main_heading = get_field("service_row_main_heading");
+    if($service_row_main_heading) {
+        echo $service_row_main_heading;
+    }
+  ?>
+</h2>
 <div class="service-row service-row--green" id="training">
   <img 
     class="service-row service-row__image" 
