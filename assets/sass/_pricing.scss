@@ -5,17 +5,89 @@
   .heading {
     margin-bottom: 30px;
   }
+  .pricing-disclaimer {
+    padding: 54px;
+    border-radius: 8px;
+  }
+  
+  .pricing-disclaimer--brown {
+    background: var(--site-secondary-color-brown);
+  
+    h5 {
+      color: var(--site-secondary-color-green);
+    }
+  }
+  
+  .pricing-disclaimer--green {
+    background: var(--site-main-color-green);
+  
+    h5 {
+      color: var(--site-main-color-brown);
+    }
+  }  
 }
 
-.pricing-disclaimer {
-  padding: 54px;
-  border-radius: 8px;
-}
+.advanced-pricing {
+  .tab-group {
+    text-align: center;
+    color: var(--site-main-color-green);
+    margin-bottom: 25px;
+  }
 
-.pricing-disclaimer--brown {
-  background: var(--site-secondary-color-brown);
+  .tab-group__link {
+    font-weight: 600;
 
-  h5 {
+    &:hover {
+      color: var(--site-main-color-brown);
+      cursor: pointer;
+    }
+
+    &::after {
+      content: ' |';
+      color: var(--site-main-color-brown);
+    }
+  }
+
+  .tab-content {
+    width: 950px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;    
+  }
+
+  .tab-content__card {
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+  }
+
+  .tab-content__card--standard {
+    background: var(--site-secondary-color-brown);
     color: var(--site-secondary-color-green);
+  }
+
+  .tab-content__card--deluxe {
+    background: var(--site-main-color-green);
+    color: var(--site-main-color-brown);
+
+    .paw-print-list li {
+      list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
+    }
+  }
+
+  .pricing-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paw-print-list {
+    list-style-position: inside;
+
+    li {
+      padding: 0;
+    }
   }
 }
