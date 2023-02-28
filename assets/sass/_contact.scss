@@ -1,0 +1,119 @@
+.home-form {
+  grid-column: 2 /4;
+  margin-bottom: 30px;
+}
+
+.home-form__wrapper {
+  width: 700px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.wpcf7 {
+  margin: 0 20px;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  /* border-radius: 10px; */
+  border: 2px solid #000000;
+  border-radius: 8px;
+  height: 50px;
+}
+
+.wpcf7-form p {
+  font-size: 28px;
+}
+
+.wpcf7-submit {
+  border: none;
+  width: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group__form-field {
+  width: 310px;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 1rem;
+}
+
+.contact-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 150px;
+  h5 {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-information__form {
+  background: var(--site-main-color-green);
+  border-radius: var(--round-md);
+  width: 525px;
+  max-width: 100%;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;  
+  .form-group__form-field {
+    width: 227px;
+  }
+
+  .home-form {
+    margin-bottom: 0;
+  }
+
+  /* This isn't great practice and a bit hacky */
+  .button--green {
+    background: var(--site-secondary-color-brown);
+    color: var(--site-secondary-color-green);
+  }  
+}
+
+.contact-information__options {
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: var(--site-secondary-color-brown);
+    }
+  }
+
+}
+
+.contact-information__options__contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  p {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+  }
+}
+
+.review-platforms {
+  display: flex;
+  gap: 30px;
+  img{
+    height: 138px;
+    width: 138px;
+  }
+}
+
+.contact-information__options__contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}

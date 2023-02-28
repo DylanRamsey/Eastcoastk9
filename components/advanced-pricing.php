@@ -2,7 +2,7 @@
   <h2 class="heading heading--brown heading--center">Pricing</h2>
   <h6 class="heading heading--brown heading--center">Please Select your dog's size for pricing</h6>
   <div class="tab-group">
-    <span class="tab-group__link" id="defaultOpen">Small Short Coat</span>
+    <span class="tab-group__link">Small Short Coat</span>
     <span class="tab-group__link">Small Long Coat</span>
     <span class="tab-group__link">Medium Short Coat</span>
     <span class="tab-group__link">Medium Long Coat</span>
@@ -43,4 +43,5 @@
       </a>              
     </div>
   </div>
+
 </section>

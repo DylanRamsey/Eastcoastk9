@@ -15,6 +15,7 @@ Author URI: https://dylanbradramsey.com
   --button-click: #9aa287;
   --shadow: 3px 3px 6px 0px #717171;
   --widescreen: 1440px;
+  --round-md: 8px;
 }
 
 /*
@@ -752,7 +753,7 @@ form, input, textarea {
 }
 
 .wpcf7-form p {
-  margin-bottom: 15px;
+  font-size: 28px;
 }
 
 .wpcf7-submit {
@@ -765,12 +766,82 @@ form, input, textarea {
 
 .form-group {
   display: flex;
-  align-items: self-end;
+  align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .form-group__form-field {
   width: 310px;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 1rem;
+}
+
+.contact-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 150px;
+}
+.contact-information h5 {
+  margin-bottom: 20px;
+}
+
+.contact-information__form {
+  background: var(--site-main-color-green);
+  border-radius: var(--round-md);
+  width: 525px;
+  max-width: 100%;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* This isn't great practice and a bit hacky */
+}
+.contact-information__form .form-group__form-field {
+  width: 227px;
+}
+.contact-information__form .home-form {
+  margin-bottom: 0;
+}
+.contact-information__form .button--green {
+  background: var(--site-secondary-color-brown);
+  color: var(--site-secondary-color-green);
+}
+
+.contact-information__options a {
+  color: black;
+  text-decoration: none;
+}
+.contact-information__options a:hover {
+  color: var(--site-secondary-color-brown);
+}
+
+.contact-information__options__contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.contact-information__options__contact p {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.review-platforms {
+  display: flex;
+  gap: 30px;
+}
+.review-platforms img {
+  height: 138px;
+  width: 138px;
+}
+
+.contact-information__options__contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .picture-with-list {
@@ -836,6 +907,7 @@ form, input, textarea {
   max-width: 100%;
   margin: auto;
   display: grid;
+  /*display: grid;*/
   grid-template-columns: 1fr 1fr;
   gap: 42px;
 }
