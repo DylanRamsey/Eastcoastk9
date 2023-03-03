@@ -1,7 +1,7 @@
 .photo-gallery {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, 700px);
+  grid-template-columns: repeat(auto-fill, 580px);
   justify-content: center;
 }
 
@@ -39,6 +39,7 @@
   left: 38px;
   bottom: 37px;
   z-index: 2;
+
 }
 
 .photo-gallery__photo--third {
@@ -46,6 +47,7 @@
   left: 93px;
   bottom: 46px;
   z-index: 3;
+
 }
 
 .photo-gallery__photo--forth {
