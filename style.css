@@ -21,6 +21,7 @@ Author URI: https://dylanbradramsey.com
 
 /*
 Mobile Opt example
+@media (min-width: $tablet) {}
 @media (min-width: $desktop) {}
 @media (min-width: $widescreen) {}
 */
@@ -72,39 +73,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.full-width-list {
-  margin-bottom: 50px;
-}
-
-.paw-print-list {
-  margin-left: 50px;
-}
-.paw-print-list li {
-  font-size: 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
-  margin-bottom: 10px;
-  max-width: 730px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 1024px) {
-  .paw-print-list li {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .paw-print-list li {
-    padding-left: 20px;
-  }
 }
 
 h1 {
@@ -164,13 +132,67 @@ h5 {
 h6 {
   font-size: 2rem;
 }
-
 p {
   font-weight: 600;
 }
 
 form, input, textarea {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.full-width-list {
+  margin-bottom: 50px;
+}
+
+.full-width-list__paw-print-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.paw-print-list {
+  margin-left: 38px;
+  position: relative;
+}
+.paw-print-list li {
+  font-size: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  max-width: 730px;
+}
+.paw-print-list li::before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 30px;
+  background-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -35px;
+}
+@media (min-width: 768px) {
+  .paw-print-list li::before {
+    height: 26px;
+    width: 37px;
+  }
+}
+@media (min-width: 1024px) {
+  .paw-print-list li::before {
+    height: 37px;
+    width: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .paw-print-list li {
+    font-size: 2rem;
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -693,12 +715,12 @@ form, input, textarea {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  text-align: justify;
   padding: 25px 25px;
 }
 @media (min-width: 768px) {
   .service-row {
     padding: 50px 50px;
+    text-align: justify;
   }
 }
 @media (min-width: 1024px) {
@@ -736,6 +758,14 @@ form, input, textarea {
     padding-left: 70px;
   }
 }
+.service-row .service-row-copy .heading {
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .service-row .service-row-copy .heading {
+    margin-bottom: unset;
+  }
+}
 .service-row .service-row-copy--reversed {
   grid-column: 2;
   padding-left: 0;
@@ -762,7 +792,21 @@ form, input, textarea {
   grid-column: 2/4;
   margin-bottom: 30px;
 }
-
+.home-form h3 {
+  font-size: 2rem;
+}
+.home-form h6 {
+  font-size: 1.125rem;
+  margin-bottom: 25px;
+}
+@media (min-width: 1024px) {
+  .home-form h3 {
+    font-size: 3.25rem;
+  }
+  .home-form h6 {
+    font-size: 2rem;
+  }
+}
 .home-form__wrapper {
   width: 700px;
   max-width: 100%;
@@ -782,9 +826,13 @@ form, input, textarea {
 }
 
 .wpcf7-form p {
-  font-size: 28px;
+  font-size: 1.2rem;
 }
-
+@media (min-width: 1024px) {
+  .wpcf7-form p {
+    font-size: 1.75rem;
+  }
+}
 .wpcf7-submit {
   border: none;
   width: 100px;
@@ -793,15 +841,24 @@ form, input, textarea {
   justify-content: center;
 }
 
-.form-group {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 20px;
+@media (min-width: 1024px) {
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .form-group__form-field {
-  width: 310px;
+  max-width: 100%;
+  margin-bottom: 14px;
+}
+@media (min-width: 1024px) {
+  .form-group__form-field {
+    margin-bottom: unset;
+    width: 310px;
+  }
 }
 
 .wpcf7-not-valid-tip {
@@ -892,31 +949,57 @@ form, input, textarea {
     margin-bottom: unset;
   }
 }
+.picture-with-list .picture-with-list__content h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
 @media (min-width: 1024px) {
   .picture-with-list .picture-with-list__content {
     padding-left: 70px;
   }
-}
-@media (min-width: 1024px) {
-  .picture-with-list .paw-print-list {
-    margin-left: 50px;
-    list-style-position: outside;
+  .picture-with-list .picture-with-list__content h3 {
+    font-size: 3.25rem;
+    margin-bottom: unset;
   }
 }
 .picture-with-list .button {
   margin-left: 50px;
 }
 
+.picture-with-list .paw-print-list li::before {
+  content: "";
+}
+
 .simple-pricing {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+}
+@media (min-width: 1024px) {
+  .simple-pricing {
+    margin-bottom: 50px;
+  }
 }
 .simple-pricing .heading {
   margin-bottom: 30px;
 }
 .simple-pricing .pricing-disclaimer {
-  padding: 54px;
   border-radius: 8px;
-  text-align: justify;
+  padding: 16px;
+}
+.simple-pricing .pricing-disclaimer h5 {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .simple-pricing .pricing-disclaimer {
+    text-align: justify;
+  }
+}
+@media (min-width: 1024px) {
+  .simple-pricing .pricing-disclaimer {
+    padding: 54px;
+  }
+  .simple-pricing .pricing-disclaimer h5 {
+    font-size: 2.25rem;
+  }
 }
 .simple-pricing .pricing-disclaimer--brown {
   background: var(--site-secondary-color-brown);
@@ -957,7 +1040,6 @@ form, input, textarea {
   max-width: 100%;
   margin: auto;
   display: grid;
-  /*display: grid;*/
   grid-template-columns: 1fr 1fr;
   gap: 42px;
 }
@@ -1116,10 +1198,12 @@ form, input, textarea {
   width: 197px;
   height: 195px;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 @media (min-width: 1024px) {
   .footer__logo {
     margin-bottom: unset;
+    margin-top: unset;
   }
 }
 
@@ -1128,6 +1212,12 @@ form, input, textarea {
   max-height: 128px;
   height: 100%;
   width: 100%;
+  margin-bottom: 25px;
+}
+@media (min-width: 1024px) {
+  .footer__secondary-logo {
+    margin-bottom: unset;
+  }
 }
 
 .footer__text {

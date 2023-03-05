@@ -50,36 +50,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.full-width-list {
-  margin-bottom: 50px;
-}
-
-.paw-print-list {
-  margin-left: 50px;
-  li {
-    font-size: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
-    margin-bottom: 10px;
-    max-width: 730px;
-    margin-left: auto;
-    margin-right: auto;
-    @media (min-width: $desktop) {
-      font-size: 2rem;
-    }
-    @media (min-width: $desktop) {
-      padding-left: 20px;
-
-    }
-  }
-}
-
 h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -128,6 +98,10 @@ h5 {
 
 h6 {
   font-size: 2rem;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+  }
+  @media (min-width: $widescreen) {}
 }
 
 p {
@@ -136,6 +110,60 @@ p {
 
 form, input, textarea {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.full-width-list {
+  margin-bottom: 50px;
+}
+
+.full-width-list__paw-print-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.paw-print-list {
+  margin-left: 38px;
+  position: relative;
+  li {
+    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    //list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
+    margin-bottom: 10px;
+    max-width: 730px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 25px;
+      width: 30px;
+      background-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -35px;
+      @media (min-width: $tablet) {
+        height: 26px;
+        width: 37px;
+      }
+      @media (min-width: $desktop) {
+        height: 37px;
+        width: 42px;
+      }
+      @media (min-width: $widescreen) {}
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 2rem;
+      padding-left: 20px;
+
+    }
+  }
 }
 
 .wrapper {

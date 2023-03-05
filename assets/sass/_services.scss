@@ -14,10 +14,10 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  text-align: justify;
   padding: 25px 25px;
   @media (min-width: $tablet) {
     padding: 50px 50px;
+    text-align: justify;
   }
   @media (min-width: $desktop) {
     grid-template-columns: 100px 1fr 1fr 100px;
@@ -46,6 +46,15 @@
     grid-column: 3;
     @media (min-width: $desktop) {
       padding-left: 70px;
+    }
+
+    .heading {
+      margin-bottom: 10px;
+      @media (min-width: $tablet) {}
+      @media (min-width: $desktop) {
+        margin-bottom: unset;
+      }
+      @media (min-width: $widescreen) {}      
     }
   }
 

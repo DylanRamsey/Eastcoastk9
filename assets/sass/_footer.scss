@@ -34,8 +34,10 @@
   width: 197px;
   height: 195px;
   margin-bottom: 25px;
+  margin-top: 25px;
   @media (min-width: $desktop) {
     margin-bottom: unset;
+    margin-top: unset;
   }
 }
 
@@ -44,6 +46,10 @@
   max-height: 128px;
   height: 100%;
   width: 100%;
+  margin-bottom: 25px;
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+  }
 }
 
 .footer__text {

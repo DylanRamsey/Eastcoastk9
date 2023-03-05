@@ -1,6 +1,26 @@
+@use 'config' as *;
 .home-form {
   grid-column: 2 /4;
   margin-bottom: 30px;
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.125rem;
+    margin-bottom: 25px;
+  }
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    h3 {
+      font-size: 3.25rem;
+    }
+
+    h6 {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: $widescreen) {}
 }
 
 .home-form__wrapper {
@@ -22,7 +42,13 @@
 }
 
 .wpcf7-form p {
-  font-size: 28px;
+
+  font-size: 1.2rem;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    font-size: 1.75rem;
+  }
+  @media (min-width: $widescreen) {}
 }
 
 .wpcf7-submit {
@@ -34,14 +60,21 @@
 }
 
 .form-group {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .form-group__form-field {
-  width: 310px;
+  max-width: 100%;
+  margin-bottom: 14px;
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+    width: 310px;
+  }
 }
 
 .wpcf7-not-valid-tip {
@@ -66,7 +99,8 @@
   margin-left: auto;
   padding-top: 15px;
   padding-left: 5px;
-  padding-right: 5px;  
+  padding-right: 5px;
+
   .form-group__form-field {
     width: 227px;
   }
@@ -90,7 +124,6 @@
       color: var(--site-secondary-color-brown);
     }
   }
-
 }
 
 .contact-information__options__contact {

@@ -1,6 +1,6 @@
 @use 'config' as *;
-.picture-with-list {
 
+.picture-with-list {
   margin-bottom: 50px;
   @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
@@ -20,19 +20,17 @@
   }
 
   .picture-with-list__content {
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
     @media (min-width: $tablet) {}
     @media (min-width: $desktop) {
       padding-left: 70px;
-    }
-    @media (min-width: $widescreen) {}
-  }
-
-  .paw-print-list {
-
-    @media (min-width: $tablet) {}
-    @media (min-width: $desktop) {
-      margin-left: 50px;
-      list-style-position: outside;
+      h3 {
+        font-size: 3.25rem;
+        margin-bottom: unset;
+      }      
     }
     @media (min-width: $widescreen) {}
   }
@@ -41,4 +39,20 @@
     margin-left: 50px;
   }
 }
+
+.picture-with-list .paw-print-list {
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+  }
+  @media (min-width: $widescreen) {}
+
+  li {
+    &::before {
+      content: "";
+
+    }
+  }
+}
+
+
 

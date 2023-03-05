@@ -1,21 +1,35 @@
 @use 'config' as *;
 
 .simple-pricing {
-  margin-bottom: 50px;
+    margin-bottom: 35px;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+  @media (min-width: $widescreen) {}  
   .heading {
     margin-bottom: 30px;
   }
   .pricing-disclaimer {
-    padding: 54px;
+    h5 {
+      font-size: 18px;
+    }
     border-radius: 8px;
-    text-align: justify;
-
-    
+    padding: 16px;
+    @media (min-width: $tablet) {
+      text-align: justify;
+    }
+    @media (min-width: $desktop) {
+      h5 {
+        font-size: 2.25rem;
+      }
+      padding: 54px;
+    }
+    @media (min-width: $widescreen) {}    
   }
   
   .pricing-disclaimer--brown {
     background: var(--site-secondary-color-brown);
-  
     h5 {
       color: var(--site-secondary-color-green);
     }
@@ -23,7 +37,6 @@
   
   .pricing-disclaimer--green {
     background: var(--site-main-color-green);
-  
     h5 {
       color: var(--site-main-color-brown);
     }
@@ -57,7 +70,6 @@
     max-width: 100%;
     margin: auto;
     display: grid;
-    /*display: grid;*/
     grid-template-columns: 1fr 1fr;
     gap: 42px;    
   }
@@ -76,7 +88,6 @@
   .tab-content__card--deluxe {
     background: var(--site-main-color-green);
     color: var(--site-main-color-brown);
-
     .paw-print-list li {
       list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
     }
