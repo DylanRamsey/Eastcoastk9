@@ -1,18 +1,40 @@
+@use 'config' as *;
 .picture-with-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
   margin-bottom: 50px;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $widescreen) {
+    
+  }  
   .picture-with-list__image {
+    margin-bottom: 35px;    
     max-width: 100%;
     border-radius: 8px;
+    @media (min-width: $tablet) {
+      margin-bottom: unset;
+    }
   }
 
   .picture-with-list__content {
-    padding-left: 70px;
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      padding-left: 70px;
+    }
+    @media (min-width: $widescreen) {}
   }
 
   .paw-print-list {
-    margin-left: 50px;
+
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      margin-left: 50px;
+      list-style-position: outside;
+    }
+    @media (min-width: $widescreen) {}
   }
 
   .button {

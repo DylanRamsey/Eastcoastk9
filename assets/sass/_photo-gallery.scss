@@ -20,6 +20,7 @@
   position: absolute;
   border-radius: var(--round-md);
   transition: margin 0.2s ease-in-out;
+  transition-delay: 200ms;
   &:hover {
     margin-bottom: 100px;
   }
@@ -30,6 +31,7 @@
   z-index: 1;
   transition: margin 0.2s ease-in-out;
   &:hover {
+    transition-delay: 500ms;
     margin-top: -150px;
   }
 }

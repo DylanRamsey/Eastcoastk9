@@ -8,6 +8,9 @@
   .pricing-disclaimer {
     padding: 54px;
     border-radius: 8px;
+    text-align: justify;
+
+    
   }
   
   .pricing-disclaimer--brown {
@@ -28,6 +31,7 @@
 }
 
 .advanced-pricing {
+  margin-bottom: 40px;
   .tab-group {
     text-align: center;
     color: var(--site-main-color-green);
@@ -36,13 +40,12 @@
 
   .tab-group__link {
     font-weight: 600;
-    color: var(--site-main-color-green);
-
+    font-size: 1.25rem;
+    color: var(--accessible-green);
     &:hover {
       color: var(--site-main-color-brown);
       cursor: pointer;
     }
-
     &::after {
       content: ' |';
       color: var(--site-main-color-brown);
@@ -77,6 +80,7 @@
     .paw-print-list li {
       list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
     }
+
   }
 
   .pricing-heading {

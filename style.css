@@ -12,6 +12,7 @@ Author URI: https://dylanbradramsey.com
   --site-secondary-color-green: #E3E3E3;
   --site-main-color-brown: #45200D;
   --site-secondary-color-brown: #73594B;
+  --accessible-green: #8d9775;
   --button-click: #9aa287;
   --shadow: 3px 3px 6px 0px #717171;
   --widescreen: 1440px;
@@ -82,15 +83,28 @@ ul {
   margin-bottom: 50px;
 }
 
+.paw-print-list {
+  margin-left: 50px;
+}
 .paw-print-list li {
   font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
   list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
   margin-bottom: 10px;
   max-width: 730px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
+}
+@media (min-width: 1024px) {
+  .paw-print-list li {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .paw-print-list li {
+    padding-left: 20px;
+  }
 }
 
 h1 {
@@ -114,24 +128,37 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 @media (min-width: 768px) {
   h2 {
     font-size: 4rem;
+    line-height: unset;
   }
 }
 
 h3 {
-  font-size: 3.25rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3.25rem;
+    line-height: unset;
+  }
 }
 
 h4 {
   font-size: 2.625rem;
 }
-
 h5 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  h5 {
+    font-size: 2.25rem;
+  }
 }
 
 h6 {
@@ -249,7 +276,7 @@ form, input, textarea {
 }
 
 .interior-page-heading--green {
-  color: var(--site-main-color-green);
+  color: var(--accessible-green);
 }
 
 .interior-page-heading--brown {
@@ -526,6 +553,7 @@ form, input, textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 70px;
+  text-align: justify;
 }
 @media (min-width: 1024px) {
   .introduction {
@@ -665,6 +693,7 @@ form, input, textarea {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  text-align: justify;
   padding: 25px 25px;
 }
 @media (min-width: 768px) {
@@ -845,19 +874,34 @@ form, input, textarea {
 }
 
 .picture-with-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-bottom: 50px;
 }
+@media (min-width: 1024px) {
+  .picture-with-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .picture-with-list .picture-with-list__image {
+  margin-bottom: 35px;
   max-width: 100%;
   border-radius: 8px;
 }
-.picture-with-list .picture-with-list__content {
-  padding-left: 70px;
+@media (min-width: 768px) {
+  .picture-with-list .picture-with-list__image {
+    margin-bottom: unset;
+  }
 }
-.picture-with-list .paw-print-list {
-  margin-left: 50px;
+@media (min-width: 1024px) {
+  .picture-with-list .picture-with-list__content {
+    padding-left: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .picture-with-list .paw-print-list {
+    margin-left: 50px;
+    list-style-position: outside;
+  }
 }
 .picture-with-list .button {
   margin-left: 50px;
@@ -872,6 +916,7 @@ form, input, textarea {
 .simple-pricing .pricing-disclaimer {
   padding: 54px;
   border-radius: 8px;
+  text-align: justify;
 }
 .simple-pricing .pricing-disclaimer--brown {
   background: var(--site-secondary-color-brown);
@@ -886,6 +931,9 @@ form, input, textarea {
   color: var(--site-main-color-brown);
 }
 
+.advanced-pricing {
+  margin-bottom: 40px;
+}
 .advanced-pricing .tab-group {
   text-align: center;
   color: var(--site-main-color-green);
@@ -893,7 +941,8 @@ form, input, textarea {
 }
 .advanced-pricing .tab-group__link {
   font-weight: 600;
-  color: var(--site-main-color-green);
+  font-size: 1.25rem;
+  color: var(--accessible-green);
 }
 .advanced-pricing .tab-group__link:hover {
   color: var(--site-main-color-brown);
@@ -978,6 +1027,7 @@ form, input, textarea {
   position: absolute;
   border-radius: var(--round-md);
   transition: margin 0.2s ease-in-out;
+  transition-delay: 200ms;
 }
 .photo-gallery__photo:hover {
   margin-bottom: 100px;
@@ -989,6 +1039,7 @@ form, input, textarea {
   transition: margin 0.2s ease-in-out;
 }
 .photo-gallery__photo--first:hover {
+  transition-delay: 500ms;
   margin-top: -150px;
 }
 

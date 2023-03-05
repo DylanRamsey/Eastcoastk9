@@ -2,6 +2,11 @@ var swiper = new Swiper(".testimonials-slider", {
   pagination: {
     el: ".swiper-pagination",
   },
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: true,
+    loop: true,
+  },  
 });
 
 document.addEventListener("DOMContentLoaded", function() {

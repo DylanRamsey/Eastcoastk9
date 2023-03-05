@@ -59,15 +59,25 @@ ul {
   margin-bottom: 50px;
 }
 
-.paw-print-list li {
-  font-size: 2rem;
-  font-weight: 500;
-  list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
-  margin-bottom: 10px;
-  max-width: 730px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
+.paw-print-list {
+  margin-left: 50px;
+  li {
+    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
+    margin-bottom: 10px;
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $desktop) {
+      font-size: 2rem;
+    }
+    @media (min-width: $desktop) {
+      padding-left: 20px;
+
+    }
+  }
 }
 
 h1 {
@@ -87,22 +97,33 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 1.2;
   @media (min-width: $tablet) {
     font-size: 4rem;
+    line-height: unset;
   }
 }
 
 h3 {
-  font-size: 3.25rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  @media (min-width: $tablet) {
+    font-size: 3.25rem;
+    line-height: unset;
+  }  
 }
 
 h4 {
   font-size: 2.625rem;
+  @media (min-width: $tablet) {}
 }
 
 h5 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
+  @media (min-width: $tablet) {
+    font-size: 2.25rem;    
+  }
 }
 
 h6 {
@@ -216,7 +237,7 @@ form, input, textarea {
 }
 
 .interior-page-heading--green {
-  color: var(--site-main-color-green);
+  color: var(--accessible-green);
 }
 
 .interior-page-heading--brown {
