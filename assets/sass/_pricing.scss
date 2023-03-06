@@ -53,16 +53,25 @@
 
   .tab-group__link {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--accessible-green);
     &:hover {
       color: var(--site-main-color-brown);
       cursor: pointer;
     }
     &::after {
-      content: ' |';
-      color: var(--site-main-color-brown);
+      @media (min-width: $tablet) {}
+      @media (min-width: $desktop) {
+        content: ' |';
+        color: var(--site-main-color-brown);        
+      }
+      @media (min-width: $widescreen) {}      
     }
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: $widescreen) {}
   }
 
   .tab-content {
@@ -70,8 +79,13 @@
     max-width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 42px;    
+    grid-template-columns:1fr;
+    gap: 42px;
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $widescreen) {}
   }
 
   .tab-content__card {
@@ -89,7 +103,18 @@
     background: var(--site-main-color-green);
     color: var(--site-main-color-brown);
     .paw-print-list li {
-      list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
+
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 25px;
+        width: 30px;
+        background-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -35px;        
+      }
     }
 
   }
@@ -109,6 +134,8 @@
   }
 
   button {
+    display: block;
+    margin: auto;
     background: none;
     color: inherit;
     border: none;
@@ -116,6 +143,12 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      display: initial;
+      margin: unset;
+    }
+    @media (min-width: $widescreen) {}
   } 
 
   [role="tab"][aria-selected="true"] {

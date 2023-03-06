@@ -119,11 +119,21 @@ ul {
 
 .full-width-list {
   margin-bottom: 50px;
+  .paw-print-list {
+    margin: auto;
+  }
 }
 
 .full-width-list__paw-print-list-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-left: 38px;
+
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    margin-left: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $widescreen) {}
 }
 
 .paw-print-list {
@@ -136,7 +146,6 @@ ul {
     //list-style-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg);
     margin-bottom: 10px;
     max-width: 730px;
-
     &::before {
       content: "";
       display: inline-block;
@@ -161,7 +170,6 @@ ul {
     @media (min-width: $desktop) {
       font-size: 2rem;
       padding-left: 20px;
-
     }
   }
 }
@@ -172,7 +180,6 @@ ul {
     grid-template-columns: 20px 1fr 1fr 20px;
     grid-template-rows: 210px 1fr;
   }
-
   @media (min-width: $widescreen) {
     grid-template-columns: 100px 1fr 1fr 100px;
   }
@@ -225,7 +232,6 @@ ul {
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: var(--shadow);
-
   @media (min-width: $desktop) {
     margin: 25px 0 25px;
   }
@@ -237,7 +243,6 @@ ul {
   &:hover {
     background-color: var(--button-click);
   }
-
   &:active {
     background-color: var(--button-click);
     transform: translateY(4px);
@@ -247,11 +252,9 @@ ul {
 .button--brown {
   background: var(--site-secondary-color-brown);
   color: var(--site-secondary-color-green);
-
   &:hover {
     background-color: var(--site-main-color-brown);
   }
-
   &:active {
     background-color: var(--site-main-color-brown);
     transform: translateY(4px);
