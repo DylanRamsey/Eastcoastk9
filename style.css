@@ -876,11 +876,16 @@ ul {
 .contact-information {
   grid-template-columns: 1fr;
   gap: 80px;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
 }
 @media (min-width: 1024px) {
   .contact-information {
     display: grid;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-information {
+    margin-bottom: 150px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -900,7 +905,7 @@ ul {
   margin-bottom: 40px;
   /* This isn't great practice and a bit hacky */
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .contact-information__form {
     margin: unset;
     margin-left: auto;
@@ -920,6 +925,17 @@ ul {
   color: var(--site-secondary-color-green);
 }
 
+.contact-information__options {
+  width: 315px;
+  max-width: 100%;
+  margin: auto;
+}
+@media (min-width: 1440px) {
+  .contact-information__options {
+    margin-left: 0;
+    width: 600px;
+  }
+}
 .contact-information__options a {
   color: black;
   text-decoration: none;
@@ -1166,13 +1182,18 @@ ul {
   }
 }
 .photo-gallery__group {
-  margin: 100px auto;
   position: relative;
   width: 470px;
   max-width: 100%;
 }
+@media (min-width: 768px) {
+  .photo-gallery__group {
+    margin: auto;
+  }
+}
 @media (min-width: 1024px) {
   .photo-gallery__group {
+    margin: 100px auto;
     height: 230px;
   }
 }
@@ -1183,9 +1204,13 @@ ul {
   height: 220px;
   object-fit: cover;
   border-radius: var(--round-md);
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 1024px) {
   .photo-gallery__photo {
+    margin-bottom: unset;
     position: absolute;
     transition: margin 0.2s ease-in-out;
     transition-delay: 200ms;
@@ -1202,7 +1227,7 @@ ul {
   }
   .photo-gallery__photo--first:hover {
     transition-delay: 500ms;
-    margin-top: -150px;
+    margin-top: -50px;
   }
   .photo-gallery__photo--second {
     rotate: -14deg;

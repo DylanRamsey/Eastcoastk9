@@ -83,13 +83,15 @@
 .contact-information {
   grid-template-columns: 1fr;
   gap: 80px;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
   @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
     display: grid;
+  }
+  @media (min-width: $widescreen) {
+    margin-bottom: 150px;
     grid-template-columns: 1fr 1fr;
   }
-  @media (min-width: $widescreen) {}
   h5 {
     margin-bottom: 20px;
   }
@@ -107,10 +109,12 @@
   margin-bottom: 40px;
   @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
+
+  }
+  @media (min-width: $widescreen) {
     margin: unset;
     margin-left: auto;
   }
-  @media (min-width: $widescreen) {}
   .form-group__form-field {
     
     @media (min-width: $tablet) {}
@@ -133,6 +137,16 @@
 }
 
 .contact-information__options {
+  width: 315px;
+  max-width: 100%;
+  margin: auto;
+  @media (min-width: $desktop) {
+    
+  }
+  @media (min-width: $widescreen) {
+    margin-left: 0;
+    width: 600px;
+  }
   a {
     color: black;
     text-decoration: none;
