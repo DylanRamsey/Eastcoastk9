@@ -290,10 +290,25 @@ ul {
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: var(--shadow);
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 @media (min-width: 1024px) {
   .button {
     margin: 25px 0 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .button:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 }
 
@@ -1462,10 +1477,10 @@ ul {
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .footer__contact p {
+  .footer__contact a {
     position: relative;
   }
-  .footer__contact p::after {
+  .footer__contact a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -1477,7 +1492,7 @@ ul {
     transform-origin: bottom right;
     transition: transform 0.8s ease-out;
   }
-  .footer__contact p:hover::after {
+  .footer__contact a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
