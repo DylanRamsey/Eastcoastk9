@@ -3,13 +3,16 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 70px;
-  text-align: justify;
+
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 2fr;
     margin: 0 0 100px;
   }
   .introduction__image {
     min-width: 100%;
+  }
+  p {
+    text-align: justify;
   }
 }
 

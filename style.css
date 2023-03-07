@@ -583,7 +583,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 70px;
-  text-align: justify;
 }
 @media (min-width: 1024px) {
   .introduction {
@@ -593,6 +592,9 @@ ul {
 }
 .introduction .introduction__image {
   min-width: 100%;
+}
+.introduction p {
+  text-align: justify;
 }
 
 .service-cards {
@@ -1009,6 +1011,11 @@ ul {
   font-size: 2rem;
   margin-bottom: 15px;
 }
+@media (min-width: 768px) {
+  .picture-with-list .picture-with-list__content h3 {
+    font-size: 3.25rem;
+  }
+}
 @media (min-width: 1024px) {
   .picture-with-list .picture-with-list__content {
     padding-left: 70px;
@@ -1273,6 +1280,17 @@ ul {
     left: 234px;
     bottom: -7px;
     z-index: 6;
+  }
+}
+.heading__photo-gallery {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .heading__photo-gallery {
+    position: absolute;
+    top: -130px;
   }
 }
 .footer {

@@ -24,7 +24,11 @@
       font-size: 2rem;
       margin-bottom: 15px;
     }
-    @media (min-width: $tablet) {}
+    @media (min-width: $tablet) {
+      h3 {
+        font-size: 3.25rem;
+      }
+    }
     @media (min-width: $desktop) {
       padding-left: 70px;
       h3 {

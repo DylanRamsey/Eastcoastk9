@@ -92,3 +92,14 @@
   }
 }
 
+.heading__photo-gallery {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -130px;
+  }
+  @media (min-width: $widescreen) {}
+}
