@@ -96,11 +96,29 @@
 
   li {
     margin-bottom: 10px;
+    display: block;
+    position: relative;
     &:hover {
       color: var(--site-main-color-brown);
     }
     @media (min-width: $desktop) {
       margin-bottom: unset;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.4s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
     
@@ -114,6 +132,27 @@
 .footer__contact {
   font-weight: 500;
   text-align: center;
+  p {
+    @media (min-width: $desktop) {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.8s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
   @media (min-width: $desktop) {
     text-align: unset;
   }

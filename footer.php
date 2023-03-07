@@ -26,7 +26,7 @@
       <div class="footer__text footer__text__bottom">
         <p>Located in North Port, Florida. Serving Fort Myers to Bradenton</p>
         <p>Copyright 2022 East Coast K9 LLC.This website does not use Cookies.</p>
-        <p>Website design and development by <a href="https://dylanbradramsey.com/">Dylanbradramsey.com</a></p>
+        <p>Website design and development by <a class="hover-underline-animation" href="https://dylanbradramsey.com/">Dylanbradramsey.com</a></p>
       </div>
     </div>
     <a href="https://stonecreekdachshunds.com/" target="_blank">

@@ -25,13 +25,13 @@
         <div class="header-contact__phone">
           <a href="tel:941-374-7161">
             <img class="header-contact__phone-icon" src="/wp-content/themes/eastcoastk9/assets/svgs/phone-icon.svg" alt="Phone Icon">
-            <p>941-374-7161</p>
+            <p class="hover-underline-animation">941-374-7161</p>
           </a>
         </div>          
         <div class="header-contact__email">
         <a href="mailto: EastCoastK9LLC@gmail.com">
             <img class="header-contact__envelope" src="/wp-content/themes/eastcoastk9/assets/svgs/envelope.svg" alt="Envelope Icon">
-            <p>EastCoastK9LLC@gmail.com</p>
+            <p class="hover-underline-animation">EastCoastK9LLC@gmail.com</p>
         </a>
         </div>
       </div>      
