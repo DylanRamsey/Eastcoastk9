@@ -64,9 +64,9 @@
         <?php 
           wp_nav_menu(
             array(
-              'menu' => 'primary',
+              'menu' => 'mobile',
               'container' => '',
-              'theme_location' => 'primary',
+              'theme_location' => 'mobile',
               'items_wrap' => '<ul class="mobile-navigation__links">%3$s</ul>'
             )
           );

@@ -1,8 +1,14 @@
+@use 'config' as *;
 .site-banner {
   grid-column: 1 / -1;
   grid-row: 2; 
   background: var(--site-secondary-color-brown);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+  @media (min-width: $widescreen) {}
   img {
     object-fit: cover;
     margin: auto;

@@ -3,6 +3,7 @@
 function eck_menus(){
   $locations = array(
     'primary' => "Primary Menu",
+    'mobile' => "Mobile Menu"
   );
 
   register_nav_menus($locations);

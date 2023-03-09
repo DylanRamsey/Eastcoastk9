@@ -3,7 +3,6 @@
 .services {
   grid-column: 1/-1;
   margin-bottom: 30px;
-
   h2 {
     margin-bottom: 50px;
   }
@@ -17,11 +16,13 @@
   padding: 25px 25px;
   @media (min-width: $tablet) {
     padding: 50px 50px;
-    text-align: justify;
   }
   @media (min-width: $desktop) {
     grid-template-columns: 100px 1fr 1fr 100px;
     padding: initial;
+  }
+  @media (min-width: $widescreen) {
+    text-align: justify;
   }
   .service-row__image {
     height: 100%;
