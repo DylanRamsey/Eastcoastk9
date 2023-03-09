@@ -1,21 +1,23 @@
 @use 'config' as *;
 .mobile-navigation {
-  padding-bottom: 30px;
-  margin-right: 30px;
   margin-top: -96px;
   @media (min-width: $desktop) {
     display: none;
   }
   .mobile-navigation__links {
     background: var(--site-main-color-green);
+    text-align: center;
     font-size: 24px;
     list-style: none;
     padding: 4px 0;
     display: none;
-    margin-bottom: 30px;
+    margin-top: 69px;
+    position: relative;
     a {
       color: black;
       text-decoration: none;
+      display: block;
+      width: 100%;
     }
     li {
       padding: 20px 0 15px 20px;
@@ -41,7 +43,7 @@
   width: 45px;
   height: 3px;
   position: relative;
-  margin: 30px 0 50px auto;
+  margin: 13px 5% 0 auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);

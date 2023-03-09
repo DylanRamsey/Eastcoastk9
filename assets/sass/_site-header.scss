@@ -3,7 +3,9 @@
   background: var(--site-main-color-green);
   border-bottom: solid 2px;
   font-weight: 600;
+  height: 100px;
   @media (min-width: $desktop) {
+    height: 100%;
     display: grid;
     grid-template-columns: 100px 1fr 100px;
     grid-template-rows: 50px 110px;
@@ -51,6 +53,7 @@
     display: flex;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     @media (min-width: $desktop) {
       gap: 10px;
