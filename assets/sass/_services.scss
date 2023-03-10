@@ -11,6 +11,8 @@
 
 .service-row {
   display: grid;
+  overflow: hidden;
+  position: relative;
   grid-template-columns: 1fr;
   align-items: center;
   padding: 25px 25px;
@@ -39,7 +41,8 @@
   }
 
   .service-row__image--reversed {
-    grid-column: 3 /-1 !important;
+    grid-column: 3 /-1;
+    z-index: 1;
   }
 
   .service-row-copy {
@@ -79,5 +82,74 @@
 
 .service-row--brown {
   background: var(--site-secondary-color-brown);
+  position: relative;
 }
 
+.paw-print-trail img {
+  position: absolute;
+  width: 54px;
+  transform: rotate(38deg);
+}
+
+.paw-print-trail__1 {
+  right: -22px;
+  bottom: 32%;
+}
+
+.paw-print-trail__2 {
+  right: -22px;
+  bottom: 9%;
+}
+
+.paw-print-trail__3 {
+  right: 30px;
+  bottom: 22%;
+}
+
+.paw-print-trail__4 {
+  right: 75px;
+  bottom: 10%;
+}
+
+.paw-print-trail__5 {
+  right: 22px;
+  bottom: -2%;
+}
+
+.paw-print-trail__6 {
+  right: 123px;
+  bottom: -2%;
+}
+
+.service-row--brown {
+  .paw-print-trail__1 {
+    @media (min-width: $desktop) {
+      left: 48%;
+    }
+  }
+  
+  .paw-print-trail__2 {
+    left: 46%;
+    @media (min-width: $desktop) {}
+  }
+  
+  .paw-print-trail__3 {
+    left: 44%;
+    @media (min-width: $desktop) {}
+  }
+  
+  .paw-print-trail__4 {
+    left: 42%;
+    @media (min-width: $desktop) {}
+  }
+  
+  .paw-print-trail__5 {
+    left: 40%;
+    @media (min-width: $desktop) {}
+  }
+  
+  .paw-print-trail__6 {
+    left: 38%;
+    @media (min-width: $desktop) {}
+  }
+}

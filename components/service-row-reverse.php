@@ -50,6 +50,14 @@
               echo $cta_text_rev;
           }
         ?>              
-    </a>          
+    </a>
+    <div class="paw-print-trail">
+      <img class="paw-print-trail__1" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg">
+      <img class="paw-print-trail__2" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg">
+      <img class="paw-print-trail__3" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg">
+      <img class="paw-print-trail__4" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg">
+      <img class="paw-print-trail__5" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg">
+      <img class="paw-print-trail__6" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print.svg">
+    </div>        
   </div>
 </div>
