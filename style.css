@@ -856,61 +856,88 @@ ul {
 }
 
 .paw-print-trail img {
-  position: absolute;
-  width: 54px;
-  transform: rotate(38deg);
+  display: none;
+}
+@media (min-width: 768px) {
+  .paw-print-trail img {
+    display: block;
+    position: absolute;
+    transform: rotate(38deg);
+    width: 25px;
+    width: 54px;
+  }
 }
 
 .paw-print-trail__1 {
-  right: -22px;
-  bottom: 32%;
+  right: -1px;
+  bottom: 18%;
+}
+@media (min-width: 768px) {
+  .paw-print-trail__1 {
+    right: -22px;
+    bottom: 32%;
+  }
 }
 
 .paw-print-trail__2 {
-  right: -22px;
-  bottom: 9%;
+  right: -13px;
+  bottom: 11%;
+}
+@media (min-width: 768px) {
+  .paw-print-trail__2 {
+    right: -22px;
+    bottom: 9%;
+  }
 }
 
 .paw-print-trail__3 {
-  right: 30px;
-  bottom: 22%;
+  right: 34px;
+  bottom: 11%;
+}
+@media (min-width: 768px) {
+  .paw-print-trail__3 {
+    right: 30px;
+    bottom: 22%;
+  }
 }
 
 .paw-print-trail__4 {
-  right: 75px;
-  bottom: 10%;
+  right: 6px;
+  bottom: 4%;
+}
+@media (min-width: 768px) {
+  .paw-print-trail__4 {
+    right: 75px;
+    bottom: 10%;
+  }
 }
 
 .paw-print-trail__5 {
-  right: 22px;
+  right: 39px;
   bottom: -2%;
+}
+@media (min-width: 768px) {
+  .paw-print-trail__5 {
+    right: 22px;
+    bottom: -2%;
+  }
 }
 
 .paw-print-trail__6 {
-  right: 123px;
-  bottom: -2%;
+  right: 60px;
+  bottom: 4.5%;
 }
-
-@media (min-width: 1024px) {
-  .service-row--brown .paw-print-trail__1 {
-    left: 48%;
+@media (min-width: 768px) {
+  .paw-print-trail__6 {
+    right: 123px;
+    bottom: -2%;
   }
 }
-.service-row--brown .paw-print-trail__2 {
-  left: 46%;
+
+.service-row--brown .paw-print-trail__1, .service-row--brown .paw-print-trail__2, .service-row--brown .paw-print-trail__3, .service-row--brown .paw-print-trail__4, .service-row--brown .paw-print-trail__5, .service-row--brown .paw-print-trail__6 {
+  display: none;
 }
-.service-row--brown .paw-print-trail__3 {
-  left: 44%;
-}
-.service-row--brown .paw-print-trail__4 {
-  left: 42%;
-}
-.service-row--brown .paw-print-trail__5 {
-  left: 40%;
-}
-.service-row--brown .paw-print-trail__6 {
-  left: 38%;
-}
+
 .home-form {
   grid-column: 2/4;
   margin-bottom: 30px;

@@ -86,70 +86,77 @@
 }
 
 .paw-print-trail img {
-  position: absolute;
-  width: 54px;
-  transform: rotate(38deg);
+  //Currently hiding pawprints on mobile, need to be completely pixel base for mobile
+  display: none;
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    transform: rotate(38deg);
+    width: 25px;
+    width: 54px;
+  }
 }
 
 .paw-print-trail__1 {
-  right: -22px;
-  bottom: 32%;
+  right: -1px;
+  bottom: 18%;
+  @media (min-width: $tablet) {
+    right: -22px;
+    bottom: 32%;
+  }
 }
 
 .paw-print-trail__2 {
-  right: -22px;
-  bottom: 9%;
+  right: -13px;
+  bottom: 11%;
+  @media (min-width: $tablet) {
+    right: -22px;
+    bottom: 9%;
+  }
 }
 
 .paw-print-trail__3 {
-  right: 30px;
-  bottom: 22%;
+  right: 34px;
+  bottom: 11%;
+  @media (min-width: $tablet) {
+    right: 30px;
+    bottom: 22%;
+  }
 }
 
 .paw-print-trail__4 {
-  right: 75px;
-  bottom: 10%;
+  right: 6px;
+  bottom: 4%;
+  @media (min-width: $tablet) {
+    right: 75px;
+    bottom: 10%;
+  }
 }
 
 .paw-print-trail__5 {
-  right: 22px;
+  right: 39px;
   bottom: -2%;
+  @media (min-width: $tablet) {
+    right: 22px;
+    bottom: -2%;
+  }
 }
 
 .paw-print-trail__6 {
-  right: 123px;
-  bottom: -2%;
+  right: 60px;
+  bottom: 4.5%;
+  @media (min-width: $tablet) {
+    right: 123px;
+    bottom: -2%;
+  }
 }
 
+//These are for the flipped service row
+//Too many issues with these right now and not consistent between screen sizes. 
+//Come back and work on these maybe in future release
+//Need to be completely pixel base, might have to base them on another Dom element vs regular service row
 .service-row--brown {
-  .paw-print-trail__1 {
-    @media (min-width: $desktop) {
-      left: 48%;
-    }
-  }
-  
-  .paw-print-trail__2 {
-    left: 46%;
-    @media (min-width: $desktop) {}
-  }
-  
-  .paw-print-trail__3 {
-    left: 44%;
-    @media (min-width: $desktop) {}
-  }
-  
-  .paw-print-trail__4 {
-    left: 42%;
-    @media (min-width: $desktop) {}
-  }
-  
-  .paw-print-trail__5 {
-    left: 40%;
-    @media (min-width: $desktop) {}
-  }
-  
-  .paw-print-trail__6 {
-    left: 38%;
-    @media (min-width: $desktop) {}
+  .paw-print-trail__1, .paw-print-trail__2, .paw-print-trail__3, .paw-print-trail__4, .paw-print-trail__5, .paw-print-trail__6  {
+    display: none;
   }
 }
