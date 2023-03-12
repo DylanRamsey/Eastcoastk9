@@ -1,4 +1,5 @@
 <div class="site-banner">
+  <img class="site-banner__emblem" src="/wp-content/uploads/2022/12/ECK-logo-e1674105395468.webp" alt="">
   <img 
     src="
       <?php

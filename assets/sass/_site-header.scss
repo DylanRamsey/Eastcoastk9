@@ -1,7 +1,9 @@
 @use 'config' as *;
 .site-header {
   background: var(--site-main-color-green);
-  border-bottom: solid 2px;
+  box-shadow: 0px 4px 10px #413939;
+  position: relative;
+  z-index: 2;
   font-weight: 600;
   height: 100px;
   @media (min-width: $desktop) {
