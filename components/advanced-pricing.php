@@ -1,3 +1,9 @@
+<?php 
+/* 
+This isn't great. Email me if there's a free alternative to ACF with repeating fields and I'll use it on my next project
+Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing it for me. Maybe ACF is actually awesome. IDK but I'll see to fix.
+*/ ?>
+
 <section class="advanced-pricing">
   <h2 class="heading heading--brown heading--center">Pricing</h2>
   <h6 class="heading heading--brown heading--center">Please Select your dog's size for pricing</h6>
@@ -137,13 +143,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$2</h3>
+            <h3>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>              
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>           
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -152,13 +193,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$2</h3>
+            <h3>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>                 
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("small_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>                     
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -171,13 +247,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$3</h3>
+            <h3>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>                   
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                  
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -186,13 +297,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$3</h3>
+            <h3>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>                   
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>              
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -205,13 +351,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$4</h3>
+            <h3>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                  
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -220,13 +401,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$4</h3>
+            <h3>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>                 
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>               
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("medium_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>              
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -239,13 +455,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$5</h3>
+            <h3>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>              
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                  
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -254,13 +505,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$5</h3>
+            <h3>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>                
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>               
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>                 
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -273,13 +559,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$6</h3>
+            <h3>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>                        
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>                
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>                
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -288,13 +609,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$6</h3>
+            <h3>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>                 
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>                 
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("large_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>                 
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -307,13 +663,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$7</h3>
+            <h3>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>                  
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>                
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>                
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -322,13 +713,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$7</h3>
+            <h3>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>               
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>    
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_short_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>                
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -341,13 +767,48 @@
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
             <h5>Standard Bath</h5>
-            <h3>$8</h3>
+            <h3>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['service_price'];
+                }
+              ?>                
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['service_1'];
+                }
+              ?>                  
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['service_2'];
+                }
+              ?>                   
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['service_3'];
+                }
+              ?>                   
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['service_4'];
+                }
+              ?>                   
+            </li>
           </ul>
           <a class="button button--green" href="/spa#form">
             Sign up now      
@@ -356,13 +817,48 @@
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
             <h5>Deluxe Bath</h5>
-            <h3>$8</h3>
+            <h3>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_price'];
+                }
+              ?>              
+            </h3>
           </div>
           <ul class="paw-print-list">
-            <li>bath</li>
-            <li>Blown Dried</li>
-            <li>Nails Trimmed</li>
-            <li>Ears Cleaning</li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_1'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_2'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_3'];
+                }
+              ?>              
+            </li>
+            <li>
+              <?php
+                $service_price = get_field("xl_long_coat");
+                if($service_price) {
+                    echo $service_price['deluxe_service_4'];
+                }
+              ?>
+            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
