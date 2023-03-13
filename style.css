@@ -1233,6 +1233,9 @@ ul {
   color: var(--site-main-color-green);
   margin-bottom: 25px;
 }
+.advanced-pricing .tabs {
+  margin-bottom: 30px;
+}
 .advanced-pricing .tab-group__link {
   font-weight: 600;
   font-size: 1.5rem;
@@ -1305,6 +1308,17 @@ ul {
 .advanced-pricing .tab-content__card--deluxe .paw-print-list li::before {
   background-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
 }
+.advanced-pricing .tab-content__disclaimer {
+  font-size: 1rem;
+  top: -8px;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .advanced-pricing .tab-content__disclaimer {
+    font-size: 1.25rem;
+    top: -12px;
+  }
+}
 .advanced-pricing .pricing-heading {
   display: flex;
   align-items: center;
@@ -1338,6 +1352,10 @@ ul {
 }
 .advanced-pricing [role=tabpanel].is-hidden {
   display: none;
+}
+
+.advanced-pricing__disclaimer {
+  text-align: center;
 }
 
 /* Advanced Pricing tabs */

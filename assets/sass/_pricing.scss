@@ -51,6 +51,10 @@
     margin-bottom: 25px;
   }
 
+  .tabs {
+    margin-bottom: 30px;
+  }
+
   .tab-group__link {
     font-weight: 600;
     font-size: 1.5rem;
@@ -115,7 +119,7 @@
       }
     }
   }
-
+  
   .tab-content__card--standard {
     background: var(--site-secondary-color-brown);
     color: var(--site-secondary-color-green);
@@ -129,7 +133,16 @@
         background-image: url(/wp-content/themes/eastcoastk9/assets/svgs/paw-print-brown.svg);
       }
     }
+  }
 
+  .tab-content__disclaimer {
+    font-size: 1rem;
+    top: -8px;
+    position: relative;
+    @media (min-width: $desktop) {
+      font-size: 1.25rem;
+      top: -12px;
+    }
   }
 
   .pricing-heading {
@@ -172,6 +185,12 @@
     display: none;
   }
 }
+
+.advanced-pricing__disclaimer {
+  text-align: center;
+}
+
+
 
 /* Advanced Pricing tabs */
 

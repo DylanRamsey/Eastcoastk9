@@ -38,7 +38,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("small_short_coat");
@@ -48,6 +48,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -88,7 +89,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("small_short_coat");
@@ -98,6 +99,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>              
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -123,14 +125,12 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 }
               ?>                
             </li>
-            <li>
-              <?php
-                $small_short_coat = get_field("small_short_coat");
-                if($small_short_coat) {
-                    echo $small_short_coat['deluxe_service_4'];
-                }
-              ?>               
-            </li>
+            <?php
+              $deluxe_forth = get_field("deluxe_forth");
+              if($deluxe_forth) {
+                  echo '<li>' . $deluxe_forth['deluxe_service_4'] . '</li>';
+              }
+            ?>               
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -142,7 +142,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("small_long_coat");
@@ -152,6 +152,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>              
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -192,7 +193,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("small_long_coat");
@@ -202,6 +203,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                 
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -227,14 +229,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 }
               ?>                 
             </li>
-            <li>
-              <?php
-                $service_price = get_field("small_long_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
-                }
-              ?>                     
-            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -246,7 +240,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("medium_short_coat");
@@ -256,6 +250,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                   
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -296,7 +291,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("medium_short_coat");
@@ -306,6 +301,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                   
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -328,14 +324,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 $service_price = get_field("medium_short_coat");
                 if($service_price) {
                     echo $service_price['deluxe_service_3'];
-                }
-              ?>              
-            </li>
-            <li>
-              <?php
-                $service_price = get_field("medium_short_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
                 }
               ?>              
             </li>
@@ -350,7 +338,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("medium_long_coat");
@@ -360,6 +348,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -400,7 +389,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("medium_long_coat");
@@ -410,6 +399,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                 
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -432,14 +422,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 $service_price = get_field("medium_long_coat");
                 if($service_price) {
                     echo $service_price['deluxe_service_3'];
-                }
-              ?>              
-            </li>
-            <li>
-              <?php
-                $service_price = get_field("medium_long_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
                 }
               ?>              
             </li>
@@ -454,7 +436,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("large_short_coat");
@@ -464,6 +446,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>              
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -504,7 +487,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("large_short_coat");
@@ -514,6 +497,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -536,14 +520,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 $service_price = get_field("large_short_coat");
                 if($service_price) {
                     echo $service_price['deluxe_service_3'];
-                }
-              ?>                 
-            </li>
-            <li>
-              <?php
-                $service_price = get_field("large_short_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
                 }
               ?>                 
             </li>
@@ -558,7 +534,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("large_long_coat");
@@ -568,6 +544,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                        
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -608,7 +585,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("large_long_coat");
@@ -618,6 +595,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                 
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -643,14 +621,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 }
               ?>                 
             </li>
-            <li>
-              <?php
-                $service_price = get_field("large_long_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
-                }
-              ?>                 
-            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -662,7 +632,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("xl_short_coat");
@@ -672,6 +642,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                  
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -712,7 +683,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("xl_short_coat");
@@ -722,6 +693,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>               
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -747,14 +719,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 }
               ?>    
             </li>
-            <li>
-              <?php
-                $service_price = get_field("xl_short_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
-                }
-              ?>                
-            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -766,7 +730,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       <div class="tab-content">
         <div class="tab-content__card tab-content__card--standard">
           <div class="pricing-heading">
-            <h5>Standard Bath</h5>
+            <h5>Standard</h5>
             <h3>
               <?php
                 $service_price = get_field("xl_long_coat");
@@ -776,6 +740,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>                
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -816,7 +781,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         </div>
         <div class="tab-content__card tab-content__card--deluxe">
           <div class="pricing-heading">
-            <h5>Deluxe Bath</h5>
+            <h5>Deluxe</h5>
             <h3>
               <?php
                 $service_price = get_field("xl_long_coat");
@@ -826,6 +791,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
               ?>              
             </h3>
           </div>
+          <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
           <ul class="paw-print-list">
             <li>
               <?php
@@ -851,14 +817,6 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
                 }
               ?>              
             </li>
-            <li>
-              <?php
-                $service_price = get_field("xl_long_coat");
-                if($service_price) {
-                    echo $service_price['deluxe_service_4'];
-                }
-              ?>
-            </li>
           </ul>
           <a class="button button--brown" href="/spa#form">
             Sign up now      
@@ -867,4 +825,5 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
       </div>
     </div>      
   </div>
+  <p class="advanced-pricing__disclaimer">Prices shown are regular prices, prices are subject to adjust based on dog behavior and breed. Please feel free to contact us and tell us all about your dog for a closer estimate.</p>
 </section>
