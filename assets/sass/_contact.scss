@@ -94,35 +94,26 @@
 .contact-information__form {
   background: var(--site-main-color-green);
   border-radius: var(--round-md);
-  width: 525px;
   max-width: 100%;
   margin: auto;
   padding-top: 15px;
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 40px;
-  @media (min-width: $tablet) {}
-  @media (min-width: $desktop) {
-
-  }
+  width: 525px;
   @media (min-width: $widescreen) {
     margin: unset;
     margin-left: auto;
   }
   .form-group__form-field {
-    
-    @media (min-width: $tablet) {}
     @media (min-width: $desktop) {
       margin-left: auto;
       width: 227px;
     }
-    @media (min-width: $widescreen) {}
   }
-
   .home-form {
     margin-bottom: 0;
   }
-
   /* This isn't great practice and a bit hacky */
   .button--green {
     background: var(--site-secondary-color-brown);
@@ -131,12 +122,9 @@
 }
 
 .contact-information__options {
-  width: 315px;
-  max-width: 100%;
   margin: auto;
-  @media (min-width: $desktop) {
-    
-  }
+  max-width: 100%;
+  width: 315px;
   @media (min-width: $widescreen) {
     margin-left: 0;
     width: 600px;
@@ -151,8 +139,8 @@
 }
 
 .contact-information__options__contact {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   gap: 15px;
   img {
     width: 20px;
@@ -162,16 +150,13 @@
     @media (min-width: $desktop) {
       width: unset;
     }
-    @media (min-width: $widescreen) {}    
   }
   p {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    @media (min-width: $tablet) {}
     @media (min-width: $desktop) {
       font-size: 1.75rem;
     }
-    @media (min-width: $widescreen) {}
   }
 }
 
@@ -185,7 +170,7 @@
 }
 
 .contact-information__options__contact {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   gap: 15px;
 }
