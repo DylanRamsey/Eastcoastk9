@@ -16,8 +16,8 @@
           );    
         ?>    
         <div class="footer__contact">
-          <p>941-374-7161</p>
-          <p>EastCoastK9LLC@gmail.com</p>
+          <a href="tel:941-374-7161"> <p>941-374-7161</p></a>
+          <a href="mailto:EastCoastK9LLC@gmail.com"><p>EastCoastK9LLC@gmail.com</p></a>
           <p>By Appointment Only</p>
           <p>Mon-Wed, Fri 6:30am - 6pm</p>
           <p>Thursday 6:30am - 4pm</p>
@@ -34,6 +34,15 @@
     </a>
   </div>
 </footer>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YL7MNHK873"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YL7MNHK873');
+</script>
 </body>
 </html>
 <?php wp_footer(); ?>

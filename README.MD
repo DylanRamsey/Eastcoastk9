@@ -1,4 +1,5 @@
 # Eastcoastk9
+### Version 1.0
 
 This is a custom WordPress site theme for a dog training business.
 
@@ -18,10 +19,11 @@ This also means some files are a bit repetitively, because there was no repeat/l
 [Airbnb SCSS Style Guide](https://github.com/airbnb/css) 
 
 ### Some custom style guiding I follow ontop of this:
-Font sizes and media queries in REMS
+- Font sizes in REMS
+- Media queries in REMS
 
 ### Some custom code organizion I follow:
-CSS Properties ABC order
+- CSS Properties ABC order (Unless it does not make sense to, like screen size breaks being in order from mobile first)
 
 Styling is adding in assets/sass
 

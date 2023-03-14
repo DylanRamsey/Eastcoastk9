@@ -10,23 +10,20 @@
     font-size: 1.125rem;
     margin-bottom: 25px;
   }
-  @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
     h3 {
       font-size: 3.25rem;
     }
-
     h6 {
       font-size: 2rem;
     }
   }
-  @media (min-width: $widescreen) {}
 }
 
 .home-form__wrapper {
-  width: 700px;
-  max-width: 100%;
   margin: auto;
+  max-width: 100%;
+  width: 700px;
 }
 
 .wpcf7 {
@@ -34,42 +31,39 @@
 }
 
 .wpcf7-form-control {
-  width: 100%;
-  /* border-radius: 10px; */
-  border: 2px solid #000000;
   border-radius: 8px;
+  border: 2px solid #000000;
   height: 50px;
+  width: 100%;
 }
 
 .wpcf7-form p {
   font-size: 1.2rem;
-  @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
     font-size: 1.75rem;
   }
-  @media (min-width: $widescreen) {}
 }
 
 .wpcf7-submit {
   border: none;
-  width: 100px;
-  margin: auto;
   display: flex;
   justify-content: center;
+  margin: auto;
+  width: 100px;
 }
 
 .form-group {
   @media (min-width: $desktop) {
-    margin-bottom: 20px;
-    display: flex;
     align-items: flex-start;
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 }
 
 .form-group__form-field {
-  max-width: 100%;
   margin-bottom: 14px;
+  max-width: 100%;
   @media (min-width: $desktop) {
     margin-bottom: unset;
     width: 310px;

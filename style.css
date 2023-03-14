@@ -8,15 +8,15 @@ Author: Dylan Ramsey
 Author URI: https://dylanbradramsey.com
 */
 :root {
-  --site-main-color-green: #B5BDA1;
-  --site-secondary-color-green: #E3E3E3;
-  --site-main-color-brown: #45200D;
-  --site-secondary-color-brown: #73594B;
   --accessible-green: #8d9775;
   --button-click: #9aa287;
-  --shadow: 3px 3px 6px 0px #717171;
-  --widescreen: 1440px;
   --round-md: 8px;
+  --shadow: 3px 3px 6px 0px #717171;
+  --site-main-color-brown: #45200D;
+  --site-main-color-green: #B5BDA1;
+  --site-secondary-color-brown: #73594B;
+  --site-secondary-color-green: #E3E3E3;
+  --widescreen: 1440px;
 }
 
 /*
@@ -157,7 +157,7 @@ ul {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--site-main-color-brown);
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
@@ -356,6 +356,18 @@ ul {
 
 .interior-page-heading--brown {
   color: var(--site-main-color-brown);
+}
+
+.page-not-found {
+  text-align: center;
+}
+.page-not-found img {
+  margin: auto;
+  max-width: 100%;
+}
+
+.page-not-found__text {
+  margin-bottom: 40px;
 }
 
 .site-header {
@@ -973,10 +985,11 @@ ul {
     font-size: 2rem;
   }
 }
+
 .home-form__wrapper {
-  width: 700px;
-  max-width: 100%;
   margin: auto;
+  max-width: 100%;
+  width: 700px;
 }
 
 .wpcf7 {
@@ -984,11 +997,10 @@ ul {
 }
 
 .wpcf7-form-control {
-  width: 100%;
-  /* border-radius: 10px; */
-  border: 2px solid #000000;
   border-radius: 8px;
+  border: 2px solid #000000;
   height: 50px;
+  width: 100%;
 }
 
 .wpcf7-form p {
@@ -999,26 +1011,27 @@ ul {
     font-size: 1.75rem;
   }
 }
+
 .wpcf7-submit {
   border: none;
-  width: 100px;
-  margin: auto;
   display: flex;
   justify-content: center;
+  margin: auto;
+  width: 100px;
 }
 
 @media (min-width: 1024px) {
   .form-group {
-    margin-bottom: 20px;
-    display: flex;
     align-items: flex-start;
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 }
 
 .form-group__form-field {
-  max-width: 100%;
   margin-bottom: 14px;
+  max-width: 100%;
 }
 @media (min-width: 1024px) {
   .form-group__form-field {
@@ -1634,8 +1647,13 @@ ul {
   font-weight: 500;
   text-align: center;
 }
+.footer__contact a {
+  color: black;
+  text-decoration: none;
+}
 @media (min-width: 1024px) {
   .footer__contact a {
+    width: max-content;
     position: relative;
   }
   .footer__contact a::after {
@@ -1646,7 +1664,7 @@ ul {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--site-main-color-brown);
     transform-origin: bottom right;
     transition: transform 0.8s ease-out;
   }

@@ -128,7 +128,7 @@ ul {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: black;
+      background-color: var(--site-main-color-brown);
       transform-origin: bottom right;
       transition: transform 0.3s ease-out;
     }
@@ -312,4 +312,16 @@ ul {
 
 .interior-page-heading--brown {
   color: var(--site-main-color-brown);
+}
+
+.page-not-found {
+  text-align: center;
+  img {
+    margin: auto;
+    max-width: 100%;
+  }
+}
+
+.page-not-found__text {
+  margin-bottom: 40px;
 }
