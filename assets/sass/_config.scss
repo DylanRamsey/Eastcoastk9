@@ -17,13 +17,13 @@ Author URI: https://dylanbradramsey.com
   --site-main-color-green: #B5BDA1;
   --site-secondary-color-brown: #73594B;
   --site-secondary-color-green: #E3E3E3;
-  --widescreen: 1440px;
+  --widescreen: 90rem;
 }
 
-$widescreen: 1440px;
-$desktop: 1024px;
-$tablet: 768px;
-$phone: 425px;
+$widescreen: 90rem;
+$desktop: 64rem;
+$tablet: 48rem;
+$phone: 26.5625rem;
 
 /*
 Mobile Opt example

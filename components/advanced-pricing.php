@@ -31,7 +31,7 @@ Also it should be sorta broken, but it looks like it's not. Maybe ACF is fixing 
         <span class="focus">XL Short Coat</span>
       </button>
       <button class="tab-group__link" id="tab-8" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-8" tabindex="-1">
-        <span>XL Long Coat</span>
+        <span class="focus">XL Long Coat</span>
       </button>    
     </div>
     <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">

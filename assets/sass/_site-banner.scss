@@ -1,30 +1,26 @@
 @use 'config' as *;
 .site-banner {
-  position: relative;
-  grid-column: 1 / -1;
-  grid-row: 2; 
   background: var(--site-secondary-color-brown);
+  grid-column: 1 / -1;
+  grid-row: 2;
   margin-bottom: 20px;
-  @media (min-width: $tablet) {}
-  @media (min-width: $desktop) {
-  }
-  @media (min-width: $widescreen) {}
+  position: relative;
   img {
-    object-fit: cover;
+    filter: contrast(63%) grayscale(9%);
+    height: 450px;
     margin: auto;
     min-width: 100%;
-    height: 450px;
-    filter: contrast(63%) grayscale(9%);
+    object-fit: cover;
   }
 
   .site-banner__emblem {
-    position: absolute;
-    width: 100%;
+    filter: contrast(100%);
     height: 100%;
     object-fit: contain;
     padding: 14px;
+    position: absolute;
+    width: 100%;
     z-index: 1;
-    filter: contrast(100%);
   }
 }
 

@@ -6,7 +6,6 @@
   h2 {
     margin-bottom: 50px;
   }
-
 }
 
 .service-row {
@@ -27,11 +26,11 @@
     text-align: justify;
   }
   .service-row__image {
+    display: none;
+    grid-column: 1 / 3;
     height: 100%;
     min-width: 100%;
     object-fit: cover;
-    grid-column: 1 / 3;
-    display: none;
     @media (min-width: $desktop) {
       display: block;
     }
@@ -46,26 +45,22 @@
   }
 
   .service-row-copy {
-    grid-column: 4;
     grid-column: 3;
     @media (min-width: $desktop) {
       padding-left: 70px;
     }
-
     .heading {
       margin-bottom: 10px;
-      @media (min-width: $tablet) {}
       @media (min-width: $desktop) {
         margin-bottom: unset;
       }
-      @media (min-width: $widescreen) {}      
     }
   }
 
   .service-row-copy--reversed {
     grid-column: 2;
-    padding-left: 0;
     grid-row: 1;
+    padding-left: 0;
     @media (min-width: $desktop) {
       padding-right: 70px;
     }
@@ -97,57 +92,56 @@
   }
 }
 
-.paw-print-trail__1 {
+.paw-print-trail__1 {  bottom: 18%;
   right: -1px;
-  bottom: 18%;
   @media (min-width: $tablet) {
-    right: -22px;
     bottom: 32%;
+    right: -22px;
   }
 }
 
 .paw-print-trail__2 {
-  right: -13px;
   bottom: 11%;
+  right: -13px;
   @media (min-width: $tablet) {
-    right: -22px;
     bottom: 9%;
+    right: -22px;
   }
 }
 
 .paw-print-trail__3 {
-  right: 34px;
   bottom: 11%;
+  right: 34px;
   @media (min-width: $tablet) {
-    right: 30px;
     bottom: 22%;
+    right: 30px;
   }
 }
 
 .paw-print-trail__4 {
-  right: 6px;
   bottom: 4%;
+  right: 6px;
   @media (min-width: $tablet) {
-    right: 75px;
     bottom: 10%;
+    right: 75px;
   }
 }
 
 .paw-print-trail__5 {
-  right: 39px;
   bottom: -2%;
+  right: 39px;
   @media (min-width: $tablet) {
-    right: 22px;
     bottom: -2%;
+    right: 22px;
   }
 }
 
 .paw-print-trail__6 {
-  right: 60px;
   bottom: 4.5%;
+  right: 60px;
   @media (min-width: $tablet) {
-    right: 123px;
     bottom: -2%;
+    right: 123px;
   }
 }
 

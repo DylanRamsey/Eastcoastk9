@@ -5,13 +5,13 @@
 
 .service-cards-group {
   display: grid;
+  grid-gap: 30px;
   grid-template-columns: 1fr;
   justify-content: center;
   justify-items: center;
-  width: 100%;
-  max-width: 1240px;
   margin: auto;
-  grid-gap: 30px;
+  max-width: 1240px;
+  width: 100%;
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0
@@ -19,15 +19,15 @@
 }
 
 .single-service-card {
+  border-radius: 50px;
+  border: 5px solid black;
+  box-shadow: var(--shadow);
   color: var(--site-main-color-brown);
   display: block;
-  width: 100%;
   max-width: 300px;
-  border: 5px solid black;
-  border-radius: 50px;
-  transition: transform 250ms;
   text-decoration: none;
-  box-shadow: var(--shadow);
+  transition: transform 250ms;
+  width: 100%;
   a {
     color: var(--site-main-color-brown);
   }
@@ -42,19 +42,19 @@
 }
 
 .single-service-card {
-  width: 100%;
-  max-width: 300px;
-  border: 5px solid black;
+  align-items: center;
   border-radius: 50px;
+  border: 5px solid black;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+  max-width: 300px;
   padding: 20px 20px 10px;
+  width: 100%;
 }
 
 .single-service-card--image {
   display: block;
-  width: 100%;
   max-width: 190px;
+  width: 100%;
 }

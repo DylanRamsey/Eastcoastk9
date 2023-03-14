@@ -7,23 +7,23 @@
   font-weight: 600;
   height: 100px;
   @media (min-width: $desktop) {
-    height: 100%;
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 50px 110px;
     grid-column: 1 / -1;
     grid-row: 1;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 50px 110px;
+    height: 100%;
     & > * {
       grid-column: 2;
     }
   }
 
   .site-header__wrapper {
-    grid-column: 2;
+    align-items: center;
     display: flex;
     flex-flow: column;
+    grid-column: 2;
     justify-content: space-between;
-    align-items: center;
     @media (min-width: $desktop) {
       flex-flow: row;
     }
@@ -31,40 +31,40 @@
 
   .site-header__logo {
     display: none;
-    width: 197px;
     height: 195px;
+    width: 197px;
     @media (min-width: $desktop) {
       display: block;
     }
-  }
+   }
 
   .site-header__locations-hours {
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
     @media (min-width: $desktop) {
-      text-align: initial;
       margin-bottom: initial;
+      text-align: initial;
     }
   }
 
   .header-contact {
-    text-align: center;
-    margin-bottom: 20px;
-    gap: 25px;
+    align-items: center;
     color: black;
     display: flex;
-    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    text-align: center;
     @media (min-width: $desktop) {
-      gap: 10px;
-      text-align: initial;
-      margin-bottom: initial;
-      padding-top: unset;
-      justify-content: end;
-      margin-top: 10px;
       font-size: 20px;
+      gap: 10px;
+      justify-content: end;
+      margin-bottom: initial;
+      margin-top: 10px;
+      padding-top: unset;
+      text-align: initial;
     }
     a {
       color: black;
@@ -80,8 +80,8 @@
     }
 
     img {
-      width: 50px;
       object-fit: contain;
+      width: 50px;
       @media (min-width: $desktop) {
         width: 30px;
       }
@@ -109,15 +109,15 @@
     @media (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
-      width: 600px;
       max-width: 100%;
+      width: 600px;
       li {
         font-size: 1.5rem;
         font-weight: 600;
         transition: margin 0.2s ease-in-out;
         &:hover {
-          margin-top: -3px;
           color: var(--site-main-color-brown);
+          margin-top: -3px;
         }
       }
     }

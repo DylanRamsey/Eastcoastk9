@@ -32,20 +32,15 @@
         margin-bottom: unset;
       }      
     }
-    @media (min-width: $widescreen) {}
   }
-
   .button {
     margin-left: 50px;
   }
 }
 
 .picture-with-list .paw-print-list {
-  @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
   }
-  @media (min-width: $widescreen) {}
-
   li {
     &::before {
       content: "";
