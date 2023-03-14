@@ -23,6 +23,22 @@
   }
 }
 
+.photo-gallery__group img {
+  @media (min-width: $desktop) {
+  width: 250px;
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--round-md);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: unset;
+  position: absolute;
+  transition: margin 0.2s ease-in-out;
+  transition-delay: 200ms;
+  }
+}
+
 .photo-gallery__photo {
   width: 250px;
   max-width: 100%;
@@ -43,6 +59,9 @@
     }
   }
   @media (min-width: $widescreen) {}
+  img {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: $desktop) {

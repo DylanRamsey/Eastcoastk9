@@ -15,16 +15,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       ?>
     </h4>
     <!-- Photo One -->
-    <a data-fslightbox href="
-      <?php
-        $photo_1 = get_field("photo_group");
-        if($photo_1) {
-            echo $photo_1['photo_1'];
-        }
-      ?>    
-    ">
+    <a data-fslightbox 
+      href="
+        <?php 
+          $photo_1 = get_field("photo_group");
+          if($photo_1) {
+              echo $photo_1['photo_1'];
+          }
+        ?>    
+      "
+      class="photo-gallery__photo photo-gallery__photo--first"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--first" 
         src="
           <?php
             $photo_1 = get_field("photo_group");
@@ -43,16 +45,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Two -->
-    <a data-fslightbox href="
-    <?php
-            $photo_2 = get_field("photo_group");
-            if($photo_2) {
-                echo $photo_2['photo_2'];
-            }
-          ?>        
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_2 = get_field("photo_group");
+          if($photo_2) {
+              echo $photo_2['photo_2'];
+          }
+        ?> 
+      "
+      class="photo-gallery__photo photo-gallery__photo--second"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--second" 
         src="
           <?php
             $photo_2 = get_field("photo_group");
@@ -71,16 +75,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Three -->
-    <a data-fslightbox href="
-      <?php
-        $photo_3 = get_field("photo_group");
-        if($photo_3) {
-            echo $photo_3['photo_3'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_3 = get_field("photo_group");
+          if($photo_3) {
+              echo $photo_3['photo_3'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--third"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--third" 
         src="
           <?php
             $photo_3 = get_field("photo_group");
@@ -99,15 +104,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Four -->
-    <a data-fslightbox href="
-      <?php
-        $photo_4 = get_field("photo_group");
-        if($photo_4) {
-            echo $photo_4['photo_4'];
-        }
-      ?>        
-    ">
-      <img class="photo-gallery__photo photo-gallery__photo--forth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_4 = get_field("photo_group");
+          if($photo_4) {
+              echo $photo_4['photo_4'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--forth" 
+    >
+      <img
         src="
           <?php
             $photo_4 = get_field("photo_group");
@@ -127,16 +134,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo Five -->
-    <a data-fslightbox href="
-      <?php
-        $photo_5 = get_field("photo_group");
-        if($photo_5) {
-            echo $photo_5['photo_5'];
-        }
-      ?>       
-    ">
-      <img 
-        class="photo-gallery__photo photo-gallery__photo--fifth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_5 = get_field("photo_group");
+          if($photo_5) {
+              echo $photo_5['photo_5'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--fifth" 
+    >
+      <img
         src="
           <?php
             $photo_5 = get_field("photo_group");
@@ -156,16 +164,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo six -->
-    <a data-fslightbox href="
-      <?php
-        $photo_6 = get_field("photo_group");
-        if($photo_6) {
-            echo $photo_6['photo_6'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_6 = get_field("photo_group");
+          if($photo_6) {
+              echo $photo_6['photo_6'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--sixth"         
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--sixth" 
         src="
           <?php
             $photo_6 = get_field("photo_group");
@@ -196,16 +205,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       ?>
     </h4>
     <!-- Photo One -->
-    <a data-fslightbox href="
-      <?php
-        $photo_1 = get_field("photo_group_2");
-        if($photo_1) {
-            echo $photo_1['photo_1'];
-        }
-      ?>    
-    ">
+    <a data-fslightbox 
+      href="
+        <?php 
+          $photo_1 = get_field("photo_group_2");
+          if($photo_1) {
+              echo $photo_1['photo_1'];
+          }
+        ?>    
+      "
+      class="photo-gallery__photo photo-gallery__photo--first"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--first" 
         src="
           <?php
             $photo_1 = get_field("photo_group_2");
@@ -224,16 +235,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Two -->
-    <a data-fslightbox href="
-    <?php
-            $photo_2 = get_field("photo_group_2");
-            if($photo_2) {
-                echo $photo_2['photo_2'];
-            }
-          ?>        
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_2 = get_field("photo_group_2");
+          if($photo_2) {
+              echo $photo_2['photo_2'];
+          }
+        ?> 
+      "
+      class="photo-gallery__photo photo-gallery__photo--second"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--second" 
         src="
           <?php
             $photo_2 = get_field("photo_group_2");
@@ -252,16 +265,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Three -->
-    <a data-fslightbox href="
-      <?php
-        $photo_3 = get_field("photo_group_2");
-        if($photo_3) {
-            echo $photo_3['photo_3'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_3 = get_field("photo_group_2");
+          if($photo_3) {
+              echo $photo_3['photo_3'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--third"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--third" 
         src="
           <?php
             $photo_3 = get_field("photo_group_2");
@@ -280,15 +294,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Four -->
-    <a data-fslightbox href="
-      <?php
-        $photo_4 = get_field("photo_group_2");
-        if($photo_4) {
-            echo $photo_4['photo_4'];
-        }
-      ?>        
-    ">
-      <img class="photo-gallery__photo photo-gallery__photo--forth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_4 = get_field("photo_group_2");
+          if($photo_4) {
+              echo $photo_4['photo_4'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--forth" 
+    >
+      <img
         src="
           <?php
             $photo_4 = get_field("photo_group_2");
@@ -308,16 +324,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo Five -->
-    <a data-fslightbox href="
-      <?php
-        $photo_5 = get_field("photo_group_2");
-        if($photo_5) {
-            echo $photo_5['photo_5'];
-        }
-      ?>       
-    ">
-      <img 
-        class="photo-gallery__photo photo-gallery__photo--fifth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_5 = get_field("photo_group_2");
+          if($photo_5) {
+              echo $photo_5['photo_5'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--fifth" 
+    >
+      <img
         src="
           <?php
             $photo_5 = get_field("photo_group_2");
@@ -337,16 +354,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo six -->
-    <a data-fslightbox href="
-      <?php
-        $photo_6 = get_field("photo_group_2");
-        if($photo_6) {
-            echo $photo_6['photo_6'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_6 = get_field("photo_group_2");
+          if($photo_6) {
+              echo $photo_6['photo_6'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--sixth"         
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--sixth" 
         src="
           <?php
             $photo_6 = get_field("photo_group_2");
@@ -377,16 +395,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       ?>
     </h4>
     <!-- Photo One -->
-    <a data-fslightbox href="
-      <?php
-        $photo_1 = get_field("photo_group_3");
-        if($photo_1) {
-            echo $photo_1['photo_1'];
-        }
-      ?>    
-    ">
+    <a data-fslightbox 
+      href="
+        <?php 
+          $photo_1 = get_field("photo_group_3");
+          if($photo_1) {
+              echo $photo_1['photo_1'];
+          }
+        ?>    
+      "
+      class="photo-gallery__photo photo-gallery__photo--first"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--first" 
         src="
           <?php
             $photo_1 = get_field("photo_group_3");
@@ -405,16 +425,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Two -->
-    <a data-fslightbox href="
-    <?php
-            $photo_2 = get_field("photo_group_3");
-            if($photo_2) {
-                echo $photo_2['photo_2'];
-            }
-          ?>        
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_2 = get_field("photo_group_3");
+          if($photo_2) {
+              echo $photo_2['photo_2'];
+          }
+        ?> 
+      "
+      class="photo-gallery__photo photo-gallery__photo--second"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--second" 
         src="
           <?php
             $photo_2 = get_field("photo_group_3");
@@ -433,16 +455,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Three -->
-    <a data-fslightbox href="
-      <?php
-        $photo_3 = get_field("photo_group_3");
-        if($photo_3) {
-            echo $photo_3['photo_3'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_3 = get_field("photo_group_3");
+          if($photo_3) {
+              echo $photo_3['photo_3'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--third"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--third" 
         src="
           <?php
             $photo_3 = get_field("photo_group_3");
@@ -461,15 +484,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Four -->
-    <a data-fslightbox href="
-      <?php
-        $photo_4 = get_field("photo_group_3");
-        if($photo_4) {
-            echo $photo_4['photo_4'];
-        }
-      ?>        
-    ">
-      <img class="photo-gallery__photo photo-gallery__photo--forth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_4 = get_field("photo_group_3");
+          if($photo_4) {
+              echo $photo_4['photo_4'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--forth" 
+    >
+      <img
         src="
           <?php
             $photo_4 = get_field("photo_group_3");
@@ -489,16 +514,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo Five -->
-    <a data-fslightbox href="
-      <?php
-        $photo_5 = get_field("photo_group_3");
-        if($photo_5) {
-            echo $photo_5['photo_5'];
-        }
-      ?>       
-    ">
-      <img 
-        class="photo-gallery__photo photo-gallery__photo--fifth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_5 = get_field("photo_group_3");
+          if($photo_5) {
+              echo $photo_5['photo_5'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--fifth" 
+    >
+      <img
         src="
           <?php
             $photo_5 = get_field("photo_group_3");
@@ -518,16 +544,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo six -->
-    <a data-fslightbox href="
-      <?php
-        $photo_6 = get_field("photo_group_3");
-        if($photo_6) {
-            echo $photo_6['photo_6'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_6 = get_field("photo_group_3");
+          if($photo_6) {
+              echo $photo_6['photo_6'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--sixth"         
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--sixth" 
         src="
           <?php
             $photo_6 = get_field("photo_group_3");
@@ -558,16 +585,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       ?>
     </h4>
     <!-- Photo One -->
-    <a data-fslightbox href="
-      <?php
-        $photo_1 = get_field("photo_group_4");
-        if($photo_1) {
-            echo $photo_1['photo_1'];
-        }
-      ?>    
-    ">
+    <a data-fslightbox 
+      href="
+        <?php 
+          $photo_1 = get_field("photo_group_4");
+          if($photo_1) {
+              echo $photo_1['photo_1'];
+          }
+        ?>    
+      "
+      class="photo-gallery__photo photo-gallery__photo--first"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--first" 
         src="
           <?php
             $photo_1 = get_field("photo_group_4");
@@ -586,16 +615,18 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Two -->
-    <a data-fslightbox href="
-    <?php
-            $photo_2 = get_field("photo_group_4");
-            if($photo_2) {
-                echo $photo_2['photo_2'];
-            }
-          ?>        
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_2 = get_field("photo_group_4");
+          if($photo_2) {
+              echo $photo_2['photo_2'];
+          }
+        ?> 
+      "
+      class="photo-gallery__photo photo-gallery__photo--second"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--second" 
         src="
           <?php
             $photo_2 = get_field("photo_group_4");
@@ -614,16 +645,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Three -->
-    <a data-fslightbox href="
-      <?php
-        $photo_3 = get_field("photo_group_4");
-        if($photo_3) {
-            echo $photo_3['photo_3'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_3 = get_field("photo_group_4");
+          if($photo_3) {
+              echo $photo_3['photo_3'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--third"
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--third" 
         src="
           <?php
             $photo_3 = get_field("photo_group_4");
@@ -642,15 +674,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
         ">
     </a>
     <!-- Photo Four -->
-    <a data-fslightbox href="
-      <?php
-        $photo_4 = get_field("photo_group_4");
-        if($photo_4) {
-            echo $photo_4['photo_4'];
-        }
-      ?>        
-    ">
-      <img class="photo-gallery__photo photo-gallery__photo--forth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_4 = get_field("photo_group_4");
+          if($photo_4) {
+              echo $photo_4['photo_4'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--forth" 
+    >
+      <img
         src="
           <?php
             $photo_4 = get_field("photo_group_4");
@@ -670,16 +704,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo Five -->
-    <a data-fslightbox href="
-      <?php
-        $photo_5 = get_field("photo_group_4");
-        if($photo_5) {
-            echo $photo_5['photo_5'];
-        }
-      ?>       
-    ">
-      <img 
-        class="photo-gallery__photo photo-gallery__photo--fifth" 
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_5 = get_field("photo_group_4");
+          if($photo_5) {
+              echo $photo_5['photo_5'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--fifth" 
+    >
+      <img
         src="
           <?php
             $photo_5 = get_field("photo_group_4");
@@ -699,16 +734,17 @@ This single file makes me really close to paying the $250 yearly cost for Advanc
       >
     </a>
     <!-- Photo six -->
-    <a data-fslightbox href="
-      <?php
-        $photo_6 = get_field("photo_group_4");
-        if($photo_6) {
-            echo $photo_6['photo_6'];
-        }
-      ?>         
-    ">
+    <a data-fslightbox 
+      href="
+        <?php
+          $photo_6 = get_field("photo_group_4");
+          if($photo_6) {
+              echo $photo_6['photo_6'];
+          }
+        ?>"
+      class="photo-gallery__photo photo-gallery__photo--sixth"         
+    >
       <img 
-        class="photo-gallery__photo photo-gallery__photo--sixth" 
         src="
           <?php
             $photo_6 = get_field("photo_group_4");
