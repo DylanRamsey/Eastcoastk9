@@ -177,13 +177,14 @@ ul {
 .full-width-list__paw-print-list-container {
   margin-left: 38px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .full-width-list__paw-print-list-container {
     margin-left: unset;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .paw-print-list {
   margin-left: 38px;
   position: relative;
@@ -194,6 +195,13 @@ ul {
   font-weight: 600;
   margin-bottom: 10px;
   max-width: 730px;
+}
+@media (min-width: 1440px) {
+  .paw-print-list li {
+    font-size: 2rem;
+    padding-left: 20px;
+    max-width: 500px;
+  }
 }
 .paw-print-list li::before {
   content: "";
@@ -216,12 +224,12 @@ ul {
   .paw-print-list li::before {
     height: 37px;
     width: 42px;
+    left: -48px;
   }
 }
-@media (min-width: 1024px) {
-  .paw-print-list li {
-    font-size: 2rem;
-    padding-left: 20px;
+@media (min-width: 1440px) {
+  .paw-print-list li::before {
+    left: -35px;
   }
 }
 

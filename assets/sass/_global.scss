@@ -149,12 +149,12 @@ ul {
 .full-width-list__paw-print-list-container {
   margin-left: 38px;
   @media (min-width: $tablet) {}
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop) {}
+  @media (min-width: $widescreen) {
     margin-left: unset;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  @media (min-width: $widescreen) {}
 }
 
 .paw-print-list {
@@ -166,6 +166,11 @@ ul {
     font-weight: 600;
     margin-bottom: 10px;
     max-width: 730px;
+    @media (min-width: $widescreen) {
+      font-size: 2rem;
+      padding-left: 20px;
+      max-width: 500px;
+    }
     &::before {
       content: "";
       display: inline-block;
@@ -183,13 +188,11 @@ ul {
       @media (min-width: $desktop) {
         height: 37px;
         width: 42px;
+        left: -48px;
       }
-      @media (min-width: $widescreen) {}
-    }
-
-    @media (min-width: $desktop) {
-      font-size: 2rem;
-      padding-left: 20px;
+      @media (min-width: $widescreen) {
+        left: -35px;
+      }
     }
   }
 }
