@@ -1,1 +1,1 @@
-shouldnt work
+<?php
