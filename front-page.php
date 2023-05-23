@@ -7,8 +7,6 @@
 </main>
 <section class="services">
   <?php include "components/service-row.php" ?>
-  <?php include "components/service-row-reverse.php" ?>
-  <?php include "components/second-service-row.php" ?>
 </section>
 <?php include "components/contact-form.php" ?>
 <?php get_footer(); ?>
