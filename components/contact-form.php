@@ -26,7 +26,14 @@
     ?>      
   </h6>
 
-  <div class="home-form__wrapper">
-    <?php echo apply_shortcodes( '[contact-form-7 id="21" title="Site Contact"]' ); ?>
-  </div>
+
+  <?php if( have_rows('content_designer') ): ?>
+    <?php while( have_rows('content_designer') ): the_row(); ?>
+      <?php if (get_row_layout() == 'contact_form'):  ?>   
+        <div class="home-form__wrapper">
+          <?php echo apply_shortcodes( '[contact-form-7 id="21" title="Site Contact"]' ); ?>
+        </div>
+      <?php endif;?>
+    <?php endwhile;?>
+  <?php endif;?>            
 </section>
