@@ -1,18 +1,17 @@
 <section class="interior-page-heading interior-page-heading--brown">
-  <h2>
-    <?php 
-      $interior_page_heading = get_field("interior_page_heading");
-      if($interior_page_heading) {
-          echo $interior_page_heading;
-      } 
-    ?>      
-  </h2>
-  <h5>
-    <?php 
-      $interior_page_subheading = get_field("interior_page_subheading");
-      if($interior_page_subheading) {
-        echo $interior_page_subheading;
-      } 
-    ?>
-  </h5>
+  <?php if( have_rows('content_designer') ): ?>
+    <?php while( have_rows('content_designer') ): the_row(); ?>
+      <?php if (get_row_layout() == 'page_heading'):
+        $main_heading = get_sub_field('main_heading');
+        $sub_heading = get_sub_field('sub_heading');
+      ?>
+      <h2>
+        <?php echo $main_heading;?>
+      </h2>
+      <h5>
+        <?php echo $sub_heading;?>
+      </h5>
+      <?php endif;?>
+    <?php endwhile;?>
+  <?php endif;?>      
 </section>
