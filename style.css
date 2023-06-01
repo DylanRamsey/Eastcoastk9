@@ -1192,6 +1192,9 @@ ul {
     margin-bottom: unset;
   }
 }
+.picture-with-list .picture-with-list__image--flipped {
+  grid-column: -1/2;
+}
 .picture-with-list .picture-with-list__content h3 {
   font-size: 2rem;
   margin-bottom: 15px;
@@ -1212,6 +1215,11 @@ ul {
 }
 .picture-with-list .button {
   margin-left: 50px;
+}
+
+.picture-with-list__content--flipped {
+  grid-column: 1/2;
+  grid-row: 1;
 }
 
 .picture-with-list .paw-print-list li::before {
