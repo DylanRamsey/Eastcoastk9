@@ -42,7 +42,7 @@
             <?php echo $picture_with_list_button_text;?>
           </a>    
         </div>
-       <?php endif;?>
+      <?php endif;?>
     <?php endwhile;?>
   <?php endif;?>     
 </section>
