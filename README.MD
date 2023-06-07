@@ -1,5 +1,5 @@
-# Eastcoastk9
-### Version 1.0
+# East Coast K9
+### Version 1.5
 
 This is a custom WordPress site theme for a dog training business.
 
@@ -8,12 +8,7 @@ This is a custom WordPress site theme for a dog training business.
 
 This directory can be zipped and uploaded as a theme to WordPress, however it was not designed to be used outside of this site build.
 
-This theme uses the Advanced Custom Fields(ACF) plugin for the CMS backend. 
-
-While component based design was used for this website, the components are set statically because the standard, non paid
-version of ACF was used for this theme. 
-
-This also means some files are a bit repetitively, because there was no repeat/loop field available for use with the non paid version of ACF.  
+This theme uses the Advanced Custom Fields(ACF) Pro plugin for the CMS backend. 
 
 ### SCSS code was written to follow AIR BNB style guiding
 [Airbnb SCSS Style Guide](https://github.com/airbnb/css) 
@@ -33,8 +28,23 @@ Setup SASS to watch for updates and compile to style.css
 - npm install -g sass
 - sass --watch ./assets/sass/main.scss style.css 
 
+### PHP Version 8.1.9
+### Database MySQL 8.0.16
+### WordPress version 6.2.2
+
 ### Plugins Used:
 - Classic Editor
 - Contact Form 7
 - SVG Support
-- Advanced Custom Fields
+- Advanced Custom Fields Pro
+- Yoast SEP
+
+# Changelog
+
+### Version 1.5
+- Implemented Advanced Custom Fields Pro.
+- Added the "Content Designer" Flexible Content Field Group to simpifly using compoonets on the site
+- Refactored all the site's components to be clearner, and work with Content Designer Field Group
+
+### Version 1.0
+- Initial release
