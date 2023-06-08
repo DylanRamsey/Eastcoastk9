@@ -1,5 +1,5 @@
 <section class="picture-with-list">
-<?php if( have_rows('content_designer') ): ?>
+  <?php if( have_rows('content_designer') ): ?>
     <?php while( have_rows('content_designer') ): the_row(); ?>
       <?php if (get_row_layout() == 'picture_with_list'):
         $flip_component = get_sub_field('flip_component');
@@ -30,16 +30,16 @@
             <?php echo $picture_with_list_heading;?>   
           </h3>
           <ul class="paw-print-list">  
-          <?php foreach($picture_with_list_items as $picture_with_list_item):?>
+            <?php foreach($picture_with_list_items as $picture_with_list_item):?>
               <li>
                 <?php echo $picture_with_list_item['picture_with_list_single_item'];?>
               </li>
-          <?php endforeach;?>               
+            <?php endforeach;?>               
           </ul>
           <a 
             class="button button--green" 
             href="<?php echo $picture_with_list_button_link;?>">
-            <?php echo $picture_with_list_button_text;?>
+              <?php echo $picture_with_list_button_text;?>
           </a>    
         </div>
       <?php endif;?>
