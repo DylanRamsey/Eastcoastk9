@@ -7,7 +7,8 @@
         $advanced_pricing_sub_heading = get_sub_field('advanced_pricing_sub_heading');
         $advanced_pricing_disclaimer = get_sub_field('advanced_pricing_disclaimer');
         $pricing_group = get_sub_field('pricing_group');
-        $tab_counter = 0;  
+        $tab_counter = 0;
+        $group_counter = 0;
       ?>
         <h2 class="heading heading--brown heading--center">
           <?php echo $advanced_pricing_heading;?>
@@ -33,9 +34,13 @@
                 </span>
               </button>
             <?php endforeach;?> 
-            <div id="tabpanel-<?php echo $tab_counter;?>" role="tabpanel" aria-labelledby="tab-<?php echo $tab_counter;?>">
+          </div>
+          <?php foreach($pricing_group as $single_pricing_group): 
+            $group_counter++; 
+          ?>
+            <div id="tabpanel-<?php echo $group_counter;?>" role="tabpanel" aria-labelledby="tab-<?php echo $tab_counter;?>">
               <div class="tab-content">
-                <?php foreach($pricing_group as $single_pricing_group): ?>
+                
                   <div class="tab-content__card tab-content__card--standard">
                     <div class="pricing-heading">
                       <h5>Standard</h5>
@@ -45,13 +50,11 @@
                     </div>
                     <p class="tab-content__disclaimer">Includes</p>
                     <ul class="paw-print-list">
-                      <li>
-                        <?php foreach($single_pricing_group['standard_features'] as $single_feature): ?>
+                      <?php foreach($single_pricing_group['standard_features'] as $single_feature): ?>
+                        <li>
                           <?php echo $single_feature['standard_feature'];?> 
-                        <?php endforeach;?>
-
-                        <!-- Do this with the deluxe prices -->
-                      </li>
+                        </li>
+                      <?php endforeach;?>
                     </ul>
                     <a class="button button--green" href="/spa#form">
                       Sign up now      
@@ -66,22 +69,20 @@
                     </div>
                     <p class="tab-content__disclaimer">Includes everything in Standard plus</p>
                     <ul class="paw-print-list">
-                      <li>
-                        <?php
-                          $small_short_coat = get_field("small_short_coat");
-                          if($small_short_coat) {
-                              echo $small_short_coat['deluxe_service_1'];
-                          }
-                        ?>                 
-                      </li>           
+                      <?php foreach($single_pricing_group['deluxe_features'] as $single_feature): ?>
+                        <li>
+                          <?php echo $single_feature['deluxe_feature'];?> 
+                        </li>   
+                      <?php endforeach;?>
                     </ul>
                     <a class="button button--brown" href="/spa#form">
                       Sign up now      
                     </a>              
                   </div>
-                <?php endforeach;?> 
+                
               </div>
             </div>
+            <?php endforeach;?> 
           </div>            
         <p class="advanced-pricing__disclaimer">Prices shown are regular prices, prices are subject to adjust based on dog behavior and breed. Please feel free to contact us and tell us all about your dog for a closer estimate.</p>
       <?php endif;?>

@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div class="site-body">
   <?php include dirname(dirname(__FILE__))."/components/interior-heading-group.php" ?>
-  <?php include dirname(dirname(__FILE__))."/components/picture-with-list-reversed.php" ?>
+  <?php include dirname(dirname(__FILE__))."/components/picture-with-list.php" ?>
 </div>
 <section class="services">
   <?php include dirname(dirname(__FILE__))."/components/service-row.php" ?>
