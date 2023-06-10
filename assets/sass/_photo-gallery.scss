@@ -63,7 +63,7 @@
 }
 
 @media (min-width: $desktop) {
-  .photo-gallery__photo--first {
+  .photo-gallery__photo--1 {
     rotate: -18deg;
     transition: margin 0.2s ease-in-out;
     z-index: 1;
@@ -73,35 +73,35 @@
     }
   }
 
-  .photo-gallery__photo--second {
+  .photo-gallery__photo--2 {
     bottom: 37px;
     left: 38px;
     rotate: -14deg;
     z-index: 2;
   }
   
-  .photo-gallery__photo--third {
+  .photo-gallery__photo--3 {
     bottom: 46px;
     left: 93px;
     rotate: -7deg;
     z-index: 3;
   }
   
-  .photo-gallery__photo--forth {
+  .photo-gallery__photo--4 {
     bottom: 46px;
     left: 134px;
     rotate: 0deg;
     z-index: 4;
   }
   
-  .photo-gallery__photo--fifth {
+  .photo-gallery__photo--5 {
     bottom: 20px;
     left: 181px;
     rotate: 10deg;
     z-index: 5;
   }
   
-  .photo-gallery__photo--sixth {
+  .photo-gallery__photo--6 {
     bottom: -7px;
     left: 234px;
     rotate: 18deg;
