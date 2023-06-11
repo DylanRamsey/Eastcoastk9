@@ -651,7 +651,6 @@ ul {
 .site-banner {
   background: var(--site-secondary-color-brown);
   grid-column: 1/-1;
-  grid-row: 2;
   margin-bottom: 20px;
   position: relative;
 }
@@ -808,7 +807,6 @@ ul {
 
 .services {
   grid-column: 1/-1;
-  margin-bottom: 30px;
 }
 .services h2 {
   margin-bottom: 50px;
@@ -984,6 +982,7 @@ ul {
 .home-form {
   grid-column: 2/4;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .home-form h3 {
   font-size: 2rem;
