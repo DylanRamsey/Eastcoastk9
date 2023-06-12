@@ -35,12 +35,13 @@
     <?php endif;?>
     <?php if (get_row_layout() == 'photo_cards'):?>
       <?php get_template_part('components/photo', 'gallery');?>
+    <?php endif;?>
+    <?php if (get_row_layout() == 'contact_form_and_data'):?>
+      <?php get_template_part('components/contact', 'info');?>
     <?php endif;?>    
     <?php if (get_row_layout() == 'contact_form'):?>
       <?php get_template_part('components/contact', 'form');?>
     <?php endif;?>
-
-
   <?php endwhile;?>
 <?php endif;?>
 

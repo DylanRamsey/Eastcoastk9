@@ -15,7 +15,10 @@
           >
             <img 
               src="<?php echo $single_photo_card['photo_card'];?> " 
-              alt="<?php echo $single_photo_card['photo_card_alt_text'];?>">
+              alt="<?php echo $single_photo_card['photo_card_alt_text'];?>"
+              width="250"
+              height="220"
+            >
           </a>
           <?php $img_counter++;?>   
           <?php if ($img_counter > 6):
