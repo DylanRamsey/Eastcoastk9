@@ -15,6 +15,10 @@
     }
   }
 
+  .picture-with-list__image--flipped {
+    grid-column: -1 / 2;
+  }
+
   .picture-with-list__content {
     h3 {
       font-size: 2rem;
@@ -36,6 +40,11 @@
   .button {
     margin-left: 50px;
   }
+}
+
+.picture-with-list__content--flipped {
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
 
 .picture-with-list .paw-print-list {

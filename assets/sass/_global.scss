@@ -84,6 +84,15 @@ h3 {
   }  
 }
 
+.heading--three {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  @media (min-width: $tablet) {
+    font-size: 3.25rem;
+    line-height: unset;
+  }  
+}
+
 h4 {
   font-size: 2.625rem;
 }
@@ -317,4 +326,8 @@ ul {
 
 .page-not-found__text {
   margin-bottom: 40px;
+}
+
+.display-none {
+  display: none;
 }

@@ -117,6 +117,17 @@ h3 {
   }
 }
 
+.heading--three {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+@media (min-width: 48rem) {
+  .heading--three {
+    font-size: 3.25rem;
+    line-height: unset;
+  }
+}
+
 h4 {
   font-size: 2.625rem;
 }
@@ -369,6 +380,10 @@ ul {
 
 .page-not-found__text {
   margin-bottom: 40px;
+}
+
+.display-none {
+  display: none;
 }
 
 .site-header {
@@ -636,7 +651,6 @@ ul {
 .site-banner {
   background: var(--site-secondary-color-brown);
   grid-column: 1/-1;
-  grid-row: 2;
   margin-bottom: 20px;
   position: relative;
 }
@@ -793,7 +807,6 @@ ul {
 
 .services {
   grid-column: 1/-1;
-  margin-bottom: 30px;
 }
 .services h2 {
   margin-bottom: 50px;
@@ -969,6 +982,7 @@ ul {
 .home-form {
   grid-column: 2/4;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .home-form h3 {
   font-size: 2rem;
@@ -1177,6 +1191,9 @@ ul {
     margin-bottom: unset;
   }
 }
+.picture-with-list .picture-with-list__image--flipped {
+  grid-column: -1/2;
+}
 .picture-with-list .picture-with-list__content h3 {
   font-size: 2rem;
   margin-bottom: 15px;
@@ -1197,6 +1214,11 @@ ul {
 }
 .picture-with-list .button {
   margin-left: 50px;
+}
+
+.picture-with-list__content--flipped {
+  grid-column: 1/2;
+  grid-row: 1;
 }
 
 .picture-with-list .paw-print-list li::before {
@@ -1457,40 +1479,40 @@ ul {
 }
 
 @media (min-width: 64rem) {
-  .photo-gallery__photo--first {
+  .photo-gallery__photo--1 {
     rotate: -18deg;
     transition: margin 0.2s ease-in-out;
     z-index: 1;
   }
-  .photo-gallery__photo--first:hover {
+  .photo-gallery__photo--1:hover {
     margin-top: -50px;
     transition-delay: 500ms;
   }
-  .photo-gallery__photo--second {
+  .photo-gallery__photo--2 {
     bottom: 37px;
     left: 38px;
     rotate: -14deg;
     z-index: 2;
   }
-  .photo-gallery__photo--third {
+  .photo-gallery__photo--3 {
     bottom: 46px;
     left: 93px;
     rotate: -7deg;
     z-index: 3;
   }
-  .photo-gallery__photo--forth {
+  .photo-gallery__photo--4 {
     bottom: 46px;
     left: 134px;
     rotate: 0deg;
     z-index: 4;
   }
-  .photo-gallery__photo--fifth {
+  .photo-gallery__photo--5 {
     bottom: 20px;
     left: 181px;
     rotate: 10deg;
     z-index: 5;
   }
-  .photo-gallery__photo--sixth {
+  .photo-gallery__photo--6 {
     bottom: -7px;
     left: 234px;
     rotate: 18deg;
