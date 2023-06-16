@@ -36,7 +36,7 @@
     @media (min-width: $desktop) {
       display: block;
     }
-   }
+  }
 
   .site-header__locations-hours {
     margin-bottom: 20px;
@@ -169,8 +169,8 @@
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 
     ul {
-      -webkit-animation-duration: 0.7s;
-      animation-duration: 0.7s;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;     
       -webkit-animation-name: fadeOut;
