@@ -123,6 +123,36 @@ ul {
   padding: 0;
 }
 
+.pagination {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+//This is the built in WordPress class name for their pagination links
+.nav-links {
+  display: flex;
+  justify-content: center;
+  border: solid 2px var(--site-main-color-brown);
+  border-radius: 8px;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.page-numbers {
+  border-right: solid 2px var(--site-main-color-brown);
+  color: var(--accessible-green);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  text-decoration: none;
+  &.current {
+    color: var(--site-main-color-brown);
+  }
+  &:last-child {
+    border: none;
+  }
+}
+
 .hover-underline-animation {
   @media (min-width: $desktop) {
     position: relative;

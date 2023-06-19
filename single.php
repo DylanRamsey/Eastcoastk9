@@ -5,7 +5,6 @@
     if( have_posts() ) {
       while( have_posts() ) {
         the_post();
-
         the_date();
         the_tags();
 
@@ -14,5 +13,4 @@
     }
   ?>
 </section>
-
 <?php get_footer(); ?>
