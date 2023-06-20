@@ -2,12 +2,8 @@
 <?php get_header(); ?>
 <section class="site-body">
 <section class="site-body interior-page-heading interior-page-heading--brown">
-  <h2>
-    Blog
-  </h2>
-  <h5>
-    Ruff Ruff, <span class="interior-page-heading--green">Read All About It!</span>
-  </h5>
+  <h2>Blog</h2>
+  <h5>Ruff Ruff, <span class="interior-page-heading--green">Read All About It!</span></h5>
 </section>  
   <div class="blog-archive">
     <?php if( have_posts() ) {

@@ -1,14 +1,11 @@
 <?php //This is a single blog post template ?>
 <?php get_header(); ?>
-<section class="site-body">
+<section class="site-body blog-post">
   <?php
     if( have_posts() ) {
       while( have_posts() ) {
         the_post();
-        the_date();
-        the_tags();
-
-        the_content();
+        get_template_part('templates/single', 'post');
       }
     }
   ?>

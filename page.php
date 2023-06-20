@@ -2,7 +2,6 @@
 
 <?php if( have_rows('content_designer') ):?>
   <?php while(have_rows('content_designer')): the_row();?>
-
     <?php if (get_row_layout() == 'home_banner'):?>
       <?php get_template_part('components/home', 'banner');?>
     <?php endif;?>
@@ -44,5 +43,4 @@
     <?php endif;?>
   <?php endwhile;?>
 <?php endif;?>
-
 <?php get_footer(); ?>
