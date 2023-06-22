@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<?php
+// These are all the different components created in the Content Designer flexible content ACF field
+?>
 <?php if( have_rows('content_designer') ):?>
   <?php while(have_rows('content_designer')): the_row();?>
     <?php if (get_row_layout() == 'home_banner'):?>
@@ -37,6 +40,9 @@
     <?php endif;?>
     <?php if (get_row_layout() == 'contact_form_and_data'):?>
       <?php get_template_part('components/contact', 'info');?>
+    <?php endif;?>
+    <?php if (get_row_layout() == 'questions_and_answers'):?>
+      <?php get_template_part('components/questions', 'answers');?>
     <?php endif;?>    
     <?php if (get_row_layout() == 'contact_form'):?>
       <?php get_template_part('components/contact', 'form');?>

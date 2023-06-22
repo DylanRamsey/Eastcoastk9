@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }, false);
 });
 
-
 /*
  *   This content is licensed according to the W3C Software License at
  *   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
@@ -165,3 +164,19 @@ window.addEventListener('load', function () {
     new TabsManual(tablists[i]);
   }
 });
+
+
+let accordion = document.getElementsByClassName("accordion__question");
+let accordionIndex;
+
+for (accordionIndex = 0; accordionIndex < accordion.length; accordionIndex++) {
+  accordion[accordionIndex].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
