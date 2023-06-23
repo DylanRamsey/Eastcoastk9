@@ -2,16 +2,26 @@
 
 .qs-and-as__categories-group {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   margin: 0 auto 30px;
   max-width: 655px;
+  text-align: center;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    flex-flow: row;
+  }
+  @media (min-width: $widescreen) {}
 }
 
 .qs-and-as__category {
-  color: var(--site-main-color-brown);
   text-transform: capitalize;
-  &:hover {
-    color: var(--site-secondary-color-brown);
+  a {
+    color: var(--site-main-color-brown);
+    text-decoration: none;
+    &:hover {
+      color: var(--site-secondary-color-brown);
+    }
   }
 }
 
@@ -40,11 +50,15 @@
   color: black;
   cursor: pointer;
   display: flex;
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 600;
   height: 80px;
   justify-content: center;
-  transition: 0.4s;
+  padding: 20px;
+  @media (min-width: $desktop) {
+    font-size: 1.375rem;
+    padding: unset;
+  }
 }
 
 .accordion__answer {

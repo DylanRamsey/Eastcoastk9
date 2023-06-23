@@ -1744,16 +1744,25 @@ ul {
 
 .qs-and-as__categories-group {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   margin: 0 auto 30px;
   max-width: 655px;
+  text-align: center;
 }
-
+@media (min-width: 64rem) {
+  .qs-and-as__categories-group {
+    flex-flow: row;
+  }
+}
 .qs-and-as__category {
-  color: var(--site-main-color-brown);
   text-transform: capitalize;
 }
-.qs-and-as__category:hover {
+.qs-and-as__category a {
+  color: var(--site-main-color-brown);
+  text-decoration: none;
+}
+.qs-and-as__category a:hover {
   color: var(--site-secondary-color-brown);
 }
 
@@ -1782,11 +1791,17 @@ ul {
   color: black;
   cursor: pointer;
   display: flex;
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 600;
   height: 80px;
   justify-content: center;
-  transition: 0.4s;
+  padding: 20px;
+}
+@media (min-width: 64rem) {
+  .accordion__question {
+    font-size: 1.375rem;
+    padding: unset;
+  }
 }
 
 .accordion__answer {
