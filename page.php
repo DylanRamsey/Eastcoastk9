@@ -43,7 +43,10 @@
     <?php endif;?>
     <?php if (get_row_layout() == 'questions_and_answers'):?>
       <?php get_template_part('components/questions', 'answers');?>
-    <?php endif;?>    
+    <?php endif;?>
+    <?php if (get_row_layout() == 'wysiwyg'):?>
+      <?php get_template_part('templates/wysiwyg');?>
+    <?php endif;?>           
     <?php if (get_row_layout() == 'contact_form'):?>
       <?php get_template_part('components/contact', 'form');?>
     <?php endif;?>

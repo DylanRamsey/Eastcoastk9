@@ -22,7 +22,10 @@
     padding: initial;
   }
   @media (min-width: $widescreen) {
-    text-align: justify;
+    p{
+      text-align: justify;
+    }
+
   }
   .service-row__image {
     display: none;

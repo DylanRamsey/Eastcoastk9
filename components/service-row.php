@@ -47,11 +47,13 @@
       <p class="service-row-copy__body">
         <?php echo $service_row_text; ?>
       </p>
-      <a 
-        class="button <?php echo $service_row_button_color;?>" 
-        href="<?php echo $service_row_button_link;?>">
-          <?php echo $service_row_button_text;?>
-      </a>
+      <?php if ($service_row_button_link):?>
+        <a 
+          class="button <?php echo $service_row_button_color;?>" 
+          href="<?php echo $service_row_button_link;?>">
+            <?php echo $service_row_button_text;?>
+        </a>
+      <?php endif;?>
       <div class="paw-print-trail <?php echo $service_row_paws;?>">
         <img class="paw-print-trail__1" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg">
         <img class="paw-print-trail__2" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg">

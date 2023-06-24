@@ -361,3 +361,18 @@ ul {
 .display-none {
   display: none;
 }
+
+.wysiwyg {
+  margin: 30px auto 30px;
+  p {
+    margin-bottom: 10px;
+  }
+  ol {
+    padding: 0;
+    list-style-position: inside;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+}

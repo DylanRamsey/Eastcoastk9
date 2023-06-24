@@ -1,5 +1,5 @@
 # East Coast K9
-### Version 1.5
+### Version 2
 
 This is a custom WordPress site theme for a dog training business.
 
@@ -37,9 +37,15 @@ Setup SASS to watch for updates and compile to style.css
 - Contact Form 7
 - SVG Support
 - Advanced Custom Fields Pro
-- Yoast SEP
+- Yoast SEO
 
 # Changelog
+
+### Verson 2
+- Added Blog setup with Blog archive template page and single blog post template page
+- Added new Q&A component and page
+- Added sub menu to main website navigation
+
 
 ### Version 1.5
 - Implemented Advanced Custom Fields Pro.
