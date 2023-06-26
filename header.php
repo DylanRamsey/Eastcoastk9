@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-to-main-content-link">Skip to main content</a>
   <section class="wrapper">
     <nav class="site-header">
       <div class="header-contact">

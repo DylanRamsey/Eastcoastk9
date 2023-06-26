@@ -2,6 +2,7 @@
 
 .simple-pricing {
   margin-bottom: 35px;
+  margin-top: 30px;
   @media (min-width: $desktop) {
     margin-bottom: 50px;
   }
@@ -41,6 +42,7 @@
 }
 
 .advanced-pricing {
+  margin-top: 30px;
   margin-bottom: 40px;
   .tab-group {
     color: var(--site-main-color-green);

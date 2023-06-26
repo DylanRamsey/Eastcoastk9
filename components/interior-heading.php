@@ -3,7 +3,7 @@
     $main_heading = get_sub_field('main_heading');
     $sub_heading = get_sub_field('sub_heading');
   ?>
-  <h2>
+  <h2 id="main-content">
     <?php echo $main_heading;?>
   </h2>
   <h5>

@@ -55,14 +55,17 @@
 
 .form-group {
   @media (min-width: $desktop) {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    p {
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
   }
 }
 
 .form-group__form-field {
+  display: block;
   margin-bottom: 14px;
   max-width: 100%;
   @media (min-width: $desktop) {

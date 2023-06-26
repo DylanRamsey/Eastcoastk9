@@ -5,7 +5,7 @@
   $home_banner_image_alt = get_sub_field( 'home_banner_image_alt' );
 ?>
 
-<div class="site-banner">
+<div class="site-banner" id="main-content">
   <img 
     class="site-banner__emblem" 
     src="<?php echo $home_banner_logo;?>" 

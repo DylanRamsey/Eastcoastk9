@@ -415,6 +415,22 @@ ul {
   display: none;
 }
 
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 .wysiwyg {
   margin: 30px auto 30px;
 }
@@ -1150,7 +1166,7 @@ ul {
 }
 
 @media (min-width: 64rem) {
-  .form-group {
+  .form-group p {
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
@@ -1159,6 +1175,7 @@ ul {
 }
 
 .form-group__form-field {
+  display: block;
   margin-bottom: 14px;
   max-width: 100%;
 }
@@ -1342,6 +1359,7 @@ ul {
 
 .simple-pricing {
   margin-bottom: 35px;
+  margin-top: 30px;
 }
 @media (min-width: 64rem) {
   .simple-pricing {
@@ -1385,6 +1403,7 @@ ul {
 }
 
 .advanced-pricing {
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 .advanced-pricing .tab-group {
