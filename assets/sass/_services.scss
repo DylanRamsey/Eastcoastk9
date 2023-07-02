@@ -14,6 +14,15 @@
   grid-template-columns: 1fr;
   align-items: center;
   padding: 25px 25px;
+  .heading {
+    line-height: 1.2;
+  }
+  p {
+    margin-bottom: 10px;
+    @media (min-width: $widescreen) {
+      text-align: justify;
+    }
+  }
   @media (min-width: $tablet) {
     padding: 50px 50px;
   }
@@ -21,12 +30,7 @@
     grid-template-columns: 100px 1fr 1fr 100px;
     padding: initial;
   }
-  @media (min-width: $widescreen) {
-    p{
-      text-align: justify;
-    }
-
-  }
+  
   .service-row__image {
     display: none;
     grid-column: 1 / 3;

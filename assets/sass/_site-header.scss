@@ -120,7 +120,21 @@
         font-weight: 600;
         // Play around with if want animations for nav
         //transition: margin 0.2s ease-in-out;
-     
+        
+        &:focus {
+          color: var(--site-main-color-brown);
+          //Part of nav animation
+          //margin-top: -3px;
+          .sub-menu {
+            display: block;
+            -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;     
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;               
+          }          
+        }
         &:hover {
           color: var(--site-main-color-brown);
           //Part of nav animation
@@ -178,7 +192,6 @@
     }
   }
 }
-
 
 @-webkit-keyframes fadeOut {
   100% {opacity: 0;}

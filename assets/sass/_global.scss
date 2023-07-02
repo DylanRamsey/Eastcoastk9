@@ -379,9 +379,14 @@ ul {
 
 .wysiwyg {
   margin: 30px auto 30px;
+  padding: 0 20px;
   p {
     margin-bottom: 10px;
   }
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+  }  
   ol {
     padding: 0;
     list-style-position: inside;

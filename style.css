@@ -433,9 +433,14 @@ ul {
 
 .wysiwyg {
   margin: 30px auto 30px;
+  padding: 0 20px;
 }
 .wysiwyg p {
   margin-bottom: 10px;
+}
+.wysiwyg ul {
+  list-style: disc;
+  list-style-position: inside;
 }
 .wysiwyg ol {
   padding: 0;
@@ -573,6 +578,18 @@ ul {
   .site-header .site-header__navigation-links li {
     font-size: 1.5rem;
     font-weight: 600;
+  }
+  .site-header .site-header__navigation-links li:focus {
+    color: var(--site-main-color-brown);
+  }
+  .site-header .site-header__navigation-links li:focus .sub-menu {
+    display: block;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
   }
   .site-header .site-header__navigation-links li:hover {
     color: var(--site-main-color-brown);
@@ -944,6 +961,17 @@ ul {
   align-items: center;
   padding: 25px 25px;
 }
+.service-row .heading {
+  line-height: 1.2;
+}
+.service-row p {
+  margin-bottom: 10px;
+}
+@media (min-width: 90rem) {
+  .service-row p {
+    text-align: justify;
+  }
+}
 @media (min-width: 48rem) {
   .service-row {
     padding: 50px 50px;
@@ -953,11 +981,6 @@ ul {
   .service-row {
     grid-template-columns: 100px 1fr 1fr 100px;
     padding: initial;
-  }
-}
-@media (min-width: 90rem) {
-  .service-row p {
-    text-align: justify;
   }
 }
 .service-row .service-row__image {
@@ -1555,6 +1578,9 @@ ul {
 }
 
 .photo-gallery__group {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
   max-width: 100%;
   position: relative;
   width: 470px;
@@ -1566,6 +1592,8 @@ ul {
 }
 @media (min-width: 64rem) {
   .photo-gallery__group {
+    display: unset;
+    flex-flow: unset;
     height: 230px;
     margin: 100px auto;
   }
