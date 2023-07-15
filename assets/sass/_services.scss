@@ -47,6 +47,7 @@
 
   .service-row__image--reversed {
     display: none;
+    object-fit: cover;
     @media (min-width: $desktop) {
       display: block;
       grid-column: 3 /-1;

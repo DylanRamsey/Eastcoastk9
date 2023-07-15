@@ -21,7 +21,7 @@
 .single-service-card {
   border-radius: 50px;
   border: 5px solid black;
-  box-: var(--);
+  box-shadow: var(--shadow);
   color: var(--site-main-color-brown);
   display: block;
   max-width: 300px;
@@ -43,18 +43,24 @@
 
 .single-service-card {
   align-items: center;
-  border-radius: 50px;
+  border-radius: 8px;
   border: 5px solid black;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  max-width: 300px;
-  padding: 20px 20px 10px;
+  position: relative;
   width: 100%;
 }
 
-.single-service-card--image {
+.single-service-card__image {
   display: block;
-  max-width: 190px;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
+}
+
+.single-service-card__heading {
+  font-size: 18px;
+  padding: 20px 0;
+  text-align: center;
 }
