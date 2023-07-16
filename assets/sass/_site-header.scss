@@ -120,7 +120,6 @@
         font-weight: 600;
         // Play around with if want animations for nav
         //transition: margin 0.2s ease-in-out;
-        
         &:focus {
           color: var(--site-main-color-brown);
           //Part of nav animation
@@ -146,7 +145,7 @@
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;     
             -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;               
+            animation-name: fadeIn;    
           }
 
           @-webkit-keyframes fadeIn {
@@ -159,9 +158,7 @@
               100% {opacity: 1;}
           }
         
-        }
-
-        
+        }  
       }
     }
     @media (min-width: $widescreen) {
@@ -175,8 +172,7 @@
     display: none;
     position: absolute;
     border-radius: 5px;
-    padding: 10px 13px;
-    top: 2.2rem;
+    top: 2.4rem;
     z-index: 99999;
     width: max-content;
     background: #8b9966;
@@ -189,6 +185,14 @@
       animation-fill-mode: both;     
       -webkit-animation-name: fadeOut;
       animation-name: fadeOut;    
+    }
+  }
+
+  li {
+    padding: 10px 13px;
+    &:hover {
+      background-color: #767e61;
+      border-radius: 5px;
     }
   }
 }

@@ -631,8 +631,7 @@ ul {
     display: none;
     position: absolute;
     border-radius: 5px;
-    padding: 10px 13px;
-    top: 2.2rem;
+    top: 2.4rem;
     z-index: 99999;
     width: max-content;
     background: #8b9966;
@@ -646,6 +645,13 @@ ul {
     -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
   }
+}
+.sub-menu li {
+  padding: 10px 13px;
+}
+.sub-menu li:hover {
+  background-color: #767e61;
+  border-radius: 5px;
 }
 
 @-webkit-keyframes fadeOut {
@@ -674,14 +680,13 @@ ul {
 }
 .mobile-navigation .mobile-navigation__links {
   background: var(--site-main-color-green);
-  border-bottom: 2px black solid;
   display: none;
   font-size: 24px;
   list-style: none;
   margin-top: 69px;
   padding: 4px 0;
   position: relative;
-  text-align: center;
+  text-align: left;
   z-index: 99;
 }
 .mobile-navigation .mobile-navigation__links a {
@@ -691,7 +696,6 @@ ul {
   width: 100%;
 }
 .mobile-navigation .mobile-navigation__links li {
-  border-top: solid 2px black;
   padding: 20px 0 15px 20px;
 }
 .mobile-navigation .mobile-navigation__links li:first-child {
@@ -831,7 +835,8 @@ ul {
 }
 
 .service-cards {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
+  margin-top: 25px;
 }
 
 .service-cards-group {
@@ -844,10 +849,25 @@ ul {
   max-width: 1240px;
   width: 100%;
 }
+
 @media (min-width: 64rem) {
-  .service-cards-group {
+  .service-cards-group--two-col {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .service-cards-group--three-col {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .service-cards-group--five-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 }
 
@@ -874,8 +894,8 @@ ul {
 
 .single-service-card {
   align-items: center;
-  border-radius: 8px;
-  border: 5px solid black;
+  border-radius: 4px;
+  border: 4px solid black;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -888,6 +908,7 @@ ul {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  max-height: 200px;
 }
 
 .single-service-card__heading {

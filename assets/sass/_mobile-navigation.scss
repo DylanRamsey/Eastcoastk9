@@ -6,14 +6,14 @@
   }
   .mobile-navigation__links {
     background: var(--site-main-color-green);
-    border-bottom: 2px black solid;
+
     display: none;
     font-size: 24px;
     list-style: none;
     margin-top: 69px;
     padding: 4px 0;
     position: relative;
-    text-align: center;
+    text-align: left;
     z-index: 99;
     a {
       color: black;
@@ -22,12 +22,20 @@
       width: 100%;
     }
     li {
-      border-top: solid 2px black;
+      //border-top: solid 2px black;
       padding: 20px 0 15px 20px;
     }
     li:first-child {
       border-top: none;
     }
+  }
+  
+  .menu-item-has-children {
+    //border-bottom: black 2px solid;
+  }
+
+  .menu-item-home {
+    //border-bottom: black 2px solid;
   }
 
   .icon {
