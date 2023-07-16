@@ -2,7 +2,7 @@
   $serviceCardHeading = get_sub_field('service_card_heading');
   $serviceCards = get_sub_field('service_card');
   $serviceCardLayout = get_sub_field('service_card_layout');
-
+  
 ?>
 
 <?php if($serviceCardLayout == '2 Column') {

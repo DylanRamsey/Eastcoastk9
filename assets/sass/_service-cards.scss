@@ -18,7 +18,17 @@
 .service-cards-group--two-col {
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0
+    gap: 80px;
+  }
+
+  a {
+    &:first-child {
+      justify-self: self-end;
+    }
+  
+    &:last-child {
+      justify-self: self-start;
+    }
   }
 }
 

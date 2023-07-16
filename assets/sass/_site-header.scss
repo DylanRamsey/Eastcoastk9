@@ -168,6 +168,7 @@
 }
 
 .sub-menu {
+  background: none;
   @media (min-width: $desktop) {
     display: none;
     position: absolute;
@@ -177,6 +178,14 @@
     width: max-content;
     background: #8b9966;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+
+    a {
+      color: black;
+      text-decoration: none;     
+      &:hover {
+        color: black !important; 
+      }
+    }
 
     ul {
       -webkit-animation-duration: 0.5s;
