@@ -54,7 +54,9 @@
             <?php echo $service_row_button_text;?>
         </a>
       <?php endif;?>
-      <div class="paw-print-trail <?php echo $service_row_paws;?>">
+      <!--
+        needs more work
+      <div class="paw-print-trail <?php /* echo $service_row_paws; */?>">
         <img class="paw-print-trail__1" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg" alt="" role="presentation">
         <img class="paw-print-trail__2" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg" alt="" role="presentation">
         <img class="paw-print-trail__3" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg" alt="" role="presentation">
@@ -62,6 +64,7 @@
         <img class="paw-print-trail__5" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg" alt="" role="presentation">
         <img class="paw-print-trail__6" src="/wp-content/themes/eastcoastk9/assets/svgs/paw-print-light-brown.svg" alt="" role="presentation">
       </div>
+      -->
     </div>
   </div>
 </section>

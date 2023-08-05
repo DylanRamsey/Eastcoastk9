@@ -634,7 +634,7 @@ ul {
     display: none;
     position: absolute;
     border-radius: 5px;
-    top: 2.4rem;
+    top: 2rem;
     z-index: 99999;
     width: max-content;
     background: #8b9966;
